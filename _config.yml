@@ -1,0 +1,102 @@
+### Site Settings ###
+title               : portfolYOU
+description         : >-
+                      I turn coffee :coffee: into code,
+                      use tabs over spaces
+                      and never broke production.
+baseurl             : "/NanyeonK.github.io"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : NanyeonK/NanyeonK.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+remote_theme        : YoussefRaafatNasry/portfolYOU
+open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
+
+
+### Plugins ###
+plugins:
+  - jemoji
+
+
+### Navbar Settings ###
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+
+
+### Author Info ###
+author:
+  name              : NanyeonK
+  image             : https://i.imgur.com/uyDNQnn.jpg
+  behance           : NanyeonK
+# dribbble          : NanyeonK
+  email             : nanyeon99@gmail.com
+  facebook          : NanyeonK
+  github            : NanyeonK
+# gitlab            : NanyeonK
+# instagram         : NanyeonK
+# kaggle            : NanyeonK
+  linkedin          : NanyeonK
+  medium            : NanyeonK
+# soundcloud        : NanyeonK
+# spotify           : NanyeonK
+# stackoverflow     : your_user_id
+# tumblr            : NanyeonK.tumblr.com
+# twitch            : NanyeonK
+  twitter           : NanyeonK
+# vimeo             : NanyeonK
+# youtube           : your_channel_name
+# keybase           : NanyeonK
+
+
+### Posts ###
+permalink: /blog/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+
+### Disqus ###
+disqus:
+  shortname: NanyeonK                     # Your website Shortname on disqus
+
+
+### Analytics ###
+analytics:
+  enabled: true                                        # Set true to enable analytics
+  google:
+    tracking_id: your-google-tracking-id
+
+
+### Buy me a coffee ###
+# See https://www.buymeacoffee.com/
+buymeacoffee:
+  enabled: false
+  username: NanyeonK
+  color: "#007bff"
+  message: "Thank you for visiting."                    # Message to be displayed aside from the button for a few seconds.
+  description: "Support me on Buy me a coffee!"
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false                                   # Set to true to enable disqus comments
+
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"
