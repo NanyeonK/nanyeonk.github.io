@@ -1,17 +1,16 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-- title: Software Engineer, Google, UK
-  from: 2018
+- title: Master's Program, SKKU Economics, South Korea
+  from: 2024
   to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  description: I am currently pursuing my Master's degree in Economics at Sungkyunkwan University (SKKU), South Korea.
+               Under the guidance of Professor Ryu, I am conducting research that integrates finance and machine learning with economics. 
+               My studies focus on advanced empirical asset pricing and quantitative analysis, preparing me to tackle real-world economic issues. 
+               Engaging in various research projects and academic seminars, I am gaining practical insights and honing my analytical skills. 
+               My goal is to contribute to the field of finance through innovative solutions and impactful research.
+
+- title: Undergraduate, Inha University Industrial Engineering, South Korea
+  from: 2022
+  to: 2023
+  description: During my undergraduate studies in Industrial Engineering at Inha University from 2022 to 2023, 
+               I focused on analyzing corporate productivity and utilizing machine learning for big data processing. 
+               This program equipped me with essential skills in optimizing production processes and 
+               leveraging advanced data analytics to drive efficiency and innovation in industrial operations.

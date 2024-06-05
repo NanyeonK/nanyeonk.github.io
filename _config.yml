@@ -1,9 +1,9 @@
 ### Site Settings ###
-title               : portfolYOU
+title               : Chronology of NanyeonK
 description         : >-
-                      I turn coffee :coffee: into code,
-                      use tabs over spaces
-                      and never broke production.
+                      Asset Pricing,
+                      Machine Learning,
+                      and the others
 baseurl             : "/NanyeonK.github.io"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : NanyeonK/NanyeonK.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
@@ -25,23 +25,22 @@ nav_exclude:                                            # The following paths ar
 ### Author Info ###
 author:
   name              : NanyeonK
-  image             : https://i.imgur.com/uyDNQnn.jpg
-  behance           : NanyeonK
+  image             : Title_image.jpg
 # dribbble          : NanyeonK
   email             : nanyeon99@gmail.com
-  facebook          : NanyeonK
+#  facebook          : NanyeonK
   github            : NanyeonK
 # gitlab            : NanyeonK
 # instagram         : NanyeonK
 # kaggle            : NanyeonK
-  linkedin          : NanyeonK
-  medium            : NanyeonK
+  linkedin          : yeonchan-kang-58181a27b/
+#  medium           : NanyeonK
 # soundcloud        : NanyeonK
 # spotify           : NanyeonK
 # stackoverflow     : your_user_id
 # tumblr            : NanyeonK.tumblr.com
 # twitch            : NanyeonK
-  twitter           : NanyeonK
+#  twitter          : NanyeonK
 # vimeo             : NanyeonK
 # youtube           : your_channel_name
 # keybase           : NanyeonK

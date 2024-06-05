@@ -1,7 +1,7 @@
-- name: Adobe Photoshop
-  percentage: 95
+- name: Empirical Asset Pricing
+  percentage: 50
   color: info
 
-- name: Adobe Illustrator
-  percentage: 90
+- name: Financial Data Analysis
+  percentage: 70
   color: success
