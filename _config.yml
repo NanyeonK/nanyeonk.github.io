@@ -18,10 +18,6 @@ plugins:
   - jekyll-seo-tag
   - jemoji
 
-exclude:
-  - vendor
-  - Gemfile.lock
-
 
 ### Navbar Settings ###
 nav_exclude:                                            # The following paths are excluded from navbar
@@ -107,5 +103,7 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
+  - vendor
+  - Gemfile.lock
 
 github: [metadata]
