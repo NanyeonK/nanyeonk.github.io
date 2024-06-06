@@ -99,3 +99,5 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
+
+github: [metadata]
