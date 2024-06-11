@@ -1,9 +1,9 @@
 ---
 title: Estimating latent asset-pricing factors
-tags: [Asset Pricing, Factor, PCA]
+tags: [Asset Pricing, Factor, PCA, JEconom, Pelger]
 style: fill
 color: light
-description: 
+description: Martin Lettau and Markus Pelger (2020, JEconom)
 ---
 
 Source-1: [Journal of Econometrics](https://doi.org/10.1016/j.jeconom.2019.08.012)     
