@@ -1,9 +1,9 @@
 ---
-title: Empirical asset pricing via machine learning
-tags: [Asset Pricing, Individual Asset Return, Machine Learning, RFS, Kelly, Xiu]
+title: Momentum turning points
+tags: [Asset Pricing, Momentum, JFE, Harvey]
 style: fill
-color: purple
-description: Gu, Kelly, and Xiu (2020, RFS)
+color: info
+description: Goulding, Harvey, and Mazzoleni (2023, JFE)
 ---
 
 Source-1: [Journal of Financial Economics](https://doi.org/10.1016/j.jfineco.2023.05.007)     
