@@ -1,0 +1,7 @@
+{{- $text := . -}}
+{{- $coauthors := site.Data.coauthors -}}
+{{- range $name, $url := $coauthors -}}
+  {{- $link := printf "<a href=\"%s\" target=\"_blank\">%s</a>" $url $name -}}
+  {{- $text = replace $text $name $link -}}
+{{- end -}}
+{{- $text | safeHTML -}}

@@ -23,23 +23,23 @@
 # ============================================================
 
 - title: "Bitcoin Forecasting with Machine Learning and On-Chain Information"
-  coauthors: "with Hoseung Kang, <a href="https://sites.google.com/view/ryudoojin/home/research-international" target="_blank">Doojin Ryu</a>, and <a href="https://www.commerce.virginia.edu/faculty/riw4j" target="_blank">Robert I. Webb</a>"
+  coauthors: "with Hoseung Kang, Doojin Ryu, and Robert I. Webb"
   category: published
   venue: "Investment Analysts Journal"
   year: 2026
   url: "https://doi.org/10.1080/10293523.2026.2616575"
   tags:
     - Big Data
-    - Token Economics
     - Machine Learning
     - Out-of-Sample Forecasting
+    - Token Economics
   abstract: "This study evaluates machine learning models for forecasting daily Bitcoin returns using on-chain, macroeconomic, and market variables from January 2017 to December 2023. We implement a rolling-window framework with window lengths ranging from 365 to 730 days and compare several machine learning models against an autoregressive benchmark. Random Forest and Support Vector Machine achieve the lowest forecasting errors consistently across volatility regimes. Feature importance analysis using permutation importance and SHAP decomposition reveals that on-chain variables account for approximately 50 per cent of total forecasting contribution, with transaction fees and mining-related metrics ranking among the top important variables. Traditional market indicators such as VIX show limited relevance for Bitcoin return forecasting. These findings highlight the distinct informational value of blockchain-native variables for cryptocurrency forecasting."
   pdf: ""
   code: ""
   figure: ""
 
 - title: "Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach"
-  coauthors: "with <a href="https://sites.google.com/view/ryudoojin/home/research-international" target="_blank">Doojin Ryu</a> and <a href="https://www.commerce.virginia.edu/faculty/riw4j" target="_blank">Robert I. Webb</a>"
+  coauthors: "with Doojin Ryu and Robert I. Webb"
   category: published
   venue: "Computational Economics"
   year: 2026
@@ -47,15 +47,15 @@
   tags:
     - Big Data
     - Machine Learning
-    - SHAP
     - Out-of-Sample Forecasting
+    - SHAP
   abstract: "We forecast monthly crude oil volatility dynamics using an interpretable machine learning framework applied to a long sample period from 1986 to 2023, encompassing multiple economic cycles, including four NBER-defined recessions, and incorporating 140 macroeconomic and uncertainty variables. Tree-based models (Random Forest and XGBoost) deliver the strongest out-of-sample forecasting performance, though their relative advantage varies across economic regimes. Uncertainty indicators, rather than oil-specific fundamentals, are the most influential predictors, indicating that oil volatility is primarily shaped by broader uncertainty conditions. Time-varying interpretability analyses reveal that the superior performance of tree-based models stems from their ability to flexibly combine multiple signals, an insight not captured by static importance scores. Our results highlight the value of dynamic interpretability in understanding regime-dependent machine learning behavior and offer guidance for volatility modeling."
   pdf: ""
   code: ""
   figure: ""
 
 - title: "How Well Do Machine Learning Models in Finance Work?"
-  coauthors: "with <a href="https://sites.google.com/view/ryudoojin/home/research-international" target="_blank">Doojin Ryu</a> and <a href="https://www.commerce.virginia.edu/faculty/riw4j" target="_blank">Robert I. Webb</a>"
+  coauthors: "with Doojin Ryu and Robert I. Webb"
   category: published
   venue: "Financial Innovation"
   year: 2025
@@ -71,7 +71,7 @@
   figure: ""
 
 - title: "Potential Pricing Factors in the Korean Market"
-  coauthors: "with Jeongseok Bang and <a href="https://sites.google.com/view/ryudoojin/home/research-international" target="_blank">Doojin Ryu</a>"
+  coauthors: "with Jeongseok Bang and Doojin Ryu"
   category: published
   venue: "Finance Research Letters"
   year: 2024
@@ -116,3 +116,4 @@
     - Urban Economics
   abstract: ""
   pdf: ""
+  figure: ""
