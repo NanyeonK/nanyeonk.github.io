@@ -1,0 +1,7 @@
+name = "Academic Minimal"
+description = "A minimal academic theme for Hugo"
+license = "MIT"
+min_version = "0.100.0"
+
+[author]
+name = "Yeonchan Kang"

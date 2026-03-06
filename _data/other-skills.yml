@@ -1,7 +1,0 @@
-- name: Empirical Asset Pricing
-  percentage: 50
-  color: info
-
-- name: Financial Data Analysis
-  percentage: 70
-  color: success

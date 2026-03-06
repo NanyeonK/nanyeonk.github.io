@@ -1,0 +1,29 @@
+---
+title: "CV"
+layout: "single"
+---
+
+📄 [Download CV (PDF)](/files/cv.pdf)
+
+## Education
+
+**Seoul National University** (Expected 2027)  
+Ph.D. in Real Estate & Finance
+
+## Research Interests
+
+- Real Estate Economics & Urban Economics
+- Machine Learning in Finance
+- Housing Markets & Commercial Real Estate
+- Asset Tokenization (STO)
+
+## Skills
+
+- **Econometrics**: Panel data, hedonic pricing, IV/DiD, RDD
+- **Machine Learning**: XGBoost, conformal prediction, SHAP
+- **Programming**: R (fixest, tidyverse), Python (scikit-learn), DuckDB, SQL
+- **Tools**: LaTeX, Git, Obsidian, Hugo
+
+---
+
+*Full CV available upon request.*

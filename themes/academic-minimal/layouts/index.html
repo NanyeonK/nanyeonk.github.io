@@ -1,0 +1,45 @@
+{{ define "main" }}
+<div class="container home-page">
+  <div class="profile-section">
+    <div class="profile-info">
+      <h1>{{ .Site.Params.author }}</h1>
+      <p class="subtitle">PhD Researcher in Real Estate & Finance</p>
+      <p class="affiliation">Seoul National University</p>
+      <div class="social-links">
+        {{ with .Site.Params.social.email }}<a href="mailto:{{ . }}" title="Email">📧 Email</a>{{ end }}
+        {{ with .Site.Params.social.github }}<a href="https://github.com/{{ . }}" title="GitHub">GitHub</a>{{ end }}
+        {{ with .Site.Params.social.linkedin }}<a href="https://linkedin.com/in/{{ . }}" title="LinkedIn">LinkedIn</a>{{ end }}
+        {{ with .Site.Params.social.googleScholar }}<a href="https://scholar.google.com/citations?user={{ . }}" title="Google Scholar">Google Scholar</a>{{ end }}
+      </div>
+    </div>
+    {{ with .Site.Params.profileImage }}
+    <div class="profile-photo">
+      <img src="{{ . }}" alt="{{ $.Site.Params.author }}">
+    </div>
+    {{ end }}
+  </div>
+
+  <div class="about-section">
+    {{ .Content }}
+  </div>
+
+  <div class="news-section">
+    <h2>News</h2>
+    {{ range first 8 (where .Site.Data.news "active" true) }}
+    <div class="news-item">
+      <span class="news-date">{{ .date }}</span>
+      <span class="news-text">{{ .text | markdownify }}</span>
+    </div>
+    {{ end }}
+  </div>
+
+  <div class="interests-section">
+    <h2>Research Interests</h2>
+    <ul>
+      {{ range .Site.Data.interests }}
+      <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
+{{ end }}

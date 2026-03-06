@@ -1,0 +1,46 @@
+baseURL: "https://nanyeonk.github.io/"
+languageCode: "en"
+title: "Yeonchan Kang"
+theme: "academic-minimal"
+
+params:
+  author: "Yeonchan Kang"
+  description: "PhD Researcher in Real Estate & Finance"
+  favicon: "/favicon.ico"
+  profileImage: "/images/profile.jpg"
+  
+  social:
+    email: "nanyeon99@gmail.com"
+    github: "NanyeonK"
+    linkedin: "yeonchan-kang-58181a27b"
+    googleScholar: ""
+
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "Research"
+      url: "/research/"
+      weight: 2
+    - name: "CV"
+      url: "/cv/"
+      weight: 3
+    - name: "Blog"
+      url: "/blog/"
+      weight: 4
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+
+paginate: 10
+
+taxonomies:
+  tag: tags

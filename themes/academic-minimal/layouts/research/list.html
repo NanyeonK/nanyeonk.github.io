@@ -1,0 +1,59 @@
+{{ define "main" }}
+<div class="container research-page">
+  <h1>Research</h1>
+  
+  {{ $papers := .Site.Data.papers }}
+
+  {{ $working := where $papers "category" "working" }}
+  {{ if $working }}
+  <h2>Working Papers</h2>
+  {{ range $working }}
+  <div class="paper-entry">
+    <p class="paper-title">
+      {{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
+    </p>
+    <p class="paper-authors">{{ .authors }}</p>
+    {{ with .venue }}<p class="paper-venue">{{ . }}</p>{{ end }}
+    {{ with .status }}<p class="paper-status">{{ . }}</p>{{ end }}
+    {{ with .abstract }}
+    <details class="paper-abstract">
+      <summary>Abstract</summary>
+      <p>{{ . }}</p>
+    </details>
+    {{ end }}
+    <div class="paper-links">
+      {{ with .pdf }}<a href="{{ . }}">[PDF]</a>{{ end }}
+      {{ with .ssrn }}<a href="{{ . }}">[SSRN]</a>{{ end }}
+      {{ with .code }}<a href="{{ . }}">[Code]</a>{{ end }}
+      {{ with .slides }}<a href="{{ . }}">[Slides]</a>{{ end }}
+    </div>
+  </div>
+  {{ end }}
+  {{ end }}
+
+  {{ $published := where $papers "category" "published" }}
+  {{ if $published }}
+  <h2>Publications</h2>
+  {{ range $published }}
+  <div class="paper-entry">
+    <p class="paper-title">
+      {{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
+    </p>
+    <p class="paper-authors">{{ .authors }}</p>
+    <p class="paper-venue"><em>{{ .venue }}</em>, {{ .year }}.</p>
+    {{ with .abstract }}
+    <details class="paper-abstract">
+      <summary>Abstract</summary>
+      <p>{{ . }}</p>
+    </details>
+    {{ end }}
+    <div class="paper-links">
+      {{ with .pdf }}<a href="{{ . }}">[PDF]</a>{{ end }}
+      {{ with .doi }}<a href="https://doi.org/{{ . }}">[DOI]</a>{{ end }}
+      {{ with .code }}<a href="{{ . }}">[Code]</a>{{ end }}
+    </div>
+  </div>
+  {{ end }}
+  {{ end }}
+</div>
+{{ end }}
