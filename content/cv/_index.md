@@ -2,7 +2,7 @@
 title: "CV"
 ---
 
-📄 [Download CV (PDF)](/files/cv.pdf)
+[Download CV (PDF)](/files/cv.pdf)
 
 ## Education
 
