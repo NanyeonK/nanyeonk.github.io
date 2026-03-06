@@ -2,6 +2,8 @@
 title: "CV"
 ---
 
+## Download
+
 [Download CV (PDF)](/files/cv.pdf)
 
 ## Education
