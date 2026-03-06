@@ -27,7 +27,6 @@ body {
 
 /* Header */
 .site-header {
-  border-bottom: 1px solid var(--border);
   padding: 1.2rem 0;
 }
 .site-header .container {
