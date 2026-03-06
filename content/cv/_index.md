@@ -26,8 +26,8 @@ B.S. in Industrial Engineering
 ## Skills
 
 - **Econometrics**: Panel data, hedonic pricing, IV/DiD, RDD
-- **Machine Learning**: XGBoost, conformal prediction, SHAP
-- **Programming**: R (fixest, tidyverse), Python (scikit-learn), DuckDB, SQL
+- **Machine Learning (including DL)**: Tabular prediction with panel structures, interpretability (SHAP, PFI, PDP), image-based analysis, text mining, ensemble methods
+- **Programming**: R (fixest, tidyverse), Python (scikit-learn, PyTorch), DuckDB, SQL
 - **Tools**: LaTeX, Git
 
 ---
