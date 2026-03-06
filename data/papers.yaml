@@ -29,7 +29,7 @@
   venue: "Financial Innovation"
   year: 2025
   doi: "10.1186/s40854-025-00870-0"
-  abstract: ""
+  abstract: "We examine how machine learning models predict stock returns in the Korean market. By analyzing various firm characteristics and macroeconomic variables, we find that tree-based models outperform other machine learning approaches. This finding suggests that, in data-constrained contexts, moderately complex models outperform advanced methods that require extensive datasets. Using PFI, SHAP, and LIME, we consistently identify the 36-month momentum as the key predictor. PDP, ICE, and ALE analyses reveal threshold effects of 36-month momentum that diminish at higher return levels. Our findings underscore the value of ensemble-based methods in settings characterized by short data histories and heightened volatility. This study illustrates how multimethod interpretability can yield deeper economic insights, ultimately guiding more effective investment strategies and policy decisions."
   pdf: ""
   code: ""
 
@@ -49,7 +49,7 @@
   venue: "Computational Economics"
   year: 2026
   doi: "10.1007/s10614-025-11299-z"
-  abstract: ""
+  abstract: "We forecast monthly crude oil volatility dynamics using an interpretable machine learning framework applied to a long sample period from 1986 to 2023, encompassing multiple economic cycles, including four NBER-defined recessions, and incorporating 140 macroeconomic and uncertainty variables. Tree-based models (Random Forest and XGBoost) deliver the strongest out-of-sample forecasting performance, though their relative advantage varies across economic regimes. Uncertainty indicators, rather than oil-specific fundamentals, are the most influential predictors, indicating that oil volatility is primarily shaped by broader uncertainty conditions. Time-varying interpretability analyses reveal that the superior performance of tree-based models stems from their ability to flexibly combine multiple signals, an insight not captured by static importance scores. Our results highlight the value of dynamic interpretability in understanding regime-dependent machine learning behavior and offer guidance for volatility modeling."
   pdf: ""
   code: ""
 
@@ -59,6 +59,6 @@
   venue: "Finance Research Letters"
   year: 2024
   doi: "10.1016/j.frl.2024.105946"
-  abstract: ""
+  abstract: "This letter examines whether new factors have additional explanatory power for the cross-section of expected stock returns compared to existing factors. We exploit machine-learning-based double-section LASSO to select factors explaining the cross-section in the Korean stock market. Among the recently proposed factors, gross profitability consistently exhibits significant SDF loadings, as confirmed by several robustness checks."
   pdf: ""
   code: ""
