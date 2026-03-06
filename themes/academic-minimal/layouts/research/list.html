@@ -1,16 +1,32 @@
 {{ define "main" }}
 <div class="container research-page">
   <h1>Research</h1>
-  
+
+  {{/* Collect all unique tags */}}
+  {{ $allTags := slice }}
+  {{ range .Site.Data.papers }}
+    {{ range .tags }}
+      {{ $allTags = $allTags | append . }}
+    {{ end }}
+  {{ end }}
+  {{ $allTags = $allTags | uniq | sort }}
+
+  <div class="tag-filter" id="tag-filter">
+    {{ range $allTags }}
+    <span class="tag tag-clickable" data-tag="{{ . }}" onclick="filterByTag('{{ . }}')">{{ . }}</span>
+    {{ end }}
+    <span class="tag tag-clear" id="tag-clear" onclick="clearFilter()" style="display:none;">✕ Clear</span>
+  </div>
+
   {{ $papers := .Site.Data.papers }}
 
   {{ $working := where $papers "category" "working" }}
   {{ if $working }}
   <h2>Working Papers</h2>
   {{ range sort $working "year" "desc" }}
-  <div class="paper-entry">
+  <div class="paper-entry" data-tags="{{ delimit .tags "," }}">
     <div class="paper-tags">
-      {{ range .tags }}<span class="tag">{{ . }}</span>{{ end }}
+      {{ range .tags }}<span class="tag tag-clickable" data-tag="{{ . }}" onclick="filterByTag('{{ . }}')">{{ . }}</span>{{ end }}
     </div>
     <p class="paper-title">
       {{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
@@ -37,9 +53,9 @@
   {{ if $published }}
   <h2>Publications</h2>
   {{ range sort $published "year" "desc" }}
-  <div class="paper-entry">
+  <div class="paper-entry" data-tags="{{ delimit .tags "," }}">
     <div class="paper-tags">
-      {{ range .tags }}<span class="tag">{{ . }}</span>{{ end }}
+      {{ range .tags }}<span class="tag tag-clickable" data-tag="{{ . }}" onclick="filterByTag('{{ . }}')">{{ . }}</span>{{ end }}
     </div>
     <p class="paper-title">
       {{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
@@ -60,5 +76,62 @@
   </div>
   {{ end }}
   {{ end }}
+
+  {{ $wip := where $papers "category" "wip" }}
+  {{ if $wip }}
+  <h2>Work in Progress</h2>
+  {{ range sort $wip "year" "desc" }}
+  <div class="paper-entry" data-tags="{{ delimit .tags "," }}">
+    <div class="paper-tags">
+      {{ range .tags }}<span class="tag tag-clickable" data-tag="{{ . }}" onclick="filterByTag('{{ . }}')">{{ . }}</span>{{ end }}
+    </div>
+    <p class="paper-title">{{ .title }}</p>
+    {{ with .coauthors }}<p class="paper-coauthors">{{ . }}</p>{{ end }}
+    {{ with .abstract }}
+    <details class="paper-abstract">
+      <summary>Abstract</summary>
+      <p>{{ . }}</p>
+    </details>
+    {{ end }}
+  </div>
+  {{ end }}
+  {{ end }}
 </div>
+
+<script>
+let activeTag = null;
+
+function filterByTag(tag) {
+  if (activeTag === tag) {
+    clearFilter();
+    return;
+  }
+  activeTag = tag;
+  
+  // Highlight active tag in filter bar
+  document.querySelectorAll('.tag-clickable').forEach(el => {
+    el.classList.toggle('tag-active', el.dataset.tag === tag);
+    el.classList.toggle('tag-dim', el.dataset.tag !== tag);
+  });
+  document.getElementById('tag-clear').style.display = 'inline-block';
+  
+  // Dim non-matching papers
+  document.querySelectorAll('.paper-entry').forEach(el => {
+    const tags = el.dataset.tags.split(',');
+    el.classList.toggle('paper-dim', !tags.includes(tag));
+    el.classList.toggle('paper-highlight', tags.includes(tag));
+  });
+}
+
+function clearFilter() {
+  activeTag = null;
+  document.querySelectorAll('.tag-clickable').forEach(el => {
+    el.classList.remove('tag-active', 'tag-dim');
+  });
+  document.querySelectorAll('.paper-entry').forEach(el => {
+    el.classList.remove('paper-dim', 'paper-highlight');
+  });
+  document.getElementById('tag-clear').style.display = 'none';
+}
+</script>
 {{ end }}

@@ -28,7 +28,7 @@ B.S. in Industrial Engineering
 - **Econometrics**: Panel data, hedonic pricing, IV/DiD, RDD
 - **Machine Learning**: XGBoost, conformal prediction, SHAP
 - **Programming**: R (fixest, tidyverse), Python (scikit-learn), DuckDB, SQL
-- **Tools**: LaTeX, Git, Obsidian, Hugo
+- **Tools**: LaTeX, Git
 
 ---
 

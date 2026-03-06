@@ -82,15 +82,30 @@ body {
 }
 .social-links {
   display: flex;
-  gap: 1.2rem;
+  gap: 0.6rem 1.4rem;
   flex-wrap: wrap;
+  margin-top: 0.3rem;
 }
 .social-links a {
-  color: var(--accent);
+  color: var(--text-light);
   text-decoration: none;
   font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: all 0.15s;
 }
-.social-links a:hover { text-decoration: underline; }
+.social-links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: #f0f6fb;
+}
+.social-links a svg {
+  flex-shrink: 0;
+}
 
 .profile-photo {
   flex-shrink: 0;
@@ -175,18 +190,55 @@ body {
   margin-bottom: 2rem;
   padding-left: 0;
 }
+.tag-filter {
+  margin-bottom: 2rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--border);
+}
 .paper-tags {
   margin-bottom: 0.3rem;
 }
-.paper-tags .tag {
+.tag {
   display: inline-block;
   font-size: 0.75rem;
   color: var(--accent);
   background: #eaf2f8;
-  padding: 0.1rem 0.5rem;
+  padding: 0.15rem 0.55rem;
   border-radius: 3px;
   margin-right: 0.4rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.3rem;
+}
+.tag-clickable {
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.tag-clickable:hover {
+  background: var(--accent);
+  color: #fff;
+}
+.tag-active {
+  background: var(--accent) !important;
+  color: #fff !important;
+}
+.tag-dim {
+  opacity: 0.35;
+}
+.tag-clear {
+  background: #f0f0f0;
+  color: var(--text-light);
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+.tag-clear:hover {
+  background: #ddd;
+}
+.paper-dim {
+  opacity: 0.2;
+  transition: opacity 0.2s;
+}
+.paper-highlight {
+  opacity: 1;
+  transition: opacity 0.2s;
 }
 .paper-coauthors {
   font-size: 0.93rem;

@@ -1,117 +1,110 @@
 # ============================================================
-# Working Papers (newest first)
+# Working Papers
 # ============================================================
 
 - title: "Spatial Heterogeneity in Housing Price Determinants: Machine Learning Evidence from Seoul"
-  authors: ""
   coauthors: ""
   category: working
   status: "R&R at Spatial Economic Analysis"
   year: 2026
   tags:
-    - Machine Learning
+    - Hedonic Model
     - Housing Market
-    - Spatial Econometrics
+    - Machine Learning
     - SHAP
   abstract: "This study examines apartment price determinants in Seoul using transaction-level building data and machine learning. Applying XGBoost with SHAP analysis to Seoul's 25 administrative districts, we find that identical characteristics yield different price premiums across neighborhoods. While district location remains the strongest single predictor, the valuation of building attributes varies substantially by district. These heterogeneous patterns account for the persistent performance gap between XGBoost and linear hedonic models. Our analysis shows that districts within a single metropolitan area operate under distinct pricing regimes, with direct implications for property valuation practice in complex urban markets."
   pdf: ""
   code: ""
-
-- title: "When Does ML Complexity Pay Off in Housing Market Forecasting?"
-  authors: ""
-  coauthors: ""
-  category: working
-  status: "Work in Progress"
-  year: 2026
-  tags:
-    - Machine Learning
-    - Housing Market
-    - Return Predictability
-    - Big Data
-  abstract: "This paper investigates when machine learning complexity pays off in housing market forecasting, and how the gains from cross-sectional pooling and nonlinearity interact across economic conditions. Using 51 US states with Zillow ZHVI and FRED-MD predictors, we decompose ML forecasting gains into pooling, nonlinearity, and interaction components under varying credit cycles and policy uncertainty regimes."
-  pdf: ""
-  code: ""
-
-- title: "Evening Economic Activity and Commercial Rents"
-  authors: ""
-  coauthors: ""
-  category: working
-  status: "Work in Progress"
-  year: 2025
-  tags:
-    - Urban Economics
-    - Big Data
-    - Commercial Real Estate
-  abstract: ""
-  pdf: ""
 
 # ============================================================
 # Published Papers (newest first)
 # ============================================================
 
 - title: "Bitcoin Forecasting with Machine Learning and On-Chain Information"
-  authors: ""
   coauthors: "with Hoseung Kang, Doojin Ryu, and Robert I. Webb"
   category: published
   venue: "Investment Analysts Journal"
   year: 2026
-  doi: "10.1080/10293523.2026.2616575"
   url: "https://doi.org/10.1080/10293523.2026.2616575"
   tags:
-    - Machine Learning
-    - Cryptocurrency
     - Big Data
-    - Return Predictability
+    - Cryptocurrency
+    - Machine Learning
+    - Out-of-Sample Prediction
   abstract: "This study evaluates machine learning models for forecasting daily Bitcoin returns using on-chain, macroeconomic, and market variables from January 2017 to December 2023. We implement a rolling-window framework with window lengths ranging from 365 to 730 days and compare several machine learning models against an autoregressive benchmark. Random Forest and Support Vector Machine achieve the lowest forecasting errors consistently across volatility regimes. Feature importance analysis using permutation importance and SHAP decomposition reveals that on-chain variables account for approximately 50 per cent of total forecasting contribution, with transaction fees and mining-related metrics ranking among the top important variables. Traditional market indicators such as VIX show limited relevance for Bitcoin return forecasting. These findings highlight the distinct informational value of blockchain-native variables for cryptocurrency forecasting."
   pdf: ""
   code: ""
 
 - title: "Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach"
-  authors: ""
   coauthors: "with Doojin Ryu and Robert I. Webb"
   category: published
   venue: "Computational Economics"
   year: 2026
-  doi: "10.1007/s10614-025-11299-z"
   url: "https://doi.org/10.1007/s10614-025-11299-z"
   tags:
-    - Machine Learning
-    - Volatility Forecasting
     - Big Data
+    - Machine Learning
     - SHAP
+    - Volatility Forecasting
   abstract: "We forecast monthly crude oil volatility dynamics using an interpretable machine learning framework applied to a long sample period from 1986 to 2023, encompassing multiple economic cycles, including four NBER-defined recessions, and incorporating 140 macroeconomic and uncertainty variables. Tree-based models (Random Forest and XGBoost) deliver the strongest out-of-sample forecasting performance, though their relative advantage varies across economic regimes. Uncertainty indicators, rather than oil-specific fundamentals, are the most influential predictors, indicating that oil volatility is primarily shaped by broader uncertainty conditions. Time-varying interpretability analyses reveal that the superior performance of tree-based models stems from their ability to flexibly combine multiple signals, an insight not captured by static importance scores. Our results highlight the value of dynamic interpretability in understanding regime-dependent machine learning behavior and offer guidance for volatility modeling."
   pdf: ""
   code: ""
 
 - title: "How Well Do Machine Learning Models in Finance Work?"
-  authors: ""
   coauthors: "with Doojin Ryu and Robert I. Webb"
   category: published
   venue: "Financial Innovation"
   year: 2025
-  doi: "10.1186/s40854-025-00870-0"
   url: "https://doi.org/10.1186/s40854-025-00870-0"
   tags:
-    - Machine Learning
     - Asset Pricing
-    - Return Predictability
+    - Machine Learning
+    - Out-of-Sample Prediction
     - SHAP
   abstract: "We examine how machine learning models predict stock returns in the Korean market. By analyzing various firm characteristics and macroeconomic variables, we find that tree-based models outperform other machine learning approaches. This finding suggests that, in data-constrained contexts, moderately complex models outperform advanced methods that require extensive datasets. Using PFI, SHAP, and LIME, we consistently identify the 36-month momentum as the key predictor. PDP, ICE, and ALE analyses reveal threshold effects of 36-month momentum that diminish at higher return levels. Our findings underscore the value of ensemble-based methods in settings characterized by short data histories and heightened volatility. This study illustrates how multimethod interpretability can yield deeper economic insights, ultimately guiding more effective investment strategies and policy decisions."
   pdf: ""
   code: ""
 
 - title: "Potential Pricing Factors in the Korean Market"
-  authors: ""
   coauthors: "with Jeongseok Bang and Doojin Ryu"
   category: published
   venue: "Finance Research Letters"
   year: 2024
-  doi: "10.1016/j.frl.2024.105946"
   url: "https://doi.org/10.1016/j.frl.2024.105946"
   tags:
     - Asset Pricing
-    - Machine Learning
     - Factor Model
+    - Machine Learning
   abstract: "This letter examines whether new factors have additional explanatory power for the cross-section of expected stock returns compared to existing factors. We exploit machine-learning-based double-section LASSO to select factors explaining the cross-section in the Korean stock market. Among the recently proposed factors, gross profitability consistently exhibits significant SDF loadings, as confirmed by several robustness checks."
   pdf: ""
   code: ""
+
+# ============================================================
+# Work in Progress
+# ============================================================
+
+- title: "When Does ML Complexity Pay Off in Housing Market Forecasting?"
+  coauthors: ""
+  category: wip
+  status: "Work in Progress"
+  year: 2026
+  tags:
+    - Big Data
+    - Housing Market
+    - Machine Learning
+    - Out-of-Sample Prediction
+  abstract: "This paper investigates when machine learning complexity pays off in housing market forecasting, and how the gains from cross-sectional pooling and nonlinearity interact across economic conditions. Using 51 US states with Zillow ZHVI and FRED-MD predictors, we decompose ML forecasting gains into pooling, nonlinearity, and interaction components under varying credit cycles and policy uncertainty regimes."
+  pdf: ""
+  code: ""
+
+- title: "Evening Economic Activity and Commercial Rents"
+  coauthors: ""
+  category: wip
+  status: "Work in Progress"
+  year: 2025
+  tags:
+    - Big Data
+    - Commercial Real Estate
+    - Urban Economics
+  abstract: ""
+  pdf: ""
