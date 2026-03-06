@@ -11,6 +11,7 @@
   const children = Array.from(container.childNodes);
   const sections = [];
   let current = null;
+  let preamble = [];
 
   children.forEach(node => {
     if (node.nodeType === 1 && node.tagName === 'H2') {
@@ -20,11 +21,14 @@
       current.appendChild(node);
     } else if (current) {
       current.appendChild(node);
+    } else {
+      preamble.push(node);
     }
   });
   if (current) sections.push(current);
 
   container.innerHTML = '';
+  preamble.forEach(n => container.appendChild(n));
   sections.forEach(s => container.appendChild(s));
 })();
 </script>

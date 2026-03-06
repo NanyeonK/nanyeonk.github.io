@@ -35,7 +35,6 @@ body {
   align-items: center;
 }
 .site-title {
-  font-family: 'Source Serif 4', Georgia, serif;
   font-size: 1.3rem;
   font-weight: 600;
   color: var(--text);
@@ -70,7 +69,6 @@ body {
 }
 .profile-info { flex: 1; }
 .profile-info h1 {
-  font-family: 'Source Serif 4', Georgia, serif;
   font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 0.3rem;
@@ -132,7 +130,6 @@ body {
 /* News */
 .news-section { margin-bottom: 2.5rem; }
 .news-section h2 {
-  font-family: 'Source Serif 4', Georgia, serif;
   font-size: 1.4rem;
   margin-bottom: 1rem;
   padding-bottom: 0.4rem;
@@ -154,7 +151,6 @@ body {
 
 /* Research Interests */
 .interests-section h2 {
-  font-family: 'Source Serif 4', Georgia, serif;
   font-size: 1.4rem;
   margin-bottom: 0.8rem;
   padding-bottom: 0.4rem;
@@ -192,12 +188,10 @@ body {
   margin-top: 2rem;
 }
 .research-page h1 {
-  font-family: 'Source Serif 4', Georgia, serif;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 .research-page h2 {
-  font-family: 'Source Serif 4', Georgia, serif;
   font-size: 1.4rem;
   margin: 2rem 0 1rem;
   padding-bottom: 0.3rem;
@@ -394,7 +388,6 @@ body {
   padding: 2.5rem 0;
 }
 .page-content h1 {
-  font-family: 'Source Serif 4', Georgia, serif;
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -414,7 +407,6 @@ body {
 /* Blog */
 .blog-page { padding: 2.5rem 0; }
 .blog-page h1 {
-  font-family: 'Source Serif 4', Georgia, serif;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
@@ -441,7 +433,6 @@ body {
 }
 .blog-post { padding: 2.5rem 0; }
 .blog-post h1 {
-  font-family: 'Source Serif 4', Georgia, serif;
   font-size: 2rem;
   margin-bottom: 0.3rem;
 }
