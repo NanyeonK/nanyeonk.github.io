@@ -31,6 +31,4 @@ B.S. in Industrial Engineering
 - **Programming**: R (fixest, tidyverse), Python (scikit-learn, PyTorch), DuckDB, SQL
 - **Tools**: LaTeX, Git
 
----
 
-*Full CV available upon request.*
