@@ -5,9 +5,7 @@
       {{ $rel := .RelPermalink }}
       {{ range .Site.Menus.main }}
         {{ $active := false }}
-        {{ if eq .URL "/" }}
-          {{ $active = eq $rel "/" }}
-        {{ else }}
+        {{ if ne .URL "/" }}
           {{ $active = hasPrefix $rel .URL }}
         {{ end }}
         <a href="{{ .URL }}" class="{{ if $active }}active{{ end }}">{{ .Name }}</a>
