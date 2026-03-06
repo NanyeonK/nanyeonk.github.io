@@ -1,5 +1,1 @@
-I am a PhD researcher in Real Estate and Finance. My research lies at the intersection of machine learning and financial economics, with a focus on real estate markets, asset pricing, and forecasting.
-
-My current projects examine how machine learning methods can improve housing price prediction, the relationship between evening economic activity and commercial real estate values, and the application of interpretable ML to commodity markets.
-
-I hold particular interest in bridging methodological advances in machine learning with substantive economic questions — ensuring that predictive models are not only accurate but also economically interpretable.
+I am a PhD researcher in Economics at Sungkyunkwan University. My research applies interpretable machine-learning methods to financial economics—housing valuation, asset pricing, and out-of-sample forecasting across real estate, equity, commodity, and digital asset markets. I combine gradient-boosted models, SHAP-based inference, and panel econometrics to uncover predictive structure in high-dimensional financial data. My work has appeared in *Financial Research Letters*, *Financial Innovation*, *Computational Economics*, and the *Investment Analysts Journal*.

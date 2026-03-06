@@ -16,6 +16,7 @@
   abstract: "This study examines apartment price determinants in Seoul using transaction-level building data and machine learning. Applying XGBoost with SHAP analysis to Seoul's 25 administrative districts, we find that identical characteristics yield different price premiums across neighborhoods. While district location remains the strongest single predictor, the valuation of building attributes varies substantially by district. These heterogeneous patterns account for the persistent performance gap between XGBoost and linear hedonic models. Our analysis shows that districts within a single metropolitan area operate under distinct pricing regimes, with direct implications for property valuation practice in complex urban markets."
   pdf: ""
   code: ""
+  figure: ""
 
 # ============================================================
 # Published Papers (newest first)
@@ -35,6 +36,7 @@
   abstract: "This study evaluates machine learning models for forecasting daily Bitcoin returns using on-chain, macroeconomic, and market variables from January 2017 to December 2023. We implement a rolling-window framework with window lengths ranging from 365 to 730 days and compare several machine learning models against an autoregressive benchmark. Random Forest and Support Vector Machine achieve the lowest forecasting errors consistently across volatility regimes. Feature importance analysis using permutation importance and SHAP decomposition reveals that on-chain variables account for approximately 50 per cent of total forecasting contribution, with transaction fees and mining-related metrics ranking among the top important variables. Traditional market indicators such as VIX show limited relevance for Bitcoin return forecasting. These findings highlight the distinct informational value of blockchain-native variables for cryptocurrency forecasting."
   pdf: ""
   code: ""
+  figure: ""
 
 - title: "Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach"
   coauthors: "with Doojin Ryu and Robert I. Webb"
@@ -50,6 +52,7 @@
   abstract: "We forecast monthly crude oil volatility dynamics using an interpretable machine learning framework applied to a long sample period from 1986 to 2023, encompassing multiple economic cycles, including four NBER-defined recessions, and incorporating 140 macroeconomic and uncertainty variables. Tree-based models (Random Forest and XGBoost) deliver the strongest out-of-sample forecasting performance, though their relative advantage varies across economic regimes. Uncertainty indicators, rather than oil-specific fundamentals, are the most influential predictors, indicating that oil volatility is primarily shaped by broader uncertainty conditions. Time-varying interpretability analyses reveal that the superior performance of tree-based models stems from their ability to flexibly combine multiple signals, an insight not captured by static importance scores. Our results highlight the value of dynamic interpretability in understanding regime-dependent machine learning behavior and offer guidance for volatility modeling."
   pdf: ""
   code: ""
+  figure: ""
 
 - title: "How Well Do Machine Learning Models in Finance Work?"
   coauthors: "with Doojin Ryu and Robert I. Webb"
@@ -65,6 +68,7 @@
   abstract: "We examine how machine learning models predict stock returns in the Korean market. By analyzing various firm characteristics and macroeconomic variables, we find that tree-based models outperform other machine learning approaches. This finding suggests that, in data-constrained contexts, moderately complex models outperform advanced methods that require extensive datasets. Using PFI, SHAP, and LIME, we consistently identify the 36-month momentum as the key predictor. PDP, ICE, and ALE analyses reveal threshold effects of 36-month momentum that diminish at higher return levels. Our findings underscore the value of ensemble-based methods in settings characterized by short data histories and heightened volatility. This study illustrates how multimethod interpretability can yield deeper economic insights, ultimately guiding more effective investment strategies and policy decisions."
   pdf: ""
   code: ""
+  figure: ""
 
 - title: "Potential Pricing Factors in the Korean Market"
   coauthors: "with Jeongseok Bang and Doojin Ryu"
@@ -79,6 +83,7 @@
   abstract: "This letter examines whether new factors have additional explanatory power for the cross-section of expected stock returns compared to existing factors. We exploit machine-learning-based double-section LASSO to select factors explaining the cross-section in the Korean stock market. Among the recently proposed factors, gross profitability consistently exhibits significant SDF loadings, as confirmed by several robustness checks."
   pdf: ""
   code: ""
+  figure: ""
 
 # ============================================================
 # Work in Progress
@@ -97,6 +102,7 @@
   abstract: "This paper investigates when machine learning complexity pays off in housing market forecasting, and how the gains from cross-sectional pooling and nonlinearity interact across economic conditions. Using 51 US states with Zillow ZHVI and FRED-MD predictors, we decompose ML forecasting gains into pooling, nonlinearity, and interaction components under varying credit cycles and policy uncertainty regimes."
   pdf: ""
   code: ""
+  figure: ""
 
 - title: "Evening Economic Activity and Commercial Rents"
   coauthors: ""

@@ -187,8 +187,30 @@ body {
   border-bottom: 1px solid var(--border);
 }
 .paper-entry {
-  margin-bottom: 2rem;
+  margin-bottom: 2.2rem;
   padding-left: 0;
+}
+.paper-content {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.paper-text {
+  flex: 1;
+  min-width: 0;
+}
+.paper-figure {
+  flex-shrink: 0;
+  width: 200px;
+}
+.paper-figure img {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+@media (max-width: 640px) {
+  .paper-content { flex-direction: column; }
+  .paper-figure { width: 100%; max-width: 280px; }
 }
 .tag-filter {
   margin-bottom: 2rem;
