@@ -204,12 +204,15 @@ body {
   border-bottom: 1px solid var(--border);
 }
 .paper-entry {
-  margin-bottom: 2.2rem;
-  padding: 1.2rem 0;
-  border-bottom: 1px solid #edf2f7;
+  margin-bottom: 1.4rem;
+  padding: 1.2rem 1.4rem;
+  background: #fafbfc;
+  border: 1px solid #f0f1f3;
+  border-radius: 6px;
+  transition: box-shadow 0.15s;
 }
-.paper-entry:last-child {
-  border-bottom: none;
+.paper-entry:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 .paper-content {
   display: flex;
