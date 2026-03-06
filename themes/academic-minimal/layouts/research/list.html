@@ -126,28 +126,37 @@
 </div>
 
 <script>
-let activeTag = null;
+const activeTags = new Set();
 
 function filterByTag(tag) {
-  if (activeTag === tag) {
+  if (activeTags.has(tag)) {
+    activeTags.delete(tag);
+  } else {
+    activeTags.add(tag);
+  }
+  applyFilter();
+}
+
+function applyFilter() {
+  if (activeTags.size === 0) {
     clearFilter();
     return;
   }
-  activeTag = tag;
-  document.querySelectorAll('.tag-clickable').forEach(el => {
-    el.classList.toggle('tag-active', el.dataset.tag === tag);
-    el.classList.toggle('tag-dim', el.dataset.tag !== tag);
-  });
   document.getElementById('tag-clear').style.display = 'inline-block';
+  document.querySelectorAll('.tag-clickable').forEach(el => {
+    el.classList.toggle('tag-active', activeTags.has(el.dataset.tag));
+    el.classList.toggle('tag-dim', !activeTags.has(el.dataset.tag));
+  });
   document.querySelectorAll('.paper-entry').forEach(el => {
     const tags = el.dataset.tags.split(',');
-    el.classList.toggle('paper-dim', !tags.includes(tag));
-    el.classList.toggle('paper-highlight', tags.includes(tag));
+    const match = [...activeTags].some(t => tags.includes(t));
+    el.classList.toggle('paper-dim', !match);
+    el.classList.toggle('paper-highlight', match);
   });
 }
 
 function clearFilter() {
-  activeTag = null;
+  activeTags.clear();
   document.querySelectorAll('.tag-clickable').forEach(el => {
     el.classList.remove('tag-active', 'tag-dim');
   });
