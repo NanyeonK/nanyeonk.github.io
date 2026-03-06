@@ -31,7 +31,7 @@ body {
 }
 .site-header .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 .site-title {
@@ -42,7 +42,7 @@ body {
   text-decoration: none;
 }
 .site-nav a {
-  margin-left: 1.8rem;
+  margin-left: 1.5rem;
   color: var(--text-light);
   text-decoration: none;
   font-size: 0.95rem;
