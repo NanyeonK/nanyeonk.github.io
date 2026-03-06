@@ -172,8 +172,27 @@ body {
   border-bottom: 1px solid var(--border);
 }
 .paper-entry {
-  margin-bottom: 1.8rem;
+  margin-bottom: 2rem;
   padding-left: 0;
+}
+.paper-tags {
+  margin-bottom: 0.3rem;
+}
+.paper-tags .tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--accent);
+  background: #eaf2f8;
+  padding: 0.1rem 0.5rem;
+  border-radius: 3px;
+  margin-right: 0.4rem;
+  margin-bottom: 0.2rem;
+}
+.paper-coauthors {
+  font-size: 0.93rem;
+  color: var(--text-light);
+  font-style: italic;
+  margin-bottom: 0.15rem;
 }
 .paper-title {
   font-weight: 600;

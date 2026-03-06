@@ -9,11 +9,13 @@
   <h2>Working Papers</h2>
   {{ range sort $working "year" "desc" }}
   <div class="paper-entry">
+    <div class="paper-tags">
+      {{ range .tags }}<span class="tag">{{ . }}</span>{{ end }}
+    </div>
     <p class="paper-title">
       {{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
     </p>
-    <p class="paper-authors">{{ .authors }}</p>
-    {{ with .venue }}<p class="paper-venue">{{ . }}</p>{{ end }}
+    {{ with .coauthors }}<p class="paper-coauthors">{{ . }}</p>{{ end }}
     {{ with .status }}<p class="paper-status">{{ . }}</p>{{ end }}
     {{ with .abstract }}
     <details class="paper-abstract">
@@ -36,10 +38,13 @@
   <h2>Publications</h2>
   {{ range sort $published "year" "desc" }}
   <div class="paper-entry">
+    <div class="paper-tags">
+      {{ range .tags }}<span class="tag">{{ . }}</span>{{ end }}
+    </div>
     <p class="paper-title">
       {{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
     </p>
-    <p class="paper-authors">{{ .authors }}</p>
+    {{ with .coauthors }}<p class="paper-coauthors">{{ . }}</p>{{ end }}
     <p class="paper-venue"><em>{{ .venue }}</em>, {{ .year }}.</p>
     {{ with .abstract }}
     <details class="paper-abstract">
