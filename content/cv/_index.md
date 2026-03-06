@@ -7,7 +7,7 @@ layout: "single"
 
 ## Education
 
-**Seoul National University** (Expected 2027)  
+**Sungkyunkwan University** (Expected 2027)  
 Ph.D. in Real Estate & Finance
 
 ## Research Interests

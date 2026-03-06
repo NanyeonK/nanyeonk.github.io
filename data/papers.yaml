@@ -39,7 +39,7 @@
   venue: "Investment Analysts Journal"
   year: 2026
   doi: "10.1080/10293523.2026.2616575"
-  abstract: ""
+  abstract: "This study evaluates machine learning models for forecasting daily Bitcoin returns using on-chain, macroeconomic, and market variables from January 2017 to December 2023. We implement a rolling-window framework with window lengths ranging from 365 to 730 days and compare several machine learning models against an autoregressive benchmark. Random Forest and Support Vector Machine achieve the lowest forecasting errors consistently across volatility regimes. Feature importance analysis using permutation importance and SHAP decomposition reveals that on-chain variables account for approximately 50 per cent of total forecasting contribution, with transaction fees and mining-related metrics ranking among the top important variables. Traditional market indicators such as VIX show limited relevance for Bitcoin return forecasting. These findings highlight the distinct informational value of blockchain-native variables for cryptocurrency forecasting."
   pdf: ""
   code: ""
 
