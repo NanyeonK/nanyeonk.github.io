@@ -50,13 +50,14 @@ B.S. in Industrial Engineering
 
 ## Conference Presentations
 
-- Joint Conference of Korean Economic Associations, Financial Engineering Session, February 2026
+- Korea's Allied Economic Associations Annual Meeting, Financial Engineering Session, February 2026
 - Korean Finance Association Annual Conference, November 2025
 - Asia-Pacific Association of Finance International Conference, July 2025
 - SERI International Conference, July 2025
 - Seoul Workshop on Empirical Finance, May 2025
 - Korean Finance Association, November 2024
 - SERI International Conference, July 2024
+- Korea's Allied Economic Associations Annual Meeting, February 2024
 
 ## Skills
 
