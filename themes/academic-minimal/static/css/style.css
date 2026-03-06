@@ -179,14 +179,17 @@ body {
 
 /* Research page */
 .research-page { padding: 2.5rem 0; }
+.research-page h1 {
+  margin-bottom: 0.5rem;
+}
 .research-page h2 {
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 1.8rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--border);
 }
 .research-page h2:first-of-type {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .research-page h1 {
   font-family: 'Source Serif 4', Georgia, serif;
@@ -231,9 +234,8 @@ body {
   .paper-figure { width: 100%; max-width: 280px; }
 }
 .tag-filter {
-  margin-bottom: 2rem;
-  padding: 0.8rem 0;
-  border-bottom: 1px solid var(--border);
+  margin-bottom: 0;
+  padding: 0.5rem 0;
 }
 .paper-tags {
   margin-bottom: 0.3rem;
