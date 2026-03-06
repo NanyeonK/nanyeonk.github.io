@@ -2,12 +2,12 @@
 # Working Papers
 # ============================================================
 
-- title: "Machine Learning Approaches to Housing Price Prediction: Evidence from South Korea"
+- title: "Spatial Heterogeneity in Housing Price Determinants: Machine Learning Evidence from Seoul"
   authors: "Yeonchan Kang"
   category: working
-  status: "R&R at Seoul Journal of Economics"
+  status: "R&R at Spatial Economic Analysis"
   year: 2026
-  abstract: ""
+  abstract: "This study examines apartment price determinants in Seoul using transaction-level building data and machine learning. Applying XGBoost with SHAP analysis to Seoul's 25 administrative districts, we find that identical characteristics yield different price premiums across neighborhoods. While district location remains the strongest single predictor, the valuation of building attributes varies substantially by district. These heterogeneous patterns account for the persistent performance gap between XGBoost and linear hedonic models. Our analysis shows that districts within a single metropolitan area operate under distinct pricing regimes, with direct implications for property valuation practice in complex urban markets."
   pdf: ""
   code: ""
 

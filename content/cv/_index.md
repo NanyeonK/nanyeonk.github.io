@@ -8,7 +8,13 @@ layout: "single"
 ## Education
 
 **Sungkyunkwan University** (Expected 2027)  
-Ph.D. in Real Estate & Finance
+Ph.D. in Economics
+
+**Sungkyunkwan University** (2026)  
+M.A. in Economics
+
+**Inha University** (2024)  
+B.S. in Industrial Engineering
 
 ## Research Interests
 
