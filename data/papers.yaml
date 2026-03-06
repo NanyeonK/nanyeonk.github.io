@@ -1,29 +1,64 @@
+# ============================================================
 # Working Papers
+# ============================================================
+
 - title: "Machine Learning Approaches to Housing Price Prediction: Evidence from South Korea"
   authors: "Yeonchan Kang"
   category: working
   status: "R&R at Seoul Journal of Economics"
   year: 2026
   abstract: ""
-  ssrn: ""
   pdf: ""
   code: ""
 
 - title: "Evening Economic Activity and Commercial Rents"
   authors: "Yeonchan Kang"
   category: working
-  status: "Under Review at Regional Science and Urban Economics"
+  status: "Under Review"
   year: 2025
   abstract: ""
   pdf: ""
 
+# ============================================================
 # Published Papers
-# - title: "Your Published Paper Title"
-#   authors: "Yeonchan Kang, Co-author Name"
-#   category: published
-#   venue: "Journal Name"
-#   year: 2024
-#   doi: "10.xxxx/xxxxx"
-#   abstract: "..."
-#   pdf: ""
-#   code: ""
+# ============================================================
+
+- title: "How Well Do Machine Learning Models in Finance Work?"
+  authors: "Yeonchan Kang, Doojin Ryu, Robert I. Webb"
+  category: published
+  venue: "Financial Innovation"
+  year: 2025
+  doi: "10.1186/s40854-025-00870-0"
+  abstract: ""
+  pdf: ""
+  code: ""
+
+- title: "Bitcoin Forecasting with Machine Learning and On-Chain Information"
+  authors: "Hoseung Kang, Yeonchan Kang, Doojin Ryu, Robert I. Webb"
+  category: published
+  venue: "Investment Analysts Journal"
+  year: 2026
+  doi: "10.1080/10293523.2026.2616575"
+  abstract: ""
+  pdf: ""
+  code: ""
+
+- title: "Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach"
+  authors: "Yeonchan Kang, Doojin Ryu, Robert I. Webb"
+  category: published
+  venue: "Computational Economics"
+  year: 2026
+  doi: "10.1007/s10614-025-11299-z"
+  abstract: ""
+  pdf: ""
+  code: ""
+
+- title: "Potential Pricing Factors in the Korean Market"
+  authors: "Jeongseok Bang, Yeonchan Kang, Doojin Ryu"
+  category: published
+  venue: "Finance Research Letters"
+  year: 2024
+  doi: "10.1016/j.frl.2024.105946"
+  abstract: ""
+  pdf: ""
+  code: ""
