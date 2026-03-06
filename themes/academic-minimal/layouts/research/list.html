@@ -7,7 +7,7 @@
   {{ $working := where $papers "category" "working" }}
   {{ if $working }}
   <h2>Working Papers</h2>
-  {{ range $working }}
+  {{ range sort $working "year" "desc" }}
   <div class="paper-entry">
     <p class="paper-title">
       {{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
@@ -34,7 +34,7 @@
   {{ $published := where $papers "category" "published" }}
   {{ if $published }}
   <h2>Publications</h2>
-  {{ range $published }}
+  {{ range sort $published "year" "desc" }}
   <div class="paper-entry">
     <p class="paper-title">
       {{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
@@ -49,7 +49,7 @@
     {{ end }}
     <div class="paper-links">
       {{ with .pdf }}<a href="{{ . }}">[PDF]</a>{{ end }}
-      {{ with .doi }}<a href="https://doi.org/{{ . }}">[DOI]</a>{{ end }}
+      {{ with .url }}<a href="{{ . }}">[Link]</a>{{ end }}
       {{ with .code }}<a href="{{ . }}">[Code]</a>{{ end }}
     </div>
   </div>
