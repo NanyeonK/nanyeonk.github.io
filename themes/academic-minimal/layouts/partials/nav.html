@@ -2,8 +2,13 @@
   <div class="container">
     <a href="{{ .Site.BaseURL }}" class="site-title">{{ .Site.Title }}</a>
     <nav class="site-nav">
+      {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}" class="{{ if $.IsMenuCurrent "main" . }}active{{ end }}">{{ .Name }}</a>
+        {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+        {{ if not $active }}
+          {{ $active = hasPrefix $currentPage.RelPermalink .URL }}
+        {{ end }}
+        <a href="{{ .URL }}" class="{{ if $active }}active{{ end }}">{{ .Name }}</a>
       {{ end }}
     </nav>
   </div>

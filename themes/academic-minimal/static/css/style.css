@@ -50,8 +50,14 @@ body {
   font-weight: 400;
   transition: color 0.2s;
 }
-.site-nav a:hover, .site-nav a.active {
+.site-nav a:hover {
   color: var(--accent);
+}
+.site-nav a.active {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 2px;
+  font-weight: 500;
 }
 
 /* Home */
