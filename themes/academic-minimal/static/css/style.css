@@ -223,13 +223,27 @@ body {
 .tag {
   display: inline-block;
   font-size: 0.75rem;
-  color: var(--accent);
-  background: #eaf2f8;
   padding: 0.15rem 0.55rem;
   border-radius: 3px;
   margin-right: 0.4rem;
   margin-bottom: 0.3rem;
+  /* default fallback */
+  color: #4a5568;
+  background: #edf2f7;
 }
+/* Pastel palette per tag */
+.tag[data-tag="Asset Pricing"]              { background: #fef3c7; color: #92400e; }
+.tag[data-tag="Big Data"]                   { background: #e0e7ff; color: #3730a3; }
+.tag[data-tag="Commercial Real Estate"]     { background: #d1fae5; color: #065f46; }
+.tag[data-tag="Factor Model"]              { background: #fce7f3; color: #9d174d; }
+.tag[data-tag="Hedonic Model"]             { background: #ede9fe; color: #5b21b6; }
+.tag[data-tag="Housing Market"]            { background: #dbeafe; color: #1e40af; }
+.tag[data-tag="Machine Learning"]          { background: #fef9c3; color: #854d0e; }
+.tag[data-tag="Out-of-Sample Forecasting"] { background: #ccfbf1; color: #134e4a; }
+.tag[data-tag="SHAP"]                      { background: #fee2e2; color: #991b1b; }
+.tag[data-tag="Spatial"]                   { background: #e0f2fe; color: #075985; }
+.tag[data-tag="Token Economics"]           { background: #f3e8ff; color: #6b21a8; }
+.tag[data-tag="Urban Economics"]           { background: #dcfce7; color: #166534; }
 .tag-clickable {
   cursor: pointer;
   transition: all 0.15s;
@@ -305,15 +319,46 @@ body {
   margin-top: 0.5rem;
 }
 .paper-links {
-  margin-top: 0.3rem;
+  margin-top: 0.4rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 .paper-links a {
-  color: var(--accent);
+  color: var(--text-light);
   text-decoration: none;
-  font-size: 0.85rem;
-  margin-right: 0.8rem;
+  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  transition: all 0.15s;
 }
-.paper-links a:hover { text-decoration: underline; }
+.paper-links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: #f0f6fb;
+}
+.paper-abstract summary {
+  cursor: pointer;
+  color: var(--text-light);
+  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  transition: all 0.15s;
+  margin-top: 0.4rem;
+}
+.paper-abstract summary:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: #f0f6fb;
+}
 
 /* CV / Page content */
 .page-content {
