@@ -471,6 +471,23 @@ body {
   .news-item { flex-direction: column; gap: 0.2rem; }
 }
 
+/* Blog typography spacing */
+.blog-post article {
+  line-height: 1.75;
+}
+.blog-post p {
+  margin: 0 0 1.05rem 0;
+}
+.blog-post h2,
+.blog-post h3 {
+  margin-top: 2.1rem;
+  margin-bottom: 0.85rem;
+}
+.blog-post h2:first-of-type,
+.blog-post h3:first-of-type {
+  margin-top: 1.3rem;
+}
+
 /* Blog tags */
 .blog-tags {
   margin: 0.5rem 0 1.5rem 0;
