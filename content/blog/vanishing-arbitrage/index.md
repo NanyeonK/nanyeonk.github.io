@@ -5,52 +5,53 @@ draft: false
 tags: ["AI & Agents", "Tokenization", "Markets"]
 ---
 
-The other day, I asked an AI agent to find the cheapest option for something I needed. Within seconds it scanned dozens of sellers, compared prices, shipping costs, and return policies, and handed me the best deal. No browser tabs. No coupon hunting. No price-comparison apps. Just a request and an answer.
+A few weeks ago, I asked an AI agent to find the cheapest option for something I needed. In a few seconds, it compared prices, shipping, and return policies across multiple sellers and gave me a clean answer.
 
-That moment made something click: the entire infrastructure of middlemen that modern commerce relies on is heading for an existential crisis.
+That moment felt small, but I think it reveals something large. A meaningful share of today’s middleman economy still depends on one old fact: searching, comparing, and verifying is expensive for ordinary people.
 
-## The Middleman Economy
 
-Think about how much of the economy runs on information asymmetry. Price comparison platforms thrive because buyers can't effortlessly survey every seller. Real estate brokers make a living off opaque property markets. Travel agencies, insurance brokers, procurement firms—they all occupy niches carved out by the sheer friction of finding, comparing, and verifying options across fragmented markets.
+## The Hidden Business Model of Intermediation
 
-None of these intermediaries produce anything tangible. They arbitrage the gap between what you know and what you *could* know if you had infinite time and patience. Human search engines with domain expertise, essentially.
+Many intermediaries are paid not because they create a product, but because they reduce confusion. They know where to look, whom to call, and how to translate messy market information into a decision.
 
-AI agents are better search engines.
+That is not trivial work. But it is still a type of arbitrage. The margin exists because one side has less information, less time, or less confidence than the other.
 
-## Agents as Friction Eliminators
+My view is simple: when that gap narrows, the margin narrows with it.
 
-When an autonomous agent can parse every listing on every platform in real time, apply your preferences as filters, negotiate on your behalf, and execute the transaction—what's left for the middleman to do?
 
-The first wave is already here. AI-powered shopping assistants are collapsing price discovery from hours to seconds. But this reaches well beyond retail:
+## Why Agents Matter More Than “Convenience”
 
-- **Financial advisory**: An agent monitors your portfolio, tax situation, and market conditions simultaneously. It rebalances with a precision no human advisor matches—at zero marginal cost.
-- **Legal services**: Routine contract review, compliance checking, and document drafting are already being automated. The $300-per-hour associate reviewing boilerplate? That's an arbitrage opportunity waiting to be closed.
-- **Supply chain procurement**: Instead of a team spending weeks soliciting bids, an agent network surveys global suppliers, verifies credentials, and negotiates terms continuously.
+It is tempting to treat AI agents as a nicer interface. I think that understates what is happening.
 
-Millions of people work in these industries. Their primary function is bridging an information gap. Agents bridge it faster, cheaper, and without lunch breaks.
+An effective agent does not just answer questions. It keeps scanning, applies your constraints consistently, and acts at machine speed. Tasks that used to justify hours of paid coordination can collapse into a few automated steps.
 
-## Tokenization Closes the Trust Gap
+We already see this in shopping. The same pressure is coming for advisory workflows, routine legal operations, and procurement pipelines where value has often come from process control rather than unique judgment.
 
-Information asymmetry is only half the story, though. Intermediaries also survive on trust. You use an exchange because you don't trust the counterparty. You use escrow because you can't verify delivery. You hire a broker because you want someone accountable when things go wrong.
 
-Tokenization tackles this head-on. When assets live as tokens on a transparent ledger, ownership is verifiable, transfer is atomic, and settlement is instant. The trust deficit that justified entire industries of intermediation starts to dissolve.
+## Tokenization Changes a Different Layer
 
-Take securities exchanges. Their core function—matching buyers with sellers while guaranteeing settlement—becomes largely redundant once tokenized assets trade peer-to-peer under smart contract enforcement. The exchange shrinks from essential infrastructure to optional convenience.
+Search is one problem. Trust is another.
 
-Real estate is an even starker example. Buying a property today involves agents, lawyers, title companies, escrow services, and banks—each extracting fees for trust and verification. Tokenize the property, put title history on-chain, run escrow through a smart contract, and most of that chain collapses into a direct transaction between buyer and seller.
+A lot of intermediation survives because counterparties do not fully trust each other. They pay third parties to verify ownership, sequence payment, and enforce settlement.
 
-## The Convergence
+Tokenization targets this trust layer. If ownership records and transfer conditions are transparent and executable, parts of verification and settlement become cheaper and faster.
 
-Here's where it gets interesting: AI and tokenization reinforce each other. Agents dissolve information asymmetry. Tokens dissolve trust asymmetry. Stack them together and both pillars holding up the middleman economy fall at once.
+In practice, this does not mean “all institutions disappear tomorrow.” It means their defensible core gets narrower. Some steps remain essential. Many become optional.
 
-Picture an AI agent that discovers the best price, checks the counterparty's on-chain reputation, executes a tokenized transaction, and confirms settlement—all on its own. Where does the traditional middleman fit?
 
-This isn't one technology replacing one industry. It's two converging technologies pulling apart the economic logic of intermediation itself.
+## The Real Disruption Is the Combination
 
-## What Survives
+What makes this moment different is that these two shifts reinforce each other.
 
-Not all arbitrage disappears, of course. Genuine expertise—the doctor's diagnosis, the engineer's design judgment, the researcher's novel insight—creates value far beyond information brokering. The arbitrage that vanishes is the mechanical kind: the margin earned purely from knowing something the other party doesn't, or from standing as a trusted checkpoint between two strangers.
+Agents reduce information asymmetry. Tokenization reduces trust asymmetry. Together, they compress the full transaction path: discover, evaluate, execute, settle.
 
-The economy has always evolved by eliminating friction. Railroads killed regional price differences. The internet killed information scarcity. AI agents and tokenization are killing the last bastions of everyday arbitrage—the ones so woven into our routines that we barely notice them.
+That is why I read this as a structural change, not a passing productivity trend.
 
-Until they are gone.
+
+## What I Think Will Still Hold Value
+
+I do not think all intermediaries vanish. I think low-context, mechanical intermediation gets squeezed first.
+
+High-context work still matters: diagnosis, judgment under ambiguity, original synthesis, accountability in edge cases. In other words, expertise survives. Friction rents do not.
+
+The internet reduced information scarcity. Agents and tokenization are now reducing transaction scarcity. The everyday arbitrage we barely noticed is not gone yet, but its floor is already cracking.
