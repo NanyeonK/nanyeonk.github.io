@@ -128,6 +128,23 @@
 <script>
 const activeTags = new Set();
 
+// Preserve original order per section for reset
+(function initResearchOriginalOrder(){
+  const researchPage = document.querySelector('.research-page');
+  if (!researchPage) return;
+  const headings = researchPage.querySelectorAll('h2');
+  headings.forEach(h2 => {
+    let idx = 0;
+    let el = h2.nextElementSibling;
+    while (el && el.tagName !== 'H2') {
+      if (el.classList.contains('paper-entry')) {
+        el.dataset.originalOrder = String(idx++);
+      }
+      el = el.nextElementSibling;
+    }
+  });
+})();
+
 function filterByTag(tag) {
   if (activeTags.has(tag)) {
     activeTags.delete(tag);
@@ -194,9 +211,30 @@ function clearFilter() {
   document.querySelectorAll('.tag-clickable').forEach(el => {
     el.classList.remove('tag-active', 'tag-dim');
   });
-  document.querySelectorAll('.paper-entry').forEach(el => {
-    el.classList.remove('paper-dim', 'paper-highlight');
+
+  const researchPage = document.querySelector('.research-page');
+  const headings = researchPage.querySelectorAll('h2');
+
+  headings.forEach(h2 => {
+    const sectionEntries = [];
+    let el = h2.nextElementSibling;
+    while (el && el.tagName !== 'H2') {
+      if (el.classList.contains('paper-entry')) sectionEntries.push(el);
+      el = el.nextElementSibling;
+    }
+
+    sectionEntries.forEach(entry => entry.classList.remove('paper-dim', 'paper-highlight'));
+
+    // Restore original order within section
+    let insertAfter = h2;
+    sectionEntries
+      .sort((a, b) => Number(a.dataset.originalOrder || 0) - Number(b.dataset.originalOrder || 0))
+      .forEach(entry => {
+        insertAfter.after(entry);
+        insertAfter = entry;
+      });
   });
+
   document.getElementById('tag-clear').style.display = 'none';
 }
 </script>

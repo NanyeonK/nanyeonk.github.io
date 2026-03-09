@@ -39,6 +39,12 @@
 <script>
 const blogActiveTags = new Set();
 
+// Preserve original order for proper reset
+(function initBlogOriginalOrder(){
+  const entries = document.querySelectorAll('#blog-entries-list .blog-entry');
+  entries.forEach((el, idx) => el.dataset.originalOrder = String(idx));
+})();
+
 function blogFilterByTag(tag) {
   if (blogActiveTags.has(tag)) {
     blogActiveTags.delete(tag);
@@ -89,9 +95,16 @@ function blogClearFilter() {
   document.querySelectorAll('.blog-tag-btn').forEach(el => {
     el.classList.remove('tag-active', 'tag-dim');
   });
-  document.querySelectorAll('#blog-entries-list .blog-entry').forEach(el => {
-    el.classList.remove('paper-dim', 'paper-highlight');
-  });
+
+  const list = document.getElementById('blog-entries-list');
+  const entries = Array.from(list.querySelectorAll('.blog-entry'));
+  entries.forEach(el => el.classList.remove('paper-dim', 'paper-highlight'));
+
+  // Restore original order
+  entries
+    .sort((a, b) => Number(a.dataset.originalOrder || 0) - Number(b.dataset.originalOrder || 0))
+    .forEach(el => list.appendChild(el));
+
   const clearBtn = document.getElementById('blog-tag-clear');
   if (clearBtn) clearBtn.style.display = 'none';
 }
