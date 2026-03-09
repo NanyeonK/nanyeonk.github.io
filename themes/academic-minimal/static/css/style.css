@@ -512,3 +512,9 @@ body {
 .blog-post .tag[data-tag="Opinion"] { background:#ffe8f1; color:#9b3b6d; }
 .blog-page .tag[data-tag="Tech"],
 .blog-post .tag[data-tag="Tech"] { background:#e8f1ff; color:#2f5fa8; }
+
+/* Match Research hover interaction on blog top filter tags */
+#blog-tag-filter .tag-clickable:hover {
+  background: var(--accent) !important;
+  color: #fff !important;
+}
