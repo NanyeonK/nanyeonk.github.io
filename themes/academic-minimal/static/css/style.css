@@ -470,3 +470,20 @@ body {
 .blog-tags .tag {
   text-decoration: none;
 }
+
+/* Blog tag filter bar */
+.blog-tag-filter {
+  margin: 0.75rem 0 1.25rem 0;
+}
+
+/* Blog-specific pastel tags */
+.blog-page .tag[data-tag="AI & Agents"],
+.blog-post .tag[data-tag="AI & Agents"] { background:#efe7ff; color:#5a3ea6; }
+.blog-page .tag[data-tag="Tokenization"],
+.blog-post .tag[data-tag="Tokenization"] { background:#e6f7ef; color:#1f7a4f; }
+.blog-page .tag[data-tag="Markets"],
+.blog-post .tag[data-tag="Markets"] { background:#fff6d6; color:#8a6a00; }
+.blog-page .tag[data-tag="Opinion"],
+.blog-post .tag[data-tag="Opinion"] { background:#ffe8f1; color:#9b3b6d; }
+.blog-page .tag[data-tag="Tech"],
+.blog-post .tag[data-tag="Tech"] { background:#e8f1ff; color:#2f5fa8; }

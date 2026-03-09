@@ -2,7 +2,7 @@
 title: "The Vanishing Arbitrage of Everyday Life"
 date: 2026-01-23
 draft: false
-tags: ["Token Economics", "Machine Learning"]
+tags: ["AI & Agents", "Tokenization", "Markets"]
 ---
 
 The other day, I asked an AI agent to find the cheapest option for something I needed. Within seconds it scanned dozens of sellers, compared prices, shipping costs, and return policies, and handed me the best deal. No browser tabs. No coupon hunting. No price-comparison apps. Just a request and an answer.
