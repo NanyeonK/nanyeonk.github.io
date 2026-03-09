@@ -275,18 +275,17 @@ body {
   background: var(--accent);
   color: #fff;
 }
-/* Research filter-bar tags use neutral default to avoid stale active-looking colors */
-#tag-filter .tag-clickable {
-  background: #edf2f7 !important;
-  color: #4a5568 !important;
-}
-#tag-filter .tag-clickable.tag-active {
-  background: var(--accent) !important;
-  color: #fff !important;
-}
 .tag-active {
-  background: var(--accent) !important;
-  color: #fff !important;
+  outline: 2px solid rgba(17, 24, 39, 0.45);
+  outline-offset: 1px;
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.9) inset;
+  transform: translateY(-1px);
+}
+
+/* Research filter bar: preserve pastel chips, same active cue */
+#tag-filter .tag-clickable.tag-active {
+  outline: 2px solid rgba(17, 24, 39, 0.45);
+  outline-offset: 1px;
 }
 .tag-dim {
   opacity: 0.35;
