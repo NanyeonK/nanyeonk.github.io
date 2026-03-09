@@ -112,5 +112,15 @@ function blogClearFilter() {
   const clearBtn = document.getElementById('blog-tag-clear');
   if (clearBtn) clearBtn.style.display = 'none';
 }
+
+// Support deep-link from single post: /blog/?tag=...
+(function initBlogFilterFromQuery(){
+  const params = new URLSearchParams(window.location.search);
+  const tag = params.get('tag');
+  if (!tag) return;
+  const exists = Array.from(document.querySelectorAll('#blog-tag-filter .tag-clickable'))
+    .some(el => el.dataset.tag === tag);
+  if (exists) blogFilterByTag(tag);
+})();
 </script>
 {{ end }}
