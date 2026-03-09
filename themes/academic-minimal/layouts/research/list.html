@@ -162,7 +162,8 @@ function applyFilter() {
   document.getElementById('tag-clear').style.display = 'inline-block';
 
   // Update tag button states
-  document.querySelectorAll('.tag-clickable').forEach(el => {
+  // Only style filter-bar tags as active/dim (avoid stale-looking states inside paper cards)
+  document.querySelectorAll('#tag-filter .tag-clickable').forEach(el => {
     el.classList.toggle('tag-active', activeTags.has(el.dataset.tag));
     el.classList.toggle('tag-dim', !activeTags.has(el.dataset.tag));
   });
@@ -208,7 +209,11 @@ function applyFilter() {
 
 function clearFilter() {
   activeTags.clear();
-  document.querySelectorAll('.tag-clickable').forEach(el => {
+  document.querySelectorAll('#tag-filter .tag-clickable').forEach(el => {
+    el.classList.remove('tag-active', 'tag-dim');
+  });
+  // Safety: remove any stale classes from paper-level tags
+  document.querySelectorAll('.paper-entry .tag-clickable').forEach(el => {
     el.classList.remove('tag-active', 'tag-dim');
   });
 
