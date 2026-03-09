@@ -61,8 +61,8 @@ function blogApplyFilter() {
   }
   document.getElementById('blog-tag-clear').style.display = 'inline-block';
 
-  // Update tag button states
-  document.querySelectorAll('.blog-tag-btn').forEach(el => {
+  // Research-style behavior: only filter-bar tags show active/dim state
+  document.querySelectorAll('#blog-tag-filter .blog-tag-btn').forEach(el => {
     el.classList.toggle('tag-active', blogActiveTags.has(el.dataset.tag));
     el.classList.toggle('tag-dim', !blogActiveTags.has(el.dataset.tag));
   });
@@ -92,7 +92,11 @@ function blogApplyFilter() {
 
 function blogClearFilter() {
   blogActiveTags.clear();
-  document.querySelectorAll('.blog-tag-btn').forEach(el => {
+  document.querySelectorAll('#blog-tag-filter .blog-tag-btn').forEach(el => {
+    el.classList.remove('tag-active', 'tag-dim');
+  });
+  // Safety: remove stale classes from in-card tags
+  document.querySelectorAll('#blog-entries-list .blog-tag-btn').forEach(el => {
     el.classList.remove('tag-active', 'tag-dim');
   });
 
