@@ -462,3 +462,11 @@ body {
   .site-nav a { margin-left: 0; margin-right: 1.2rem; }
   .news-item { flex-direction: column; gap: 0.2rem; }
 }
+
+/* Blog tags */
+.blog-tags {
+  margin: 0.5rem 0 1.5rem 0;
+}
+.blog-tags .tag {
+  text-decoration: none;
+}

@@ -5,6 +5,11 @@
   <article class="blog-entry">
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     <time>{{ .Date.Format "January 2, 2006" }}</time>
+    {{ with .Params.tags }}
+    <div class="blog-tags">
+      {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+    </div>
+    {{ end }}
     <p>{{ .Summary }}</p>
   </article>
   {{ end }}

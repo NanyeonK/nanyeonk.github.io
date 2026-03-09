@@ -3,6 +3,11 @@
   <article>
     <h1>{{ .Title }}</h1>
     <time>{{ .Date.Format "January 2, 2006" }}</time>
+    {{ with .Params.tags }}
+    <div class="blog-tags">
+      {{ range . }}<a href="{{ "/tags/" | absURL }}{{ . | urlize }}/" class="tag">{{ . }}</a>{{ end }}
+    </div>
+    {{ end }}
     {{ .Content }}
   </article>
 </div>
