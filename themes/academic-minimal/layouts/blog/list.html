@@ -14,7 +14,7 @@
   {{ if $allBlogTags }}
   <div class="tag-filter blog-tag-filter" id="blog-tag-filter">
     {{ range $allBlogTags }}
-    <span class="tag tag-clickable blog-tag-btn" data-tag="{{ . }}" onclick="blogFilterByTag('{{ . }}')">{{ . }}</span>
+    <span class="tag tag-clickable" data-tag="{{ . }}" onclick="blogFilterByTag('{{ . }}')">{{ . }}</span>
     {{ end }}
     <span class="tag tag-clear" id="blog-tag-clear" onclick="blogClearFilter()" style="display:none;">✕ Clear</span>
   </div>
@@ -27,7 +27,7 @@
     <time>{{ .Date.Format "January 2, 2006" }}</time>
     {{ with .Params.tags }}
     <div class="blog-tags">
-      {{ range . }}<span class="tag tag-clickable blog-tag-btn" data-tag="{{ . }}" onclick="blogFilterByTag('{{ . }}')">{{ . }}</span>{{ end }}
+      {{ range . }}<span class="tag tag-clickable" data-tag="{{ . }}" onclick="blogFilterByTag('{{ . }}')">{{ . }}</span>{{ end }}
     </div>
     {{ end }}
     <p>{{ .Summary }}</p>
@@ -62,7 +62,7 @@ function blogApplyFilter() {
   document.getElementById('blog-tag-clear').style.display = 'inline-block';
 
   // Research-style behavior: only filter-bar tags show active/dim state
-  document.querySelectorAll('#blog-tag-filter .blog-tag-btn').forEach(el => {
+  document.querySelectorAll('#blog-tag-filter .tag-clickable').forEach(el => {
     el.classList.toggle('tag-active', blogActiveTags.has(el.dataset.tag));
     el.classList.toggle('tag-dim', !blogActiveTags.has(el.dataset.tag));
   });
@@ -92,11 +92,11 @@ function blogApplyFilter() {
 
 function blogClearFilter() {
   blogActiveTags.clear();
-  document.querySelectorAll('#blog-tag-filter .blog-tag-btn').forEach(el => {
+  document.querySelectorAll('#blog-tag-filter .tag-clickable').forEach(el => {
     el.classList.remove('tag-active', 'tag-dim');
   });
   // Safety: remove stale classes from in-card tags
-  document.querySelectorAll('#blog-entries-list .blog-tag-btn').forEach(el => {
+  document.querySelectorAll('#blog-entries-list .tag-clickable').forEach(el => {
     el.classList.remove('tag-active', 'tag-dim');
   });
 
