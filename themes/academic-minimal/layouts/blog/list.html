@@ -14,7 +14,7 @@
   {{ if $allBlogTags }}
   <div class="tag-filter blog-tag-filter" id="blog-tag-filter">
     {{ range $allBlogTags }}
-    <span class="tag blog-tag-btn" data-tag="{{ . }}" onclick="blogFilterByTag('{{ . }}')">{{ . }}</span>
+    <span class="tag tag-clickable blog-tag-btn" data-tag="{{ . }}" onclick="blogFilterByTag('{{ . }}')">{{ . }}</span>
     {{ end }}
     <span class="tag tag-clear" id="blog-tag-clear" onclick="blogClearFilter()" style="display:none;">✕ Clear</span>
   </div>
@@ -27,7 +27,7 @@
     <time>{{ .Date.Format "January 2, 2006" }}</time>
     {{ with .Params.tags }}
     <div class="blog-tags">
-      {{ range . }}<span class="tag blog-tag-btn" data-tag="{{ . }}" onclick="blogFilterByTag('{{ . }}')">{{ . }}</span>{{ end }}
+      {{ range . }}<span class="tag tag-clickable blog-tag-btn" data-tag="{{ . }}" onclick="blogFilterByTag('{{ . }}')">{{ . }}</span>{{ end }}
     </div>
     {{ end }}
     <p>{{ .Summary }}</p>
