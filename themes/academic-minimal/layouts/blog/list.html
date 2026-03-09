@@ -1,17 +1,99 @@
 {{ define "main" }}
 <div class="container blog-page">
   <h1>Blog</h1>
+
+  {{/* Collect all unique blog tags */}}
+  {{ $allBlogTags := slice }}
+  {{ range .Pages }}
+    {{ range .Params.tags }}
+      {{ $allBlogTags = $allBlogTags | append . }}
+    {{ end }}
+  {{ end }}
+  {{ $allBlogTags = $allBlogTags | uniq | sort }}
+
+  {{ if $allBlogTags }}
+  <div class="tag-filter blog-tag-filter" id="blog-tag-filter">
+    {{ range $allBlogTags }}
+    <span class="tag blog-tag-btn" data-tag="{{ . }}" onclick="blogFilterByTag('{{ . }}')">{{ . }}</span>
+    {{ end }}
+    <span class="tag tag-clear" id="blog-tag-clear" onclick="blogClearFilter()" style="display:none;">✕ Clear</span>
+  </div>
+  {{ end }}
+
+  <div id="blog-entries-list">
   {{ range .Pages.ByDate.Reverse }}
-  <article class="blog-entry">
+  <article class="blog-entry" data-tags="{{ delimit .Params.tags "," }}">
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     <time>{{ .Date.Format "January 2, 2006" }}</time>
     {{ with .Params.tags }}
     <div class="blog-tags">
-      {{ range . }}<span class="tag" data-tag="{{ . }}">{{ . }}</span>{{ end }}
+      {{ range . }}<span class="tag blog-tag-btn" data-tag="{{ . }}" onclick="blogFilterByTag('{{ . }}')">{{ . }}</span>{{ end }}
     </div>
     {{ end }}
     <p>{{ .Summary }}</p>
   </article>
   {{ end }}
+  </div>
 </div>
+
+<script>
+const blogActiveTags = new Set();
+
+function blogFilterByTag(tag) {
+  if (blogActiveTags.has(tag)) {
+    blogActiveTags.delete(tag);
+  } else {
+    blogActiveTags.add(tag);
+  }
+  blogApplyFilter();
+}
+
+function blogApplyFilter() {
+  if (blogActiveTags.size === 0) {
+    blogClearFilter();
+    return;
+  }
+  document.getElementById('blog-tag-clear').style.display = 'inline-block';
+
+  // Update tag button states
+  document.querySelectorAll('.blog-tag-btn').forEach(el => {
+    el.classList.toggle('tag-active', blogActiveTags.has(el.dataset.tag));
+    el.classList.toggle('tag-dim', !blogActiveTags.has(el.dataset.tag));
+  });
+
+  // Sort blog entries: matches float to top, non-matches dim + pushed down
+  const list = document.getElementById('blog-entries-list');
+  const entries = Array.from(list.querySelectorAll('.blog-entry'));
+  const matches = [];
+  const nonMatches = [];
+
+  entries.forEach(entry => {
+    const tags = (entry.dataset.tags || '').split(',').map(t => t.trim()).filter(Boolean);
+    const match = [...blogActiveTags].some(t => tags.includes(t));
+    if (match) {
+      matches.push(entry);
+      entry.classList.remove('paper-dim');
+      entry.classList.add('paper-highlight');
+    } else {
+      nonMatches.push(entry);
+      entry.classList.add('paper-dim');
+      entry.classList.remove('paper-highlight');
+    }
+  });
+
+  [...matches, ...nonMatches].forEach(entry => list.appendChild(entry));
+}
+
+function blogClearFilter() {
+  blogActiveTags.clear();
+  document.querySelectorAll('.blog-tag-btn').forEach(el => {
+    el.classList.remove('tag-active', 'tag-dim');
+  });
+  document.querySelectorAll('#blog-entries-list .blog-entry').forEach(el => {
+    el.classList.remove('paper-dim', 'paper-highlight');
+  });
+  const clearBtn = document.getElementById('blog-tag-clear');
+  if (clearBtn) clearBtn.style.display = 'none';
+}
+</script>
 {{ end }}

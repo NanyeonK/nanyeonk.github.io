@@ -143,15 +143,49 @@ function applyFilter() {
     return;
   }
   document.getElementById('tag-clear').style.display = 'inline-block';
+
+  // Update tag button states
   document.querySelectorAll('.tag-clickable').forEach(el => {
     el.classList.toggle('tag-active', activeTags.has(el.dataset.tag));
     el.classList.toggle('tag-dim', !activeTags.has(el.dataset.tag));
   });
-  document.querySelectorAll('.paper-entry').forEach(el => {
-    const tags = el.dataset.tags.split(',');
-    const match = [...activeTags].some(t => tags.includes(t));
-    el.classList.toggle('paper-dim', !match);
-    el.classList.toggle('paper-highlight', match);
+
+  // Sort within each section: matching papers float to top, rest dim + pushed down
+  const researchPage = document.querySelector('.research-page');
+  const headings = researchPage.querySelectorAll('h2');
+
+  headings.forEach(h2 => {
+    // Collect paper-entry siblings until the next h2
+    const sectionEntries = [];
+    let el = h2.nextElementSibling;
+    while (el && el.tagName !== 'H2') {
+      if (el.classList.contains('paper-entry')) sectionEntries.push(el);
+      el = el.nextElementSibling;
+    }
+
+    const matches = [];
+    const nonMatches = [];
+
+    sectionEntries.forEach(entry => {
+      const tags = (entry.dataset.tags || '').split(',').map(t => t.trim()).filter(Boolean);
+      const match = [...activeTags].some(t => tags.includes(t));
+      if (match) {
+        matches.push(entry);
+        entry.classList.remove('paper-dim');
+        entry.classList.add('paper-highlight');
+      } else {
+        nonMatches.push(entry);
+        entry.classList.add('paper-dim');
+        entry.classList.remove('paper-highlight');
+      }
+    });
+
+    // Re-insert in order: matches first, then non-matches
+    let insertAfter = h2;
+    [...matches, ...nonMatches].forEach(entry => {
+      insertAfter.after(entry);
+      insertAfter = entry;
+    });
   });
 }
 
