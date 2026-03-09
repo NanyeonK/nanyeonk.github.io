@@ -75,7 +75,7 @@ B.S. in Industrial Engineering
 
 **Republic of Korea Army** (2019–2021)  
 CBRN Specialist, Headquarters Company  
-Capital Mechanized Infantry Division, Artillery Brigade
+[Capital Mechanized Infantry Division](https://en.wikipedia.org/wiki/Capital_Mechanized_Infantry_Division), Artillery Brigade
 
 ## References
 
