@@ -5,7 +5,7 @@
     <time>{{ .Date.Format "January 2, 2006" }}</time>
     {{ with .Params.tags }}
     <div class="blog-tags">
-      {{ range . }}<a href="{{ "/tags/" | absURL }}{{ . | urlize }}/" class="tag">{{ . }}</a>{{ end }}
+      {{ range . }}<a href="{{ "/tags/" | absURL }}{{ . | urlize }}/" class="tag" data-tag="{{ . }}">{{ . }}</a>{{ end }}
     </div>
     {{ end }}
     {{ .Content }}
