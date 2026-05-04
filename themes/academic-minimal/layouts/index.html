@@ -50,23 +50,11 @@
 
   <div class="news-section">
     <h2>News</h2>
-    {{/* Auto-generate news from papers */}}
-    {{ $papers := .Site.Data.papers }}
-    {{ range sort $papers "year" "desc" }}
-      {{ if eq .category "published" }}
+    {{ range .Site.Data.news }}
       <div class="news-item">
-        <span class="news-date">{{ .year }}</span>
-        <span class="news-text">
-          New paper published in <em>{{ .venue }}</em>: 
-          {{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}{{ with .coauthors }}, {{ partial "coauthors.html" . }}{{ end }}.
-        </span>
+        <span class="news-date">{{ .date }}</span>
+        <span class="news-text">{{ if .url }}<a href="{{ .url }}" target="_blank">{{ .text }}</a>{{ else }}{{ .text }}{{ end }}</span>
       </div>
-      {{ else if eq .status "R&R at Spatial Economic Analysis" }}
-      <div class="news-item">
-        <span class="news-date">{{ .year }}</span>
-        <span class="news-text">R&amp;R at <em>Spatial Economic Analysis</em>: {{ .title }}{{ with .coauthors }}, {{ partial "coauthors.html" . }}{{ end }}.</span>
-      </div>
-      {{ end }}
     {{ end }}
   </div>
 

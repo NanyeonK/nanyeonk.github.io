@@ -1,11 +1,39 @@
 # ============================================================
-# Working Papers
+# Manuscripts Accepted / Under Review
 # ============================================================
 
-- title: "One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning"
-  coauthors: ""
+- title: "Factor Timing with Characteristic-State Similarity"
+  coauthors: "with Doojin Ryu"
   category: working
-  status: "R&R at Spatial Economic Analysis"
+  status: "Accepted at Journal of Portfolio Management"
+  year: 2026
+  tags:
+    - Asset Pricing
+    - Factor Timing
+    - Portfolio Management
+  abstract: ""
+  pdf: ""
+  code: ""
+  figure: ""
+
+- title: "Time-Series Momentum and Market-Timing in Bitcoin"
+  coauthors: "with coauthors"
+  category: working
+  status: "Revise and Resubmit at Risk Management"
+  year: 2026
+  tags:
+    - Bitcoin
+    - Market Timing
+    - Time-Series Momentum
+  abstract: ""
+  pdf: ""
+  code: ""
+  figure: ""
+
+- title: "One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning"
+  coauthors: "with coauthors"
+  category: working
+  status: "Revise and Resubmit at Spatial Economic Analysis"
   year: 2026
   tags:
     - Hedonic Model
@@ -19,7 +47,7 @@
   figure: ""
 
 # ============================================================
-# Published Papers (newest first)
+# International Refereed Journals (SSCI)
 # ============================================================
 
 - title: "Bitcoin Forecasting with Machine Learning and On-Chain Information"
@@ -81,6 +109,24 @@
     - Factor Model
     - Machine Learning
   abstract: "This letter examines whether new factors have additional explanatory power for the cross-section of expected stock returns compared to existing factors. We exploit machine-learning-based double-section LASSO to select factors explaining the cross-section in the Korean stock market. Among the recently proposed factors, gross profitability consistently exhibits significant SDF loadings, as confirmed by several robustness checks."
+  pdf: ""
+  code: ""
+  figure: ""
+
+# ============================================================
+# Domestic Refereed Journals (KCI)
+# ============================================================
+
+- title: "Trends in the Application of Machine Learning Models in Finance"
+  coauthors: "with Doojin Ryu"
+  category: published
+  venue: "KCI-listed journal"
+  year: 2023
+  tags:
+    - Finance
+    - Machine Learning
+    - Survey
+  abstract: "Korean title: 금융 분야의 기계학습 모형 활용 추이."
   pdf: ""
   code: ""
   figure: ""
