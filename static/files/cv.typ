@@ -15,14 +15,14 @@
 #let row(left, right) = grid(columns: (1fr, auto), gutter: 1em, left, right)
 
 #align(center)[
-  #text(size: 16pt, weight: "bold")[Yeonchan Kang (김연찬)] \
+  #text(size: 16pt, weight: "bold")[Yeonchan Kang] \
   Ph.D. Candidate in Economics, Sungkyunkwan University \
   #link("mailto:nanyeon99@g.skku.edu")[#text("nanyeon99@g.skku.edu")] · #link("mailto:nanyeon99@gmail.com")[#text("nanyeon99@gmail.com")] \
   #link("https://nanyeonk.github.io")[nanyeonk.github.io] · ORCID: #link("https://orcid.org/0009-0004-5988-299X")[0009-0004-5988-299X]
 ]
 
 #section[Education]
-#row[*Sungkyunkwan University*][Expected 2027]
+#row[*Sungkyunkwan University*][Expected 2030]
 Ph.D. in Economics
 
 #row[*Sungkyunkwan University*][2026]
@@ -32,7 +32,7 @@ M.A. in Economics
 B.S. in Industrial Engineering
 
 #section[Research Interests]
-Real Estate Economics & Urban Economics · Machine Learning in Finance · Housing Markets & Commercial Real Estate · Asset Tokenization (STO)
+Asset Pricing · Big Data · Machine Learning · Portfolio Management · Real Estate
 
 #section[International Refereed Journals (SSCI)]
 + Kang, Y., & Ryu, D. (Accepted). “Factor Timing with Characteristic-State Similarity.” #emph[Journal of Portfolio Management]. (SSCI)
@@ -54,9 +54,10 @@ Real Estate Economics & Urban Economics · Machine Learning in Finance · Housin
 - “Expanding the Cross-Section: Economic Construction for Virtue of Complexity”
 
 #section[Awards & Fellowships]
-#row[*Korean Finance Association – Kiwoom Securities Ph.D. Fellowship*][2026]
+#row[*Korean Finance Association – Kiwoom Securities Ph.D. Fellowship*][Expected 2026–2027]
 #row[*Best Paper Award*, Korean Financial Management Association][2025]
-#row[*BK21 Fellowship*, Sungkyunkwan University][2024–2026]
+#row[*BK21 Fellowship*, Sungkyunkwan University, Master's Program][2024–2025]
+#row[*BK21 Fellowship*, Sungkyunkwan University, Ph.D. Program][Expected 2026–2027]
 
 #section[Conference Presentations]
 - #row[Korea's Allied Economic Associations Annual Meeting, Financial Engineering Session][February 2026]
@@ -69,7 +70,7 @@ Real Estate Economics & Urban Economics · Machine Learning in Finance · Housin
 - #row[Korea's Allied Economic Associations Annual Meeting][February 2024]
 
 #section[Skills]
-*Econometrics:* Panel data, hedonic pricing, IV/DiD, RDD \
+*Econometrics:* Panel data, hedonic pricing \
 *Machine Learning (including DL):* Tabular prediction with panel structures, interpretability (SHAP, PFI, PDP), image-based analysis, text mining, ensemble methods \
 *Programming:* R (fixest, tidyverse), Python (scikit-learn, PyTorch), DuckDB, SQL \
 *Tools:* LaTeX, Git
@@ -79,7 +80,7 @@ Korean (native) · English (proficient)
 
 #section[Military Service]
 #row[*Republic of Korea Army*][2019–2021]
-CBRN Specialist, Headquarters Company \
+CBRN Specialist, Division Artillery Brigade Headquarters and Headquarters Battery \
 #link("https://en.wikipedia.org/wiki/Capital_Mechanized_Infantry_Division")[Capital Mechanized Infantry Division], Artillery Brigade
 
 #section[References]

@@ -6,7 +6,7 @@ fontsize: 10.5pt
 ---
 
 \begin{center}
-\Large\textbf{Yeonchan Kang (김연찬)}\\
+\Large\textbf{Yeonchan Kang}\\
 Ph.D. Candidate in Economics, Sungkyunkwan University\\
 \href{mailto:nanyeon99@g.skku.edu}{nanyeon99@g.skku.edu} · \href{mailto:nanyeon99@gmail.com}{nanyeon99@gmail.com}\\
 \href{https://nanyeonk.github.io}{nanyeonk.github.io} · ORCID: \href{https://orcid.org/0009-0004-5988-299X}{0009-0004-5988-299X}
@@ -14,7 +14,7 @@ Ph.D. Candidate in Economics, Sungkyunkwan University\\
 
 # Education
 
-**Sungkyunkwan University** \hfill Expected 2027\\
+**Sungkyunkwan University** \hfill Expected 2030\\
 Ph.D. in Economics
 
 **Sungkyunkwan University** \hfill 2026\\
@@ -25,7 +25,7 @@ B.S. in Industrial Engineering
 
 # Research Interests
 
-Real Estate Economics & Urban Economics · Machine Learning in Finance · Housing Markets & Commercial Real Estate · Asset Tokenization (STO)
+Asset Pricing · Big Data · Machine Learning · Portfolio Management · Real Estate
 
 # International Refereed Journals (SSCI)
 
@@ -52,9 +52,10 @@ Real Estate Economics & Urban Economics · Machine Learning in Finance · Housin
 
 # Awards & Fellowships
 
-**Korean Finance Association – Kiwoom Securities Ph.D. Fellowship** \hfill 2026\\
+**Korean Finance Association – Kiwoom Securities Ph.D. Fellowship** \hfill Expected 2026–2027\\
 **Best Paper Award**, Korean Financial Management Association \hfill 2025\\
-**BK21 Fellowship**, Sungkyunkwan University \hfill 2024–2026
+**BK21 Fellowship**, Sungkyunkwan University, Master's Program \hfill 2024–2025\\
+**BK21 Fellowship**, Sungkyunkwan University, Ph.D. Program \hfill Expected 2026–2027
 
 # Conference Presentations
 
@@ -69,7 +70,7 @@ Real Estate Economics & Urban Economics · Machine Learning in Finance · Housin
 
 # Skills
 
-**Econometrics:** Panel data, hedonic pricing, IV/DiD, RDD\\
+**Econometrics:** Panel data, hedonic pricing\\
 **Machine Learning (including DL):** Tabular prediction with panel structures, interpretability (SHAP, PFI, PDP), image-based analysis, text mining, ensemble methods\\
 **Programming:** R (fixest, tidyverse), Python (scikit-learn, PyTorch), DuckDB, SQL\\
 **Tools:** LaTeX, Git
@@ -81,7 +82,7 @@ Korean (native) · English (proficient)
 # Military Service
 
 **Republic of Korea Army** \hfill 2019–2021\\
-CBRN Specialist, Headquarters Company\\
+CBRN Specialist, Division Artillery Brigade Headquarters and Headquarters Battery\\
 [Capital Mechanized Infantry Division](https://en.wikipedia.org/wiki/Capital_Mechanized_Infantry_Division), Artillery Brigade
 
 # References
