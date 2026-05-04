@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Real Estate STO Review</title>
+    <link>https://nanyeonk.github.io/sto_page/</link>
+    <description>Recent content on Real Estate STO Review</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 29 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://nanyeonk.github.io/sto_page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>REIT vs STO</title>
+      <link>https://nanyeonk.github.io/sto_page/wiki/real-estate/reit-vs-sto/</link>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://nanyeonk.github.io/sto_page/wiki/real-estate/reit-vs-sto/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Real Estate Investment Trusts (REITs) and Security Token Offerings (STOs) both provide investors with exposure to real estate, but they differ substantially in structure, regulation, liquidity mechanisms, and investor experience. This page compares the two along dimensions that matter for both practitioners and researchers.&lt;/p&gt;&#xA;&lt;h2 id=&#34;structure&#34;&gt;Structure&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;REITs&lt;/strong&gt; are pooled investment vehicles. A REIT holds a portfolio of properties (or real estate debt) and issues shares that trade on public exchanges or are offered privately. REITs must satisfy specific regulatory requirements: in the US, they must distribute at least 90% of taxable income as dividends, hold at least 75% of assets in real estate, and have a minimum number of shareholders.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>US Securities Law</title>
+      <link>https://nanyeonk.github.io/sto_page/wiki/regulations/us-securities-law/</link>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://nanyeonk.github.io/sto_page/wiki/regulations/us-securities-law/</guid>
+      <description>&lt;h2 id=&#34;the-howey-test&#34;&gt;The Howey Test&lt;/h2&gt;&#xA;&lt;p&gt;The foundational question in US securities law is whether a given instrument is a &amp;ldquo;security&amp;rdquo; under the Securities Act of 1933. The Supreme Court&amp;rsquo;s 1946 decision in SEC v. W.J. Howey Co. established the test: an instrument is a security if it involves (1) an investment of money, (2) in a common enterprise, (3) with an expectation of profit, (4) derived from the efforts of others.&lt;/p&gt;&#xA;&lt;p&gt;Real estate security tokens almost always satisfy this test. Investors put money into a token representing ownership in an SPV that holds property. The expectation is that rental income or property appreciation will generate returns. And the management of the property is handled by a third party, not the token holders. The SEC has consistently treated such arrangements as securities.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What Is Tokenization?</title>
+      <link>https://nanyeonk.github.io/sto_page/wiki/tokenization/what-is-tokenization/</link>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://nanyeonk.github.io/sto_page/wiki/tokenization/what-is-tokenization/</guid>
+      <description>&lt;h2 id=&#34;definition&#34;&gt;Definition&lt;/h2&gt;&#xA;&lt;p&gt;Tokenization is the process of representing ownership rights in a real-world asset as a digital token on a blockchain. When applied to securities, the resulting tokens are called security tokens, and the process of offering them to investors is a security token offering (STO).&lt;/p&gt;&#xA;&lt;p&gt;Unlike utility tokens or cryptocurrencies, security tokens are subject to securities regulations. They represent actual financial claims: equity, debt, revenue shares, or fractional ownership in an underlying asset. The token itself is not the asset. It is a digital record of ownership that references an off-chain legal structure.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Glossary</title>
+      <link>https://nanyeonk.github.io/sto_page/wiki/glossary/</link>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://nanyeonk.github.io/sto_page/wiki/glossary/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Week 1: Why Real Estate Tokenization Deserves Serious Attention</title>
+      <link>https://nanyeonk.github.io/sto_page/blog/2026-04-week-01/</link>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://nanyeonk.github.io/sto_page/blog/2026-04-week-01/</guid>
+      <description>The opening post of Real Estate STO Review. We lay out what this publication covers and why tokenized real estate is worth tracking for both practitioners and researchers.</description>
+    </item>
+  </channel>
+</rss>

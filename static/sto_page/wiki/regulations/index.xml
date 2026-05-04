@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Regulations on Real Estate STO Review</title>
+    <link>https://nanyeonk.github.io/sto_page/wiki/regulations/</link>
+    <description>Recent content in Regulations on Real Estate STO Review</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 29 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://nanyeonk.github.io/sto_page/wiki/regulations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>US Securities Law</title>
+      <link>https://nanyeonk.github.io/sto_page/wiki/regulations/us-securities-law/</link>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://nanyeonk.github.io/sto_page/wiki/regulations/us-securities-law/</guid>
+      <description>&lt;h2 id=&#34;the-howey-test&#34;&gt;The Howey Test&lt;/h2&gt;&#xA;&lt;p&gt;The foundational question in US securities law is whether a given instrument is a &amp;ldquo;security&amp;rdquo; under the Securities Act of 1933. The Supreme Court&amp;rsquo;s 1946 decision in SEC v. W.J. Howey Co. established the test: an instrument is a security if it involves (1) an investment of money, (2) in a common enterprise, (3) with an expectation of profit, (4) derived from the efforts of others.&lt;/p&gt;&#xA;&lt;p&gt;Real estate security tokens almost always satisfy this test. Investors put money into a token representing ownership in an SPV that holds property. The expectation is that rental income or property appreciation will generate returns. And the management of the property is handled by a third party, not the token holders. The SEC has consistently treated such arrangements as securities.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

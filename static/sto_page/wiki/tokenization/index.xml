@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tokenization on Real Estate STO Review</title>
+    <link>https://nanyeonk.github.io/sto_page/wiki/tokenization/</link>
+    <description>Recent content in Tokenization on Real Estate STO Review</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 29 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://nanyeonk.github.io/sto_page/wiki/tokenization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Is Tokenization?</title>
+      <link>https://nanyeonk.github.io/sto_page/wiki/tokenization/what-is-tokenization/</link>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://nanyeonk.github.io/sto_page/wiki/tokenization/what-is-tokenization/</guid>
+      <description>&lt;h2 id=&#34;definition&#34;&gt;Definition&lt;/h2&gt;&#xA;&lt;p&gt;Tokenization is the process of representing ownership rights in a real-world asset as a digital token on a blockchain. When applied to securities, the resulting tokens are called security tokens, and the process of offering them to investors is a security token offering (STO).&lt;/p&gt;&#xA;&lt;p&gt;Unlike utility tokens or cryptocurrencies, security tokens are subject to securities regulations. They represent actual financial claims: equity, debt, revenue shares, or fractional ownership in an underlying asset. The token itself is not the asset. It is a digital record of ownership that references an off-chain legal structure.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
