@@ -17,7 +17,7 @@
   figure: ""
 
 - title: "Time-Series Momentum and Market-Timing in Bitcoin"
-  coauthors: "with coauthors"
+  coauthors: "with Doojin Ryu"
   category: working
   status: "Revise and Resubmit at Risk Management"
   year: 2026
@@ -31,7 +31,7 @@
   figure: ""
 
 - title: "One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning"
-  coauthors: "with coauthors"
+  coauthors: "with Doojin Ryu"
   category: working
   status: "Revise and Resubmit at Spatial Economic Analysis"
   year: 2026
@@ -120,7 +120,7 @@
 - title: "Trends in the Application of Machine Learning Models in Finance"
   coauthors: "with Doojin Ryu"
   category: published
-  venue: "KCI-listed journal"
+  venue: "금융공학연구"
   year: 2023
   tags:
     - Finance
@@ -135,31 +135,44 @@
 # Work in Progress
 # ============================================================
 
-- title: "When Does ML Complexity Pay Off in Housing Market Forecasting?"
+- title: "Macrocast: Toolbox for Macroeconomic Forecasting"
   coauthors: ""
   category: wip
   status: "Work in Progress"
   year: 2026
   tags:
-    - Big Data
-    - Housing Market
+    - Forecasting
+    - Macroeconomics
     - Machine Learning
-    - Out-of-Sample Forecasting
-  abstract: "This paper investigates when machine learning complexity pays off in housing market forecasting, and how the gains from cross-sectional pooling and nonlinearity interact across economic conditions. Using 51 US states with Zillow ZHVI and FRED-MD predictors, we decompose ML forecasting gains into pooling, nonlinearity, and interaction components under varying credit cycles and policy uncertainty regimes."
+  abstract: ""
   pdf: ""
   code: ""
   figure: ""
 
-- title: "Evening Economic Activity and Commercial Rents"
+- title: "Temporal Demand Structure and Shopping District Rent Capitalization"
   coauthors: ""
   category: wip
   status: "Work in Progress"
-  year: 2025
+  year: 2026
   tags:
-    - Big Data
     - Commercial Real Estate
-    - Spatial
     - Urban Economics
+    - Demand Structure
   abstract: ""
   pdf: ""
+  code: ""
+  figure: ""
+
+- title: "Expanding the Cross-Section: Economic Construction for Virtue of Complexity"
+  coauthors: ""
+  category: wip
+  status: "Work in Progress"
+  year: 2026
+  tags:
+    - Asset Pricing
+    - Machine Learning
+    - Complexity
+  abstract: ""
+  pdf: ""
+  code: ""
   figure: ""

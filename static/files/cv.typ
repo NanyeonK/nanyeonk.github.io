@@ -36,19 +36,22 @@ Real Estate Economics & Urban Economics · Machine Learning in Finance · Housin
 
 #section[International Refereed Journals (SSCI)]
 + Kang, Y., & Ryu, D. (Accepted). “Factor Timing with Characteristic-State Similarity.” #emph[Journal of Portfolio Management]. (SSCI)
-+ Kang, Y., et al. (Revise and Resubmit, 2026). “Time-Series Momentum and Market-Timing in Bitcoin.” #emph[Risk Management]. (SSCI)
-+ Kang, Y., et al. (Revise and Resubmit, 2026). “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” #emph[Spatial Economic Analysis]. (SSCI)
 + Kang, H., Kang, Y., Ryu, D., & Webb, R. I. (2026). “Bitcoin Forecasting with Machine Learning and On-Chain Information.” #emph[Investment Analysts Journal]. #link("https://doi.org/10.1080/10293523.2026.2616575")[https://doi.org/10.1080/10293523.2026.2616575]. (SSCI)
 + Kang, Y., Ryu, D., & Webb, R. I. (2026). “Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach.” #emph[Computational Economics]. #link("https://doi.org/10.1007/s10614-025-11299-z")[https://doi.org/10.1007/s10614-025-11299-z]. (SSCI)
 + Kang, Y., Ryu, D., & Webb, R. I. (2025). “How Well Do Machine Learning Models in Finance Work?” #emph[Financial Innovation], 11. #link("https://doi.org/10.1186/s40854-025-00870-0")[https://doi.org/10.1186/s40854-025-00870-0]. (SSCI)
 + Bang, J., Kang, Y., & Ryu, D. (2024). “Potential Pricing Factors in the Korean Market.” #emph[Finance Research Letters], 67. #link("https://doi.org/10.1016/j.frl.2024.105946")[https://doi.org/10.1016/j.frl.2024.105946]. (SSCI)
 
 #section[Domestic Refereed Journals (KCI)]
-+ Kang, Y., & Ryu, D. (2023). “Trends in the Application of Machine Learning Models in Finance” [금융 분야의 기계학습 모형 활용 추이]. (KCI-listed)
++ Kang, Y., & Ryu, D. (2023). “Trends in the Application of Machine Learning Models in Finance” [금융 분야의 기계학습 모형 활용 추이]. #emph[금융공학연구]. (KCI)
 
 #section[Working Papers]
-- “When Does ML Complexity Pay Off in Housing Market Forecasting?” — Work in Progress
-- “Evening Economic Activity and Commercial Rents” — Work in Progress
+- Kang, Y., & Ryu, D. (Revise and Resubmit, 2026). “Time-Series Momentum and Market-Timing in Bitcoin.” #emph[Risk Management]. (SSCI)
+- Kang, Y., & Ryu, D. (Revise and Resubmit, 2026). “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” #emph[Spatial Economic Analysis]. (SSCI)
+
+#section[Work in Progress]
+- “Macrocast: Toolbox for Macroeconomic Forecasting”
+- “Temporal Demand Structure and Shopping District Rent Capitalization”
+- “Expanding the Cross-Section: Economic Construction for Virtue of Complexity”
 
 #section[Awards & Fellowships]
 #row[*Korean Finance Association – Kiwoom Securities Ph.D. Fellowship*][2026]
