@@ -1,0 +1,20 @@
+# ============================================================
+# "Now I'm working on" — homepage spotlight of current main
+# projects. Edit this file to update the section; no template
+# changes needed. Three entries by design (see round-4 feedback).
+# ============================================================
+
+- title: "Hexagonal Spatial Indexing for Machine-Learning Real-Estate Valuation"
+  tags:
+    - Housing Markets
+    - Commercial Real Estate
+    - Big Data & Machine Learning
+
+- title: "Temporal Demand Structure and Shopping District Rent Capitalization"
+  tags:
+    - Commercial Real Estate
+
+- title: "Private Education Capitalization in Seoul Housing and Jeonse Markets"
+  tags:
+    - Housing Markets
+    - Big Data & Machine Learning

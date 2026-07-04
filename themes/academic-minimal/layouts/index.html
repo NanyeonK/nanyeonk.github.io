@@ -1,7 +1,6 @@
 {{ define "main" }}
 {{ $author := .Site.Params.author }}
 {{ $interests := .Site.Data.interests }}
-{{ $papers := .Site.Data.papers }}
 
 <header class="hero">
   <div class="hero-inner">
@@ -41,26 +40,23 @@
 
       <section class="card">
         <h2>Research</h2>
-        <p>My research centers on portfolio choice and asset pricing. Recently, much of that work has moved into real estate, where I have several ongoing projects. My focus is on bringing new data and big data to bear on real estate prices &mdash; in both housing and commercial markets &mdash; through econometrics and machine learning.</p>
+        <p>My research centers on portfolio choice and asset pricing. My recent work focuses on real estate, with several ongoing projects on housing and commercial markets. I apply big data, econometrics, and machine learning to real estate prices.</p>
       </section>
 
-      {{ $spotlight := first 3 (sort (where $papers "category" "!=" "wip") "year" "desc") }}
-      {{ if $spotlight }}
+      {{ $nowWorking := .Site.Data.now_working }}
+      {{ if $nowWorking }}
       <section class="card">
-        <h2>Recent &amp; Forthcoming</h2>
+        <h2>Now I&rsquo;m working on</h2>
         <div class="recent-list">
-          {{ range $spotlight }}
+          {{ range $nowWorking }}
           <article class="recent-row">
             <div class="recent-row-main">
-              <p class="recent-row-title">{{ if and (eq .category "published") .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</p>
-              {{ if .coauthors }}<p class="recent-row-coauthors">{{ partial "coauthors.html" .coauthors }}</p>{{ end }}
+              <p class="recent-row-title">{{ .title }}</p>
             </div>
             <div class="recent-row-meta">
-              {{ if eq .category "published" }}
-              <span class="recent-row-venue"><em>{{ .venue }}</em> &middot; {{ .year }}</span>
-              {{ else }}
-              <span class="badge {{ if in .status "Accepted" }}badge-accepted{{ else if in .status "Revise" }}badge-rr{{ else if in .status "Review" }}badge-review{{ else }}badge-wp{{ end }}">{{ .status }}</span>
-              {{ end }}
+              <div class="recent-row-tags">
+                {{ range .tags }}<span class="tag">{{ . }}</span>{{ end }}
+              </div>
             </div>
           </article>
           {{ end }}

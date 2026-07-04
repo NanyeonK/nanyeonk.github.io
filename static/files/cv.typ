@@ -23,7 +23,7 @@
 ]
 
 #section[Profile]
-Ph.D. candidate in Economics at Sungkyunkwan University. My research centers on portfolio choice and asset pricing. Recently, much of that work has moved into real estate, where I have several ongoing projects. My focus is on bringing new data and big data to bear on real estate prices --- in both housing and commercial markets --- through econometrics and machine learning.
+Ph.D. candidate in Economics at Sungkyunkwan University. My research centers on portfolio choice and asset pricing. My recent work focuses on real estate, with several ongoing projects on housing and commercial markets. I apply big data, econometrics, and machine learning to real estate prices.
 
 #section[Education]
 #row[*Sungkyunkwan University*][Expected 2030]

@@ -8,10 +8,11 @@ params:
   description: "Ph.D. Candidate in Economics"
   affiliation: "Sungkyunkwan University"
   favicon: "/favicon.ico"
-  # TODO: photo pending — set to "/images/profile.jpg" once Yeonchan provides a
-  # headshot (drop the file under static/images/). Until then the hero renders
-  # a generated initials avatar instead of an <img> tag.
-  profileImage: ""
+  # Headshot provided 2026-07-05; processed to a web-optimized JPEG under
+  # static/images/profile.jpg (480px wide, portrait aspect preserved). The
+  # hero renders this photo; the generated initials avatar in
+  # layouts/index.html is now only the no-photo fallback.
+  profileImage: "/images/profile.jpg"
 
   social:
     email: "nanyeon99@gmail.com"

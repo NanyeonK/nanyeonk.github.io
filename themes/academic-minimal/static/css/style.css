@@ -316,8 +316,11 @@ img { max-width: 100%; display: block; }
   align-items: flex-end;
   gap: .35rem;
   text-align: right;
+  max-width: 260px;
 }
 .recent-row-venue { font-size: .85rem; color: var(--text-light); white-space: nowrap; }
+.recent-row-tags { display: flex; flex-wrap: wrap; gap: .3rem; justify-content: flex-end; }
+.recent-row-tags .tag { margin: 0; }
 
 /* ===== "Coming soon" / featured card (aside spotlight, STO list) ===== */
 .coming-soon-card h2 { display: block; margin-bottom: .5rem; }
@@ -533,7 +536,8 @@ img { max-width: 100%; display: block; }
   .home-layout { grid-template-columns: 1fr; }
   .info-grid { grid-template-columns: 1fr; }
   .recent-row { flex-direction: column; }
-  .recent-row-meta { align-items: flex-start; text-align: left; }
+  .recent-row-meta { align-items: flex-start; text-align: left; max-width: none; }
+  .recent-row-tags { justify-content: flex-start; }
 }
 
 @media (max-width: 960px) {

@@ -7,6 +7,7 @@
   category: working
   status: "Conditionally Accepted at Journal of Portfolio Management"
   year: 2026
+  featured: true
   tags:
     - Asset Pricing
     - Factor Timing
@@ -85,6 +86,7 @@
   category: published
   venue: "Computational Economics"
   year: 2026
+  featured: true
   url: "https://doi.org/10.1007/s10614-025-11299-z"
   tags:
     - Big Data
@@ -101,6 +103,7 @@
   category: published
   venue: "Financial Innovation"
   year: 2025
+  featured: true
   url: "https://doi.org/10.1186/s40854-025-00870-0"
   tags:
     - Asset Pricing
@@ -117,6 +120,7 @@
   category: published
   venue: "Finance Research Letters"
   year: 2024
+  featured: true
   url: "https://doi.org/10.1016/j.frl.2024.105946"
   tags:
     - Asset Pricing

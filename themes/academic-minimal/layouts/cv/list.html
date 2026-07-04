@@ -15,7 +15,7 @@
 
   <section class="card">
     <h2>Profile</h2>
-    <p>Yeonchan Kang is a Ph.D. candidate in Economics at Sungkyunkwan University. His research centers on portfolio choice and asset pricing. Recently, much of that work has moved into real estate, where he has several ongoing projects. His focus is on bringing new data and big data to bear on real estate prices &mdash; in both housing and commercial markets &mdash; through econometrics and machine learning.</p>
+    <p>Yeonchan Kang is a Ph.D. candidate in Economics at Sungkyunkwan University. His research centers on portfolio choice and asset pricing. His recent work focuses on real estate, with several ongoing projects on housing and commercial markets. He applies big data, econometrics, and machine learning to real estate prices.</p>
   </section>
 
   <div class="info-grid">
@@ -49,12 +49,16 @@
 
     <section class="card">
       <h2>Selected Publications</h2>
-      {{ $selected := first 4 (sort (where $papers "category" "published") "year" "desc") }}
+      {{ $selected := first 4 (sort (where $papers "featured" true) "year" "desc") }}
       <ul class="clean-list">
         {{ range $selected }}
         <li>
           <span class="detail-label">{{ .title }}</span>
+          {{ if eq .category "published" }}
           <em>{{ .venue }}</em>{{ if .year }}, {{ .year }}{{ end }}
+          {{ else }}
+          {{ replace .status " at " ", " }}{{ if .year }} ({{ .year }}){{ end }}
+          {{ end }}
         </li>
         {{ end }}
       </ul>
