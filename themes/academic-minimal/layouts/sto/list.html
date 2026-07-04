@@ -2,13 +2,24 @@
 <header class="page-header">
   <div class="page-header-inner">
     <h1>{{ .Title }}</h1>
-    <p>A monthly review of real-estate security token markets.</p>
+    <p>A periodic review of real-estate security token markets — market structure, regulation, and research notes.</p>
   </div>
 </header>
 <div class="container page-content sto-page">
+  {{ range .Pages.ByDate.Reverse }}
+  <section class="card coming-soon-card">
+    {{ with .Params.status }}<p class="eyebrow">{{ . }}</p>{{ end }}
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    {{ .Summary }}
+    <div class="repo-links">
+      <a class="badge badge-wp" href="{{ .Permalink }}">Read the plan</a>
+    </div>
+  </section>
+  {{ else }}
   <section class="card">
     <p class="eyebrow">Coming Soon</p>
-    {{ .Content }}
+    <p>No issues published yet — check back soon.</p>
   </section>
+  {{ end }}
 </div>
 {{ end }}

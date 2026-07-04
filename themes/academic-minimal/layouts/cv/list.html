@@ -1,13 +1,76 @@
 {{ define "main" }}
+{{ $papers := .Site.Data.papers }}
+{{ $interests := .Site.Data.interests }}
 <header class="page-header">
   <div class="page-header-inner">
     <h1>{{ .Title }}</h1>
-    <p>Full curriculum vitae, downloadable as PDF or viewable inline below.</p>
+    <p>Current position, education, and selected publications. Download the full CV for complete details.</p>
+    <div class="page-actions">
+      <a class="button button-primary" href="{{ "/files/cv.pdf" | relURL }}" download>Download Full CV (PDF)</a>
+    </div>
   </div>
 </header>
+
 <div class="container cv-page">
-  <div class="cv-content">
-    {{ .Content }}
+
+  <section class="card">
+    <h2>Profile</h2>
+    <p>Yeonchan Kang is a Ph.D. candidate in Economics at Sungkyunkwan University. His research centers on portfolio choice and asset pricing. Recently, much of that work has moved into real estate, where he has several ongoing projects. His focus is on bringing new data and big data to bear on real estate prices &mdash; in both housing and commercial markets &mdash; through econometrics and machine learning.</p>
+  </section>
+
+  <div class="info-grid">
+    <section class="card">
+      <h2>Current Position</h2>
+      <ul class="clean-list">
+        <li>
+          <span class="detail-label">{{ .Site.Params.affiliation }}</span>
+          Ph.D. Candidate in Economics &middot; Expected 2030
+        </li>
+      </ul>
+    </section>
+
+    <section class="card interests-section">
+      <h2>Research Interests</h2>
+      <ul class="clean-list">
+        {{ range $interests }}<li>{{ . }}</li>{{ end }}
+      </ul>
+    </section>
   </div>
+
+  <div class="info-grid">
+    <section class="card">
+      <h2>Education</h2>
+      <ul class="clean-list">
+        <li><span class="detail-label">Sungkyunkwan University</span>Ph.D. in Economics &middot; Expected 2030</li>
+        <li><span class="detail-label">Sungkyunkwan University</span>M.A. in Economics &middot; 2026</li>
+        <li><span class="detail-label">Inha University</span>B.S. in Industrial Engineering &middot; 2024</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Selected Publications</h2>
+      {{ $selected := first 4 (sort (where $papers "category" "published") "year" "desc") }}
+      <ul class="clean-list">
+        {{ range $selected }}
+        <li>
+          <span class="detail-label">{{ .title }}</span>
+          <em>{{ .venue }}</em>{{ if .year }}, {{ .year }}{{ end }}
+        </li>
+        {{ end }}
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Profiles &amp; Downloads</h2>
+      <div class="stack-sm">
+        <a class="button button-dark" href="{{ "/files/cv.pdf" | relURL }}" download>Full CV (PDF)</a>
+        <a class="button button-outline" href="{{ "/research/" | relURL }}">All Publications &amp; Working Papers</a>
+        {{ with .Site.Params.social.github }}<a class="button button-outline" href="https://github.com/{{ . }}" target="_blank" rel="noopener noreferrer">GitHub</a>{{ end }}
+        {{ with .Site.Params.social.orcid }}<a class="button button-outline" href="https://orcid.org/{{ . }}" target="_blank" rel="noopener noreferrer">ORCID</a>{{ end }}
+        {{ with .Site.Params.social.email }}<a class="button button-outline" href="mailto:{{ . }}">Email</a>{{ end }}
+      </div>
+    </section>
+  </div>
+
 </div>
 {{ end }}

@@ -22,6 +22,9 @@
   #link("https://nanyeonk.github.io")[nanyeonk.github.io] · ORCID: #link("https://orcid.org/0009-0004-5988-299X")[0009-0004-5988-299X]
 ]
 
+#section[Profile]
+Ph.D. candidate in Economics at Sungkyunkwan University. My research centers on portfolio choice and asset pricing. Recently, much of that work has moved into real estate, where I have several ongoing projects. My focus is on bringing new data and big data to bear on real estate prices --- in both housing and commercial markets --- through econometrics and machine learning.
+
 #section[Education]
 #row[*Sungkyunkwan University*][Expected 2030]
 Ph.D. in Economics
@@ -33,7 +36,7 @@ M.A. in Economics
 B.S. in Industrial Engineering
 
 #section[Research Interests]
-Asset Pricing · Big Data · Machine Learning · Portfolio Management · Real Estate
+Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice · Big Data & Machine Learning
 
 #section[International Refereed Journals (SSCI)]
 + Kang, Y., & Ryu, D. (Conditionally Accepted, 2026). “Factor Timing with Characteristic-State Similarity.” #emph[Journal of Portfolio Management]. (SSCI)

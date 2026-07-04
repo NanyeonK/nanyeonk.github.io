@@ -1,0 +1,66 @@
+name: Build CV PDF from LaTeX
+
+# static/files/cv.tex is the canonical source for the full CV. This workflow
+# recompiles it with Tectonic on every push that touches the source, so a
+# build failure (missing package, overfull content, broken Korean/CJK glyphs)
+# is caught in CI even when nobody has a local LaTeX toolchain installed.
+# It does not commit the PDF back automatically — static/files/cv.pdf is
+# produced and verified locally (see repo history) and reviewed like any
+# other binary asset; this job is a validation gate + downloadable artifact.
+
+on:
+  push:
+    paths:
+      - "static/files/cv.tex"
+      - ".github/workflows/cv-build.yml"
+  workflow_dispatch:
+
+jobs:
+  build-cv:
+    runs-on: ubuntu-latest
+    env:
+      TECTONIC_VERSION: 0.16.9
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Tectonic ${{ env.TECTONIC_VERSION }}
+        run: |
+          curl -fsSL -o /tmp/tectonic.tar.gz \
+            "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%40${TECTONIC_VERSION}/tectonic-${TECTONIC_VERSION}-x86_64-unknown-linux-gnu.tar.gz"
+          tar -xzf /tmp/tectonic.tar.gz -C /usr/local/bin
+          tectonic --version
+
+      - name: Install Korean CJK font + PDF tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends fonts-noto-cjk poppler-utils
+
+      - name: Compile cv.tex
+        working-directory: static/files
+        run: |
+          set -o pipefail
+          tectonic -X compile cv.tex 2>&1 | tee /tmp/tectonic.log
+          test -f cv.pdf
+
+      - name: Fail on overfull boxes or missing glyphs
+        run: |
+          if grep -Ei "overfull|missing character" /tmp/tectonic.log; then
+            echo "::error::Tectonic reported overfull boxes or missing characters — see log above."
+            exit 1
+          fi
+
+      - name: Sanity-check page count
+        run: |
+          pages=$(pdfinfo static/files/cv.pdf | awk '/^Pages:/ {print $2}')
+          echo "cv.pdf has ${pages} page(s)"
+          if [ -z "$pages" ] || [ "$pages" -lt 1 ]; then
+            echo "::error::cv.pdf has no readable pages"
+            exit 1
+          fi
+
+      - name: Upload built CV as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-pdf
+          path: static/files/cv.pdf

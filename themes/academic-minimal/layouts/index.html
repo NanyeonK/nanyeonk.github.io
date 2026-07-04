@@ -24,12 +24,6 @@
       <p class="subtitle">{{ .Site.Params.description }}{{ with .Site.Params.affiliation }}, {{ . }}{{ end }}</p>
       <div class="hero-lede">{{ .Content }}</div>
 
-      <div class="hero-actions">
-        <a class="button button-primary" href="{{ "/research/" | relURL }}">Publications &amp; Working Papers</a>
-        <a class="button button-secondary" href="{{ "/cv/" | relURL }}">CV</a>
-        <a class="button button-secondary" href="{{ "/blog/" | relURL }}">Blog</a>
-      </div>
-
       <div class="hero-contact">
         {{ with .Site.Params.social.email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
         {{ with .Site.Params.social.github }}<a href="https://github.com/{{ . }}" target="_blank" rel="noopener noreferrer">GitHub</a>{{ end }}
@@ -47,28 +41,27 @@
 
       <section class="card">
         <h2>Research</h2>
-        <p>My research centers on portfolio choice and asset pricing. Recently, much of that work has moved into real estate, where I have several ongoing projects, with a broader focus on bringing new data and big data into asset pricing through econometrics and machine learning.</p>
+        <p>My research centers on portfolio choice and asset pricing. Recently, much of that work has moved into real estate, where I have several ongoing projects. My focus is on bringing new data and big data to bear on real estate prices &mdash; in both housing and commercial markets &mdash; through econometrics and machine learning.</p>
       </section>
 
       {{ $spotlight := first 3 (sort (where $papers "category" "!=" "wip") "year" "desc") }}
       {{ if $spotlight }}
       <section class="card">
         <h2>Recent &amp; Forthcoming</h2>
-        <div class="spotlight-grid">
+        <div class="recent-list">
           {{ range $spotlight }}
-          <article class="spotlight-card">
-            <p class="eyebrow">{{ if eq .category "published" }}{{ .venue }} &middot; {{ .year }}{{ else }}{{ .status }}{{ end }}</p>
-            <h3>{{ .title }}</h3>
-            {{ if .abstract }}<p>{{ .abstract | truncate 120 }}</p>
-            {{ else if .coauthors }}<p>{{ partial "coauthors.html" .coauthors }}</p>
-            {{ end }}
-            {{ if or .pdf .code (and (eq .category "published") .url) }}
-            <div class="repo-links">
-              {{ with .pdf }}<a class="badge badge-pdf" href="{{ . }}">PDF</a>{{ end }}
-              {{ with .code }}<a class="badge badge-code" href="{{ . }}" target="_blank" rel="noopener noreferrer">Code</a>{{ end }}
-              {{ if eq .category "published" }}{{ with .url }}<a class="badge badge-journal" href="{{ . }}" target="_blank" rel="noopener noreferrer">Link</a>{{ end }}{{ end }}
+          <article class="recent-row">
+            <div class="recent-row-main">
+              <p class="recent-row-title">{{ if and (eq .category "published") .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</p>
+              {{ if .coauthors }}<p class="recent-row-coauthors">{{ partial "coauthors.html" .coauthors }}</p>{{ end }}
             </div>
-            {{ end }}
+            <div class="recent-row-meta">
+              {{ if eq .category "published" }}
+              <span class="recent-row-venue"><em>{{ .venue }}</em> &middot; {{ .year }}</span>
+              {{ else }}
+              <span class="badge {{ if in .status "Accepted" }}badge-accepted{{ else if in .status "Revise" }}badge-rr{{ else if in .status "Review" }}badge-review{{ else }}badge-wp{{ end }}">{{ .status }}</span>
+              {{ end }}
+            </div>
           </article>
           {{ end }}
         </div>
@@ -104,17 +97,6 @@
         <ul class="clean-list">
           {{ range $interests }}<li>{{ . }}</li>{{ end }}
         </ul>
-      </section>
-
-      <section class="card">
-        <h2>Quick Access</h2>
-        <div class="stack-sm">
-          <a class="button button-dark" href="{{ "/cv/" | relURL }}">View CV</a>
-          <a class="button button-outline" href="{{ "/research/" | relURL }}">Publications &amp; Working Papers</a>
-          <a class="button button-outline" href="{{ "/blog/" | relURL }}">Blog</a>
-          {{ with .Site.Params.social.googleScholar }}<a class="button button-outline" href="https://scholar.google.com/citations?user={{ . }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>{{ end }}
-          {{ with .Site.Params.social.github }}<a class="button button-outline" href="https://github.com/{{ . }}" target="_blank" rel="noopener noreferrer">GitHub</a>{{ end }}
-        </div>
       </section>
 
     </aside>

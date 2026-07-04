@@ -1,0 +1,14 @@
+{{ define "main" }}
+<header class="page-header">
+  <div class="page-header-inner">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.status }}<p>{{ . }}</p>{{ end }}
+  </div>
+</header>
+<div class="container page-content sto-page">
+  <article class="card">
+    {{ .Content }}
+  </article>
+  <p><a href="{{ "/sto/" | relURL }}">&larr; Back to Tokenized Real Estate Review</a></p>
+</div>
+{{ end }}

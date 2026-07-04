@@ -2,16 +2,32 @@
 \usepackage[margin=2.2cm]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+% Korean glyphs (KCI journal title/venue below) need a CJK-capable font.
+% Prefer the system font on macOS (Apple SD Gothic Neo); fall back to
+% Noto CJK on Linux CI runners (installed via `apt-get install fonts-noto-cjk`).
+\IfFontExistsTF{Apple SD Gothic Neo}{%
+  \setCJKmainfont{Apple SD Gothic Neo}
+}{%
+  \IfFontExistsTF{Noto Serif CJK KR}{%
+    \setCJKmainfont{Noto Serif CJK KR}
+  }{%
+    \setCJKmainfont{Noto Sans CJK KR}
+  }
+}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage[colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+\usepackage{xurl} % allow long DOI/URL text to break at any character (avoids overfull hboxes)
 \usepackage{xcolor}
 
 \titleformat{\section}{\Large\bfseries}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{12pt}{3pt}
+\titlespacing{\section}{0pt}{9pt}{2pt}
 \pagestyle{plain}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{4pt}
+\setlength{\parskip}{3pt}
+\setlist{topsep=1pt,itemsep=1pt,parsep=0pt}
 
 \begin{document}
 
@@ -21,6 +37,10 @@ Ph.D.\ Candidate in Economics, Sungkyunkwan University\\[4pt]
 \href{mailto:nanyeon99@g.skku.edu}{nanyeon99@g.skku.edu} ~$\cdot$~ \href{mailto:nanyeon99@gmail.com}{nanyeon99@gmail.com}\\
 \href{https://nanyeonk.github.io}{nanyeonk.github.io} ~$\cdot$~ ORCID: \href{https://orcid.org/0009-0004-5988-299X}{0009-0004-5988-299X}
 \end{center}
+
+\section{Profile}
+
+Ph.D.\ candidate in Economics at Sungkyunkwan University. My research centers on portfolio choice and asset pricing. Recently, much of that work has moved into real estate, where I have several ongoing projects. My focus is on bringing new data and big data to bear on real estate prices --- in both housing and commercial markets --- through econometrics and machine learning.
 
 \section{Education}
 
@@ -35,16 +55,16 @@ B.S.\ in Industrial Engineering
 
 \section{Research Interests}
 
-Asset Pricing ~$\cdot$~ Big Data ~$\cdot$~ Machine Learning ~$\cdot$~ Portfolio Management ~$\cdot$~ Real Estate
+Commercial Real Estate ~$\cdot$~ Housing Markets ~$\cdot$~ Asset Pricing ~$\cdot$~ Portfolio Choice ~$\cdot$~ Big Data \& Machine Learning
 
 \section{International Refereed Journals (SSCI)}
 
 \begin{enumerate}[leftmargin=1.5em]
 \item Kang, Y., \& Ryu, D. (Conditionally Accepted, 2026). ``Factor Timing with Characteristic-State Similarity.'' \textit{Journal of Portfolio Management}. (SSCI)
-\item Kang, H., Kang, Y., Ryu, D., \& Webb, R. I. (2026). ``Bitcoin Forecasting with Machine Learning and On-Chain Information.'' \textit{Investment Analysts Journal}. \href{https://doi.org/10.1080/10293523.2026.2616575}{https://doi.org/10.1080/10293523.2026.2616575}. (SSCI)
-\item Kang, Y., Ryu, D., \& Webb, R. I. (2026). ``Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach.'' \textit{Computational Economics}. \href{https://doi.org/10.1007/s10614-025-11299-z}{https://doi.org/10.1007/s10614-025-11299-z}. (SSCI)
-\item Kang, Y., Ryu, D., \& Webb, R. I. (2025). ``How Well Do Machine Learning Models in Finance Work?'' \textit{Financial Innovation}, 11. \href{https://doi.org/10.1186/s40854-025-00870-0}{https://doi.org/10.1186/s40854-025-00870-0}. (SSCI)
-\item Bang, J., Kang, Y., \& Ryu, D. (2024). ``Potential Pricing Factors in the Korean Market.'' \textit{Finance Research Letters}, 67. \href{https://doi.org/10.1016/j.frl.2024.105946}{https://doi.org/10.1016/j.frl.2024.105946}. (SSCI)
+\item Kang, H., Kang, Y., Ryu, D., \& Webb, R. I. (2026). ``Bitcoin Forecasting with Machine Learning and On-Chain Information.'' \textit{Investment Analysts Journal}. \url{https://doi.org/10.1080/10293523.2026.2616575}. (SSCI)
+\item Kang, Y., Ryu, D., \& Webb, R. I. (2026). ``Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach.'' \textit{Computational Economics}. \url{https://doi.org/10.1007/s10614-025-11299-z}. (SSCI)
+\item Kang, Y., Ryu, D., \& Webb, R. I. (2025). ``How Well Do Machine Learning Models in Finance Work?'' \textit{Financial Innovation}, 11. \url{https://doi.org/10.1186/s40854-025-00870-0}. (SSCI)
+\item Bang, J., Kang, Y., \& Ryu, D. (2024). ``Potential Pricing Factors in the Korean Market.'' \textit{Finance Research Letters}, 67. \url{https://doi.org/10.1016/j.frl.2024.105946}. (SSCI)
 \end{enumerate}
 
 \section{Domestic Refereed Journals (KCI)}

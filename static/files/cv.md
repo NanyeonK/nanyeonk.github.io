@@ -12,6 +12,10 @@ Ph.D. Candidate in Economics, Sungkyunkwan University\\
 \href{https://nanyeonk.github.io}{nanyeonk.github.io} · ORCID: \href{https://orcid.org/0009-0004-5988-299X}{0009-0004-5988-299X}
 \end{center}
 
+# Profile
+
+Ph.D. candidate in Economics at Sungkyunkwan University. My research centers on portfolio choice and asset pricing. Recently, much of that work has moved into real estate, where I have several ongoing projects. My focus is on bringing new data and big data to bear on real estate prices — in both housing and commercial markets — through econometrics and machine learning.
+
 # Education
 
 **Sungkyunkwan University** \hfill Expected 2030\\
@@ -25,7 +29,7 @@ B.S. in Industrial Engineering
 
 # Research Interests
 
-Asset Pricing · Big Data · Machine Learning · Portfolio Management · Real Estate
+Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice · Big Data & Machine Learning
 
 # International Refereed Journals (SSCI)
 
