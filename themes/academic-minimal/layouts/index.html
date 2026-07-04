@@ -31,19 +31,12 @@
       </div>
 
       <div class="hero-contact">
-        {{ $hasPrev := false }}
-        {{ with .Site.Params.social.email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ $hasPrev = true }}{{ end }}
-        {{ with .Site.Params.social.github }}{{ if $hasPrev }} &middot; {{ end }}<a href="https://github.com/{{ . }}" target="_blank" rel="noopener noreferrer">GitHub</a>{{ $hasPrev = true }}{{ end }}
-        {{ with .Site.Params.social.linkedin }}{{ if $hasPrev }} &middot; {{ end }}<a href="https://linkedin.com/in/{{ . }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>{{ $hasPrev = true }}{{ end }}
-        {{ with .Site.Params.social.orcid }}{{ if $hasPrev }} &middot; {{ end }}<a href="https://orcid.org/{{ . }}" target="_blank" rel="noopener noreferrer">ORCID</a>{{ $hasPrev = true }}{{ end }}
-        {{ with .Site.Params.social.googleScholar }}{{ if $hasPrev }} &middot; {{ end }}<a href="https://scholar.google.com/citations?user={{ . }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>{{ end }}
+        {{ with .Site.Params.social.email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
+        {{ with .Site.Params.social.github }}<a href="https://github.com/{{ . }}" target="_blank" rel="noopener noreferrer">GitHub</a>{{ end }}
+        {{ with .Site.Params.social.linkedin }}<a href="https://linkedin.com/in/{{ . }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>{{ end }}
+        {{ with .Site.Params.social.orcid }}<a href="https://orcid.org/{{ . }}" target="_blank" rel="noopener noreferrer">ORCID</a>{{ end }}
+        {{ if .Site.Params.social.googleScholar }}<a href="https://scholar.google.com/citations?user={{ .Site.Params.social.googleScholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>{{ else }}<a href="#" title="profile coming soon">Google Scholar</a>{{ end }}
       </div>
-
-      {{ if $interests }}
-      <ul class="tag-list" aria-label="Research areas">
-        {{ range $interests }}<li class="tag">{{ . }}</li>{{ end }}
-      </ul>
-      {{ end }}
     </div>
   </div>
 </header>
@@ -54,20 +47,7 @@
 
       <section class="card">
         <h2>Research</h2>
-        {{ $venues := slice }}
-        {{ range where $papers "category" "published" }}
-          {{ if .venue }}{{ $venues = $venues | append .venue }}{{ end }}
-        {{ end }}
-        {{ $venues = $venues | uniq }}
-        {{ $vn := len $venues }}
-        {{ if gt $vn 0 }}
-        <p>My work has appeared in
-          {{ if eq $vn 1 }}<em>{{ index $venues 0 }}</em>
-          {{ else if eq $vn 2 }}<em>{{ index $venues 0 }}</em> and <em>{{ index $venues 1 }}</em>
-          {{ else }}{{ range first (sub $vn 1) $venues }}<em>{{ . }}</em>, {{ end }}and <em>{{ index $venues (sub $vn 1) }}</em>
-          {{ end }}.
-        </p>
-        {{ end }}
+        <p>My research centers on portfolio choice and asset pricing. Recently, much of that work has moved into real estate, where I have several ongoing projects, with a broader focus on bringing new data and big data into asset pricing through econometrics and machine learning.</p>
       </section>
 
       {{ $spotlight := first 3 (sort (where $papers "category" "!=" "wip") "year" "desc") }}
@@ -119,15 +99,6 @@
         </ul>
       </section>
 
-      <section class="card">
-        <h2>Education</h2>
-        <ul class="clean-list">
-          <li><span class="detail-label">Sungkyunkwan University</span>Ph.D. in Economics (expected 2030)</li>
-          <li><span class="detail-label">Sungkyunkwan University</span>M.A. in Economics (2026)</li>
-          <li><span class="detail-label">Inha University</span>B.S. in Industrial Engineering (2024)</li>
-        </ul>
-      </section>
-
       <section class="card interests-section">
         <h2>Research Interests</h2>
         <ul class="clean-list">
@@ -145,21 +116,6 @@
           {{ with .Site.Params.social.github }}<a class="button button-outline" href="https://github.com/{{ . }}" target="_blank" rel="noopener noreferrer">GitHub</a>{{ end }}
         </div>
       </section>
-
-      {{ $awards := where .Site.Data.news "type" "award" }}
-      {{ if $awards }}
-      <section class="card">
-        <h2>Awards &amp; Fellowships</h2>
-        <ul class="clean-list">
-          {{ range $awards }}
-          <li>
-            <span class="detail-label">{{ .date }}</span>
-            {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .text }}</a>{{ else }}{{ .text }}{{ end }}
-          </li>
-          {{ end }}
-        </ul>
-      </section>
-      {{ end }}
 
     </aside>
   </div>
