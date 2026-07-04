@@ -7,7 +7,8 @@ params:
   author: "Yeonchan Kang"
   description: "Ph.D. Candidate in Economics"
   favicon: "/favicon.ico"
-  profileImage: "/images/profile.jpg"
+  # TODO: photo pending — set to "/images/profile.jpg" once Yeonchan provides a headshot.
+  profileImage: ""
   
   social:
     email: "nanyeon99@gmail.com"

@@ -1,6 +1,7 @@
 #set page(paper: "a4", margin: (x: 2.0cm, y: 1.45cm))
 #set text(font: ("New Computer Modern", "NanumMyeongjo"), size: 9.4pt, lang: "en")
 #set par(justify: false, leading: 0.46em)
+#set block(spacing: 0.8em)
 #set list(indent: 1.1em, body-indent: 0.45em)
 #set enum(indent: 1.1em, body-indent: 0.45em)
 #show link: it => text(fill: black, it)
@@ -35,7 +36,7 @@ B.S. in Industrial Engineering
 Asset Pricing · Big Data · Machine Learning · Portfolio Management · Real Estate
 
 #section[International Refereed Journals (SSCI)]
-+ Kang, Y., & Ryu, D. (Accepted). “Factor Timing with Characteristic-State Similarity.” #emph[Journal of Portfolio Management]. (SSCI)
++ Kang, Y., & Ryu, D. (Conditionally Accepted, 2026). “Factor Timing with Characteristic-State Similarity.” #emph[Journal of Portfolio Management]. (SSCI)
 + Kang, H., Kang, Y., Ryu, D., & Webb, R. I. (2026). “Bitcoin Forecasting with Machine Learning and On-Chain Information.” #emph[Investment Analysts Journal]. #link("https://doi.org/10.1080/10293523.2026.2616575")[https://doi.org/10.1080/10293523.2026.2616575]. (SSCI)
 + Kang, Y., Ryu, D., & Webb, R. I. (2026). “Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach.” #emph[Computational Economics]. #link("https://doi.org/10.1007/s10614-025-11299-z")[https://doi.org/10.1007/s10614-025-11299-z]. (SSCI)
 + Kang, Y., Ryu, D., & Webb, R. I. (2025). “How Well Do Machine Learning Models in Finance Work?” #emph[Financial Innovation], 11. #link("https://doi.org/10.1186/s40854-025-00870-0")[https://doi.org/10.1186/s40854-025-00870-0]. (SSCI)
@@ -47,6 +48,7 @@ Asset Pricing · Big Data · Machine Learning · Portfolio Management · Real Es
 #section[Working Papers]
 - Kang, Y., & Ryu, D. (Revise and Resubmit, 2026). “Time-Series Momentum and Market-Timing in Bitcoin.” #emph[Risk Management]. (SSCI)
 - Kang, Y., & Ryu, D. (Revise and Resubmit, 2026). “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” #emph[Spatial Economic Analysis]. (SSCI)
+- Kang, Y., & Ryu, D. (Under Review, 2026). “Market-specific confirmation horizons in momentum turning-point strategies.” #emph[Applied Economics]. (SSCI)
 
 #section[Work in Progress]
 - “Macrocast: Toolbox for Macroeconomic Forecasting”

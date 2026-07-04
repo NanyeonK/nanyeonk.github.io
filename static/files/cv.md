@@ -29,7 +29,7 @@ Asset Pricing · Big Data · Machine Learning · Portfolio Management · Real Es
 
 # International Refereed Journals (SSCI)
 
-1. Kang, Y., & Ryu, D. (Accepted). “Factor Timing with Characteristic-State Similarity.” *Journal of Portfolio Management*. (SSCI)
+1. Kang, Y., & Ryu, D. (Conditionally Accepted, 2026). “Factor Timing with Characteristic-State Similarity.” *Journal of Portfolio Management*. (SSCI)
 2. Kang, H., Kang, Y., Ryu, D., & Webb, R. I. (2026). “Bitcoin Forecasting with Machine Learning and On-Chain Information.” *Investment Analysts Journal*. <https://doi.org/10.1080/10293523.2026.2616575>. (SSCI)
 3. Kang, Y., Ryu, D., & Webb, R. I. (2026). “Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach.” *Computational Economics*. <https://doi.org/10.1007/s10614-025-11299-z>. (SSCI)
 4. Kang, Y., Ryu, D., & Webb, R. I. (2025). “How Well Do Machine Learning Models in Finance Work?” *Financial Innovation*, 11. <https://doi.org/10.1186/s40854-025-00870-0>. (SSCI)
@@ -43,6 +43,7 @@ Asset Pricing · Big Data · Machine Learning · Portfolio Management · Real Es
 
 - Kang, Y., & Ryu, D. (Revise and Resubmit, 2026). “Time-Series Momentum and Market-Timing in Bitcoin.” *Risk Management*. (SSCI)
 - Kang, Y., & Ryu, D. (Revise and Resubmit, 2026). “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” *Spatial Economic Analysis*. (SSCI)
+- Kang, Y., & Ryu, D. (Under Review, 2026). “Market-specific confirmation horizons in momentum turning-point strategies.” *Applied Economics*. (SSCI)
 
 # Work in Progress
 

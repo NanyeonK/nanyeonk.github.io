@@ -5,7 +5,7 @@
 - title: "Factor Timing with Characteristic-State Similarity"
   coauthors: "with Doojin Ryu"
   category: working
-  status: "Accepted at Journal of Portfolio Management"
+  status: "Conditionally Accepted at Journal of Portfolio Management"
   year: 2026
   tags:
     - Asset Pricing
@@ -42,6 +42,20 @@
     - SHAP
     - Spatial
   abstract: "This study examines apartment price determinants in Seoul using transaction-level building data and machine learning. Applying XGBoost with SHAP analysis to Seoul's 25 administrative districts, we find that identical characteristics yield different price premiums across neighborhoods. While district location remains the strongest single predictor, the valuation of building attributes varies substantially by district. These heterogeneous patterns account for the persistent performance gap between XGBoost and linear hedonic models. Our analysis shows that districts within a single metropolitan area operate under distinct pricing regimes, with direct implications for property valuation practice in complex urban markets."
+  pdf: ""
+  code: ""
+  figure: ""
+
+- title: "Market-specific confirmation horizons in momentum turning-point strategies"
+  coauthors: "with Doojin Ryu"
+  category: working
+  status: "Under Review at Applied Economics"
+  year: 2026
+  tags:
+    - Momentum
+    - Turning-Point Strategies
+    - Market Microstructure
+  abstract: ""
   pdf: ""
   code: ""
   figure: ""
