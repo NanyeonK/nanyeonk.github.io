@@ -6,10 +6,13 @@ theme: "academic-minimal"
 params:
   author: "Yeonchan Kang"
   description: "Ph.D. Candidate in Economics"
+  affiliation: "Sungkyunkwan University"
   favicon: "/favicon.ico"
-  # TODO: photo pending — set to "/images/profile.jpg" once Yeonchan provides a headshot.
+  # TODO: photo pending — set to "/images/profile.jpg" once Yeonchan provides a
+  # headshot (drop the file under static/images/). Until then the hero renders
+  # a generated initials avatar instead of an <img> tag.
   profileImage: ""
-  
+
   social:
     email: "nanyeon99@gmail.com"
     github: "NanyeonK"

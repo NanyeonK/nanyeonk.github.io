@@ -1,5 +1,12 @@
-<footer class="site-footer">
-  <div class="container">
-    <p>&copy; {{ now.Year }} {{ .Site.Params.author }}. Powered by <a href="https://gohugo.io">Hugo</a>.</p>
+<footer class="footer">
+  <div class="footer-inner">
+    <p>&copy; {{ now.Year }} {{ .Site.Params.author }}{{ with .Site.Params.affiliation }} &middot; {{ . }}{{ end }}{{ with .Site.Params.social.email }} &middot; <a href="mailto:{{ . }}">{{ . }}</a>{{ end }}</p>
+    <p class="footer-links">
+      {{ $first := true }}
+      {{ with .Site.Params.social.github }}<a href="https://github.com/{{ . }}" target="_blank" rel="noopener noreferrer">GitHub</a>{{ $first = false }}{{ end }}
+      {{ with .Site.Params.social.linkedin }}{{ if not $first }} &middot; {{ end }}<a href="https://linkedin.com/in/{{ . }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>{{ $first = false }}{{ end }}
+      {{ with .Site.Params.social.orcid }}{{ if not $first }} &middot; {{ end }}<a href="https://orcid.org/{{ . }}" target="_blank" rel="noopener noreferrer">ORCID</a>{{ $first = false }}{{ end }}
+      {{ with .Site.Params.social.googleScholar }}{{ if not $first }} &middot; {{ end }}<a href="https://scholar.google.com/citations?user={{ . }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>{{ end }}
+    </p>
   </div>
 </footer>

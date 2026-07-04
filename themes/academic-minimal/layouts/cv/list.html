@@ -1,6 +1,11 @@
 {{ define "main" }}
+<header class="page-header">
+  <div class="page-header-inner">
+    <h1>{{ .Title }}</h1>
+    <p>Full curriculum vitae, downloadable as PDF or viewable inline below.</p>
+  </div>
+</header>
 <div class="container cv-page">
-  <h1>{{ .Title }}</h1>
   <div class="cv-content">
     {{ .Content }}
   </div>

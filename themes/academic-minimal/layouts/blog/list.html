@@ -1,6 +1,11 @@
 {{ define "main" }}
+<header class="page-header">
+  <div class="page-header-inner">
+    <h1>Blog</h1>
+    <p>Short notes on AI, markets, and tokenization.</p>
+  </div>
+</header>
 <div class="container blog-page">
-  <h1>Blog</h1>
 
   {{/* Collect all unique blog tags */}}
   {{ $allBlogTags := slice }}

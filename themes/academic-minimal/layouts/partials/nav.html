@@ -1,14 +1,18 @@
-<header class="site-header">
-  <div class="container">
-    <nav class="site-nav">
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="{{ "/" | relURL }}" class="nav-brand">{{ .Site.Params.author }}</a>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="site-navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links" id="site-navigation">
       {{ $rel := .RelPermalink }}
       {{ range .Site.Menus.main }}
         {{ $active := false }}
-        {{ if ne .URL "/" }}
+        {{ if eq .URL "/" }}
+          {{ $active = eq $rel "/" }}
+        {{ else }}
           {{ $active = hasPrefix $rel .URL }}
         {{ end }}
-        <a href="{{ .URL }}" class="{{ if $active }}active{{ end }}">{{ .Name }}</a>
+        <li><a href="{{ .URL }}" class="{{ if $active }}active{{ end }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
       {{ end }}
-    </nav>
+    </ul>
   </div>
-</header>
+</nav>
