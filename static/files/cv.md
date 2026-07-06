@@ -52,9 +52,8 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice �
 # Work in Progress
 
 - “Hexagonal Spatial Indexing for Machine-Learning Real Estate Valuation”
-- “Macrocast: Toolbox for Macroeconomic Forecasting”
+- “Private Education Capitalization in Seoul Housing and Jeonse Markets”
 - “Temporal Demand Structure and Shopping District Rent Capitalization”
-- “Expanding the Cross-Section: Economic Construction for Virtue of Complexity”
 
 # Awards & Fellowships
 

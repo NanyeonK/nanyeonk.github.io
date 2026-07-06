@@ -55,9 +55,8 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice �
 
 #section[Work in Progress]
 - “Hexagonal Spatial Indexing for Machine-Learning Real Estate Valuation”
-- “Macrocast: Toolbox for Macroeconomic Forecasting”
+- “Private Education Capitalization in Seoul Housing and Jeonse Markets”
 - “Temporal Demand Structure and Shopping District Rent Capitalization”
-- “Expanding the Cross-Section: Economic Construction for Virtue of Complexity”
 
 #section[Awards & Fellowships]
 #row[*Korean Finance Association – Kiwoom Securities Ph.D. Fellowship*][Expected 2026–2027]
