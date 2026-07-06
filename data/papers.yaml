@@ -18,7 +18,7 @@
 - title: "Time-Series Momentum and Market-Timing in Bitcoin"
   coauthors: "with Doojin Ryu"
   category: working
-  status: "Revise and Resubmit at Risk Management"
+  status: "Accepted at Risk Management"
   year: 2026
   tags:
     - Bitcoin
@@ -141,6 +141,20 @@
 # ============================================================
 # Work in Progress
 # ============================================================
+
+- title: "Hexagonal Spatial Indexing for Machine-Learning Real Estate Valuation"
+  coauthors: ""
+  category: wip
+  status: "Work in Progress"
+  year: 2026
+  tags:
+    - Housing Markets
+    - Commercial Real Estate
+    - Big Data & Machine Learning
+  abstract: ""
+  pdf: ""
+  code: ""
+  figure: ""
 
 - title: "Macrocast: Toolbox for Macroeconomic Forecasting"
   coauthors: ""

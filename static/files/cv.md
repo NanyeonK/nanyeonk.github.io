@@ -1,20 +1,20 @@
 ---
 title: Yeonchan Kang
-subtitle: Ph.D. Candidate in Economics, Sungkyunkwan University
+subtitle: Ph.D. Student in Economics, Sungkyunkwan University
 geometry: margin=2.2cm
 fontsize: 10.5pt
 ---
 
 \begin{center}
 \Large\textbf{Yeonchan Kang}\\
-Ph.D. Candidate in Economics, Sungkyunkwan University\\
+Ph.D. Student in Economics, Sungkyunkwan University\\
 \href{mailto:nanyeon99@g.skku.edu}{nanyeon99@g.skku.edu} · \href{mailto:nanyeon99@gmail.com}{nanyeon99@gmail.com}\\
 \href{https://nanyeonk.github.io}{nanyeonk.github.io} · ORCID: \href{https://orcid.org/0009-0004-5988-299X}{0009-0004-5988-299X}
 \end{center}
 
 # Profile
 
-Ph.D. candidate in Economics at Sungkyunkwan University. My research centers on portfolio choice and asset pricing. My recent work focuses on real estate, with several ongoing projects on housing and commercial markets. I apply big data, econometrics, and machine learning to real estate prices.
+Ph.D. student in Economics at Sungkyunkwan University. My research centers on real estate, with several ongoing projects on housing and commercial markets. I apply big data, econometrics, and machine learning to real estate prices, and I also work on portfolio choice and asset pricing more broadly.
 
 # Education
 
@@ -45,12 +45,13 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice �
 
 # Working Papers
 
-- Kang, Y., & Ryu, D. (Revise and Resubmit, 2026). “Time-Series Momentum and Market-Timing in Bitcoin.” *Risk Management*. (SSCI)
+- Kang, Y., & Ryu, D. (Accepted, 2026). “Time-Series Momentum and Market-Timing in Bitcoin.” *Risk Management*. (SSCI)
 - Kang, Y., & Ryu, D. (Revise and Resubmit, 2026). “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” *Spatial Economic Analysis*. (SSCI)
 - Kang, Y., & Ryu, D. (Under Review, 2026). “Market-specific confirmation horizons in momentum turning-point strategies.” *Applied Economics*. (SSCI)
 
 # Work in Progress
 
+- “Hexagonal Spatial Indexing for Machine-Learning Real Estate Valuation”
 - “Macrocast: Toolbox for Macroeconomic Forecasting”
 - “Temporal Demand Structure and Shopping District Rent Capitalization”
 - “Expanding the Cross-Section: Economic Construction for Virtue of Complexity”

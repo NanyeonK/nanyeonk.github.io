@@ -17,13 +17,13 @@
 
 #align(center)[
   #text(size: 16pt, weight: "bold")[Yeonchan Kang] \
-  Ph.D. Candidate in Economics, Sungkyunkwan University \
+  Ph.D. Student in Economics, Sungkyunkwan University \
   #link("mailto:nanyeon99@g.skku.edu")[#text("nanyeon99@g.skku.edu")] · #link("mailto:nanyeon99@gmail.com")[#text("nanyeon99@gmail.com")] \
   #link("https://nanyeonk.github.io")[nanyeonk.github.io] · ORCID: #link("https://orcid.org/0009-0004-5988-299X")[0009-0004-5988-299X]
 ]
 
 #section[Profile]
-Ph.D. candidate in Economics at Sungkyunkwan University. My research centers on portfolio choice and asset pricing. My recent work focuses on real estate, with several ongoing projects on housing and commercial markets. I apply big data, econometrics, and machine learning to real estate prices.
+Ph.D. student in Economics at Sungkyunkwan University. My research centers on real estate, with several ongoing projects on housing and commercial markets. I apply big data, econometrics, and machine learning to real estate prices, and I also work on portfolio choice and asset pricing more broadly.
 
 #section[Education]
 #row[*Sungkyunkwan University*][Expected 2030]
@@ -49,11 +49,12 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice �
 + Kang, Y., & Ryu, D. (2023). “Trends in the Application of Machine Learning Models in Finance” [금융 분야의 기계학습 모형 활용 추이]. #emph[금융공학연구]. (KCI)
 
 #section[Working Papers]
-- Kang, Y., & Ryu, D. (Revise and Resubmit, 2026). “Time-Series Momentum and Market-Timing in Bitcoin.” #emph[Risk Management]. (SSCI)
+- Kang, Y., & Ryu, D. (Accepted, 2026). “Time-Series Momentum and Market-Timing in Bitcoin.” #emph[Risk Management]. (SSCI)
 - Kang, Y., & Ryu, D. (Revise and Resubmit, 2026). “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” #emph[Spatial Economic Analysis]. (SSCI)
 - Kang, Y., & Ryu, D. (Under Review, 2026). “Market-specific confirmation horizons in momentum turning-point strategies.” #emph[Applied Economics]. (SSCI)
 
 #section[Work in Progress]
+- “Hexagonal Spatial Indexing for Machine-Learning Real Estate Valuation”
 - “Macrocast: Toolbox for Macroeconomic Forecasting”
 - “Temporal Demand Structure and Shopping District Rent Capitalization”
 - “Expanding the Cross-Section: Economic Construction for Virtue of Complexity”
