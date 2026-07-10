@@ -15,18 +15,6 @@
   code: ""
   figure: ""
 
-- title: "Time-Series Momentum and Market-Timing in Bitcoin"
-  coauthors: "with Doojin Ryu"
-  category: working
-  status: "Accepted at Risk Management"
-  year: 2026
-  tags:
-    - Bitcoin
-    - Momentum
-  abstract: ""
-  pdf: ""
-  code: ""
-  figure: ""
 
 - title: "One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning"
   coauthors: "with Doojin Ryu"
@@ -57,6 +45,20 @@
 # ============================================================
 # International Refereed Journals (SSCI)
 # ============================================================
+
+- title: "Time-Series Momentum and Market-Timing in Bitcoin"
+  coauthors: "with Doojin Ryu"
+  category: published
+  venue: "Risk Management"
+  year: 2026
+  url: "https://doi.org/10.1057/s41283-026-00234-7"
+  tags:
+    - Bitcoin
+    - Momentum
+  abstract: ""
+  pdf: ""
+  code: ""
+  figure: ""
 
 - title: "Bitcoin Forecasting with Machine Learning and On-Chain Information"
   coauthors: "with Hoseung Kang, Doojin Ryu, and Robert I. Webb"
