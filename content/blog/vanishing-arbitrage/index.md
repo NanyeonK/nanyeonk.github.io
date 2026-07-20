@@ -2,7 +2,6 @@
 title: "The Vanishing Arbitrage of Everyday Life"
 date: 2026-01-23
 draft: false
-publish_ready: false
 tags: ["AI & Agents", "Tokenization", "Markets"]
 ---
 

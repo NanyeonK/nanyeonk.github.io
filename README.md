@@ -30,8 +30,7 @@ hugo server -D
 3. Frontmatter fields:
    - `title` — Post title
    - `date` — Publication date (YYYY-MM-DD)
-   - `draft` — Set `true` while writing, `false` when ready
-   - `publish_ready` — Final confirmation flag
+   - `draft` — Set `true` while writing; set `false` only when ready to publish (this is the single go-live gate)
    - `tags` — List of tags (e.g. `["AI & Agents", "Markets"]`)
 4. Review locally with `hugo server -D` (drafts visible with `-D` flag).
 5. Set `draft: false` and push to deploy.

@@ -2,7 +2,6 @@
 title: "AI may not kill all jobs. It may kill the career ladder first"
 date: 2026-02-28
 draft: false
-publish_ready: false
 tags: ["AI & Agents", "Labor", "Macro"]
 ---
 

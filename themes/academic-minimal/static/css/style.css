@@ -19,6 +19,25 @@
   --radius: 8px;
   --max-width: 1080px;
   --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* Text-only aliases for --primary/--primary-light, kept separate because those two
+     also serve as hero/navbar background-gradient stops (which must stay maroon in
+     both themes) — only these text aliases repoint in dark mode. */
+  --heading: var(--primary);
+  --link: var(--primary-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171c;
+    --bg-card: #1b1f26;
+    --text: #e4e7eb;
+    --text-light: #9aa5b1;
+    --border: #2c313a;
+    --shadow: 0 1px 3px rgba(0,0,0,.4), 0 1px 2px rgba(0,0,0,.3);
+    --shadow-lg: 0 6px 18px rgba(0,0,0,.5);
+    --heading: #e494a8;
+    --link: #ec9fb2;
+  }
 }
 
 html { scroll-behavior: smooth; font-size: 16px; }
@@ -32,7 +51,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a { color: var(--primary-light); text-decoration: none; transition: color .2s; }
+@media (prefers-color-scheme: dark) {
+  body { background: radial-gradient(circle at top, #1a1f27 0, var(--bg) 32%, #101318 100%); }
+}
+
+a { color: var(--link); text-decoration: none; transition: color .2s; }
 a:hover { color: var(--accent); }
 a:focus-visible,
 button:focus-visible {
@@ -224,7 +247,7 @@ img { max-width: 100%; display: block; }
   color: rgba(255,255,255,.8);
 }
 .card .eyebrow,
-.coming-soon-card .eyebrow { color: var(--primary-light); }
+.coming-soon-card .eyebrow { color: var(--link); }
 
 .button {
   display: inline-flex;
@@ -245,7 +268,7 @@ img { max-width: 100%; display: block; }
 .button-secondary:hover { background: rgba(255,255,255,.2); color: #fff; }
 .button-dark { background: var(--primary); color: #fff; }
 .button-dark:hover { background: var(--primary-light); color: #fff; }
-.button-outline { background: transparent; border-color: var(--border); color: var(--primary); }
+.button-outline { background: transparent; border-color: var(--border); color: var(--heading); }
 .button-outline:hover { background: #f5f8fc; color: var(--primary); }
 
 /* ===== Cards (shared by home + research/blog/cv entries) ===== */
@@ -265,7 +288,7 @@ img { max-width: 100%; display: block; }
 .card h2, .research-page h2, .blog-page h2, .cv-page h1 {
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--heading);
   margin-bottom: 1rem;
   padding-bottom: .5rem;
   border-bottom: 2px solid var(--accent);
@@ -306,7 +329,7 @@ img { max-width: 100%; display: block; }
 .recent-row:last-child { border-bottom: none; }
 .recent-row-main { flex: 1; min-width: 0; }
 .recent-row-title { font-weight: 600; font-size: 1rem; color: var(--text); }
-.recent-row-title a { color: var(--primary-light); }
+.recent-row-title a { color: var(--link); }
 .recent-row-title a:hover { color: var(--accent); text-decoration: underline; }
 .recent-row-coauthors { font-size: .85rem; color: var(--text-light); font-style: italic; margin-top: .2rem; }
 .recent-row-meta {
@@ -360,7 +383,7 @@ img { max-width: 100%; display: block; }
 
 .clean-list li { padding: .6rem 0; border-bottom: 1px solid var(--border); }
 .clean-list li:last-child { border-bottom: none; }
-.detail-label { display: block; color: var(--primary); font-weight: 600; margin-bottom: .1rem; }
+.detail-label { display: block; color: var(--heading); font-weight: 600; margin-bottom: .1rem; }
 
 /* Legacy per-topic pastel tag chips (research / blog filter bars) */
 .tag {
@@ -434,11 +457,11 @@ img { max-width: 100%; display: block; }
 
 .paper-coauthors { font-size: .9rem; color: var(--text-light); font-style: italic; margin-bottom: .15rem; }
 .paper-title { font-weight: 600; font-size: 1.05rem; margin-bottom: .2rem; }
-.paper-title a { color: var(--primary-light); }
+.paper-title a { color: var(--link); }
 .paper-title a:hover { color: var(--accent); text-decoration: underline; }
 .paper-authors { color: var(--text-light); font-size: .93rem; margin-bottom: .15rem; }
 .paper-venue { font-size: .9rem; color: var(--text-light); font-style: italic; }
-.paper-status { font-size: .85rem; color: var(--primary-light); font-weight: 600; }
+.paper-status { font-size: .85rem; color: var(--link); font-weight: 600; }
 .paper-abstract summary {
   cursor: pointer;
   color: var(--text-light);

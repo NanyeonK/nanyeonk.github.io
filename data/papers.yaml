@@ -10,6 +10,8 @@
   featured: true
   tags:
     - Factor Investing
+  # [GAP] No public preprint/SSRN link found (checked SSRN + co-author page, 2026-07-20).
+  # [GAP] Abstract not filled in — add once available; do not fabricate.
   abstract: ""
   pdf: ""
   code: ""
@@ -37,6 +39,8 @@
   year: 2026
   tags:
     - Momentum
+  # [GAP] No public preprint/SSRN link found (checked SSRN + co-author page, 2026-07-20).
+  # [GAP] Abstract not filled in — add once available; do not fabricate.
   abstract: ""
   pdf: ""
   code: ""
@@ -55,6 +59,8 @@
   tags:
     - Bitcoin
     - Momentum
+  # [GAP] Abstract not filled in. Springer's page is paywalled/login-gated so the
+  # verbatim text could not be verified here — paste it in from the accepted manuscript.
   abstract: ""
   pdf: ""
   code: ""
@@ -131,8 +137,9 @@
 - title: "Trends in the Application of Machine Learning Models in Finance"
   coauthors: "with Doojin Ryu"
   category: published
-  venue: "금융공학연구"
+  venue: "금융공학연구 (Korean Journal of Financial Engineering), Vol. 22, No. 3, 141-168"
   year: 2023
+  url: "https://doi.org/10.35527/kfedoi.2023.22.3.006"
   tags:
     - Machine Learning
   abstract: "Korean title: 금융 분야의 기계학습 모형 활용 추이."
