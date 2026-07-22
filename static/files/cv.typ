@@ -24,7 +24,7 @@
 
 #section[Education]
 #row[*Sungkyunkwan University*][2026--Present]
-Ph.D. in Economics
+Ph.D. student in Economics
 
 #row[*Sungkyunkwan University*][2026]
 M.A. in Economics \

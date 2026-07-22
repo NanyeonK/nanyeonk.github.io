@@ -15,7 +15,7 @@ Ph.D. student in Economics, Sungkyunkwan University\\
 # Education
 
 **Sungkyunkwan University** \hfill 2026–Present\\
-Ph.D. in Economics
+Ph.D. student in Economics
 
 **Sungkyunkwan University** \hfill 2026\\
 M.A. in Economics\\
