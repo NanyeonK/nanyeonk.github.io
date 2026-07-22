@@ -5,7 +5,7 @@ theme: "academic-minimal"
 
 params:
   author: "Yeonchan Kang"
-  description: "Ph.D. Student in Economics"
+  description: "Ph.D. student in Economics"
   affiliation: "Sungkyunkwan University"
   favicon: "/favicon.ico"
   # Headshot provided 2026-07-05; processed to a web-optimized JPEG under

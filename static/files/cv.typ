@@ -17,16 +17,13 @@
 
 #align(center)[
   #text(size: 16pt, weight: "bold")[Yeonchan Kang] \
-  Ph.D. Student in Economics, Sungkyunkwan University \
+  Ph.D. student in Economics, Sungkyunkwan University \
   #link("mailto:nanyeon99@g.skku.edu")[#text("nanyeon99@g.skku.edu")] · #link("mailto:nanyeon99@gmail.com")[#text("nanyeon99@gmail.com")] \
   #link("https://nanyeonk.github.io")[nanyeonk.github.io] · ORCID: #link("https://orcid.org/0009-0004-5988-299X")[0009-0004-5988-299X]
 ]
 
-#section[Profile]
-Ph.D. student in Economics at Sungkyunkwan University. My current research agenda focuses on housing and commercial real-estate markets, using big data, econometrics, and machine learning for property valuation and local market analysis. This work builds on my earlier research in empirical asset pricing, portfolio choice, and financial machine learning.
-
 #section[Education]
-#row[*Sungkyunkwan University*][2026--present]
+#row[*Sungkyunkwan University*][2026--Present]
 Ph.D. in Economics
 
 #row[*Sungkyunkwan University*][2026]
