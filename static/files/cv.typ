@@ -26,7 +26,7 @@
 Ph.D. student in Economics at Sungkyunkwan University. My research centers on real estate, with several ongoing projects on housing and commercial markets. I apply big data, econometrics, and machine learning to real estate prices, and I also work on portfolio choice and asset pricing more broadly.
 
 #section[Education]
-#row[*Sungkyunkwan University*][Expected 2030]
+#row[*Sungkyunkwan University*][2026--present]
 Ph.D. in Economics
 
 #row[*Sungkyunkwan University*][2026]

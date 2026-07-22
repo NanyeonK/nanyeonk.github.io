@@ -18,7 +18,7 @@ Ph.D. student in Economics at Sungkyunkwan University. My research centers on re
 
 # Education
 
-**Sungkyunkwan University** \hfill Expected 2030\\
+**Sungkyunkwan University** \hfill 2026–present\\
 Ph.D. in Economics
 
 **Sungkyunkwan University** \hfill 2026\\
