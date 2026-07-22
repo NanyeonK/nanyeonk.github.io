@@ -26,18 +26,19 @@
   --link: var(--primary-light);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #14171c;
-    --bg-card: #1b1f26;
-    --text: #e4e7eb;
-    --text-light: #9aa5b1;
-    --border: #2c313a;
-    --shadow: 0 1px 3px rgba(0,0,0,.4), 0 1px 2px rgba(0,0,0,.3);
-    --shadow-lg: 0 6px 18px rgba(0,0,0,.5);
-    --heading: #e494a8;
-    --link: #ec9fb2;
-  }
+/* Dark mode is opt-in via the navbar toggle (defaults to light regardless of OS
+   preference); site.js sets data-theme="dark" on <html> and persists it to
+   localStorage, and an inline script in <head> re-applies it before first paint. */
+:root[data-theme="dark"] {
+  --bg: #14171c;
+  --bg-card: #1b1f26;
+  --text: #e4e7eb;
+  --text-light: #9aa5b1;
+  --border: #2c313a;
+  --shadow: 0 1px 3px rgba(0,0,0,.4), 0 1px 2px rgba(0,0,0,.3);
+  --shadow-lg: 0 6px 18px rgba(0,0,0,.5);
+  --heading: #e494a8;
+  --link: #ec9fb2;
 }
 
 html { scroll-behavior: smooth; font-size: 16px; }
@@ -49,11 +50,10 @@ body {
   line-height: 1.65;
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
+  transition: background-color .2s ease, color .2s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  body { background: radial-gradient(circle at top, #1a1f27 0, var(--bg) 32%, #101318 100%); }
-}
+[data-theme="dark"] body { background: radial-gradient(circle at top, #1a1f27 0, var(--bg) 32%, #101318 100%); }
 
 a { color: var(--link); text-decoration: none; transition: color .2s; }
 a:hover { color: var(--accent); }
@@ -101,6 +101,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: .5rem;
   padding: 0 1.5rem;
 }
 .nav-brand {
@@ -137,6 +138,25 @@ img { max-width: 100%; display: block; }
   padding: .5rem;
   line-height: 1;
 }
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  margin-left: auto;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 999px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s;
+}
+.theme-toggle:hover { background: rgba(255,255,255,.24); }
+.theme-toggle .icon-sun { display: none; }
+[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
 /* ===== Hero (home page) ===== */
 .hero {

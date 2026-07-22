@@ -22,7 +22,8 @@ Ph.D. student in Economics at Sungkyunkwan University. My current research agend
 Ph.D. in Economics
 
 **Sungkyunkwan University** \hfill 2026\\
-M.A. in Economics
+M.A. in Economics\\
+Thesis: “Factor Timing with Characteristic-State Similarity” · Advisor: Doojin Ryu
 
 **Inha University** \hfill 2024\\
 B.S. in Industrial Engineering
