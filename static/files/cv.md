@@ -87,7 +87,9 @@ Korean (native) · English (proficient)
 
 # Military Service
 
-**Republic of Korea Army**, CBRN Specialist \hfill 2019–2021
+**Republic of Korea Army** \hfill 2019–2021\\
+CBRN Specialist, Division Artillery Brigade Headquarters and Headquarters Battery\\
+[Capital Mechanized Infantry Division](https://en.wikipedia.org/wiki/Capital_Mechanized_Infantry_Division), Artillery Brigade
 
 # References
 

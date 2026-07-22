@@ -85,7 +85,9 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice �
 Korean (native) · English (proficient)
 
 #section[Military Service]
-#row[*Republic of Korea Army*, CBRN Specialist][2019–2021]
+#row[*Republic of Korea Army*][2019–2021]
+CBRN Specialist, Division Artillery Brigade Headquarters and Headquarters Battery \
+#link("https://en.wikipedia.org/wiki/Capital_Mechanized_Infantry_Division")[Capital Mechanized Infantry Division], Artillery Brigade
 
 #section[References]
 #link("https://sites.google.com/view/ryudoojin")[*Doojin Ryu*] \
