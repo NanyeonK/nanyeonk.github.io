@@ -14,7 +14,7 @@ Ph.D. Student in Economics, Sungkyunkwan University\\
 
 # Profile
 
-Ph.D. student in Economics at Sungkyunkwan University. My research centers on real estate, with several ongoing projects on housing and commercial markets. I apply big data, econometrics, and machine learning to real estate prices, and I also work on portfolio choice and asset pricing more broadly.
+Ph.D. student in Economics at Sungkyunkwan University. My current research agenda focuses on housing and commercial real-estate markets, using big data, econometrics, and machine learning for property valuation and local market analysis. This work builds on my earlier research in empirical asset pricing, portfolio choice, and financial machine learning.
 
 # Education
 
@@ -34,10 +34,11 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice �
 # International Refereed Journals (SSCI)
 
 1. Kang, Y., & Ryu, D. (Conditionally Accepted, 2026). “Factor Timing with Characteristic-State Similarity.” *Journal of Portfolio Management*. (SSCI)
-2. Kang, H., Kang, Y., Ryu, D., & Webb, R. I. (2026). “Bitcoin Forecasting with Machine Learning and On-Chain Information.” *Investment Analysts Journal*. <https://doi.org/10.1080/10293523.2026.2616575>. (SSCI)
-3. Kang, Y., Ryu, D., & Webb, R. I. (2026). “Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach.” *Computational Economics*. <https://doi.org/10.1007/s10614-025-11299-z>. (SSCI)
-4. Kang, Y., Ryu, D., & Webb, R. I. (2025). “How Well Do Machine Learning Models in Finance Work?” *Financial Innovation*, 11. <https://doi.org/10.1186/s40854-025-00870-0>. (SSCI)
-5. Bang, J., Kang, Y., & Ryu, D. (2024). “Potential Pricing Factors in the Korean Market.” *Finance Research Letters*, 67. <https://doi.org/10.1016/j.frl.2024.105946>. (SSCI)
+2. Kang, Y., & Ryu, D. (2026). “Time-Series Momentum and Market-Timing in Bitcoin.” *Risk Management*. <https://doi.org/10.1057/s41283-026-00234-7>. (SSCI)
+3. Kang, H., Kang, Y., Ryu, D., & Webb, R. I. (2026). “Bitcoin Forecasting with Machine Learning and On-Chain Information.” *Investment Analysts Journal*. <https://doi.org/10.1080/10293523.2026.2616575>. (SSCI)
+4. Kang, Y., Ryu, D., & Webb, R. I. (2026). “Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach.” *Computational Economics*. <https://doi.org/10.1007/s10614-025-11299-z>. (SSCI)
+5. Kang, Y., Ryu, D., & Webb, R. I. (2025). “How Well Do Machine Learning Models in Finance Work?” *Financial Innovation*, 11. <https://doi.org/10.1186/s40854-025-00870-0>. (SSCI)
+6. Bang, J., Kang, Y., & Ryu, D. (2024). “Potential Pricing Factors in the Korean Market.” *Finance Research Letters*, 67. <https://doi.org/10.1016/j.frl.2024.105946>. (SSCI)
 
 # Domestic Refereed Journals (KCI)
 
@@ -45,22 +46,21 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice �
 
 # Working Papers
 
-- Kang, Y., & Ryu, D. (Accepted, 2026). “Time-Series Momentum and Market-Timing in Bitcoin.” *Risk Management*. (SSCI)
 - Kang, Y., & Ryu, D. (Revise and Resubmit, 2026). “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” *Spatial Economic Analysis*. (SSCI)
 - Kang, Y., & Ryu, D. (Under Review, 2026). “Market-specific confirmation horizons in momentum turning-point strategies.” *Applied Economics*. (SSCI)
 
 # Work in Progress
 
-- “Hexagonal Spatial Indexing for Machine-Learning Real Estate Valuation”
+- “Representing Location in House-Price Prediction: Hexagonal Spatial Encodings and Out-of-Sample Performance”
 - “Private Education Capitalization in Seoul Housing and Jeonse Markets”
 - “Temporal Demand Structure and Shopping District Rent Capitalization”
 
 # Awards & Fellowships
 
-**Korean Finance Association – Kiwoom Securities Ph.D. Fellowship** \hfill Expected 2026–2027\\
+**Korean Finance Association – Kiwoom Securities Ph.D. Fellowship** \hfill Recipient, 2026–2027\\
 **Best Paper Award**, Korean Financial Management Association \hfill 2025\\
 **BK21 Fellowship**, Sungkyunkwan University, Master's Program \hfill 2024–2025\\
-**BK21 Fellowship**, Sungkyunkwan University, Ph.D. Program \hfill Expected 2026–2027
+**BK21 Fellowship**, Sungkyunkwan University, Ph.D. Program \hfill Recipient, 2026–2027
 
 # Conference Presentations
 
@@ -86,9 +86,7 @@ Korean (native) · English (proficient)
 
 # Military Service
 
-**Republic of Korea Army** \hfill 2019–2021\\
-CBRN Specialist, Division Artillery Brigade Headquarters and Headquarters Battery\\
-[Capital Mechanized Infantry Division](https://en.wikipedia.org/wiki/Capital_Mechanized_Infantry_Division), Artillery Brigade
+**Republic of Korea Army**, CBRN Specialist \hfill 2019–2021
 
 # References
 

@@ -55,6 +55,7 @@
   category: published
   venue: "Risk Management"
   year: 2026
+  featured: true
   url: "https://doi.org/10.1057/s41283-026-00234-7"
   tags:
     - Bitcoin
@@ -149,7 +150,7 @@
 # Work in Progress
 # ============================================================
 
-- title: "Hexagonal Spatial Indexing for Machine-Learning Real Estate Valuation"
+- title: "Representing Location in House-Price Prediction: Hexagonal Spatial Encodings and Out-of-Sample Performance"
   coauthors: ""
   category: wip
   status: "Work in Progress"

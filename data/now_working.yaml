@@ -4,7 +4,7 @@
 # changes needed. Three entries by design (see round-4 feedback).
 # ============================================================
 
-- title: "Hexagonal Spatial Indexing for Machine-Learning Real-Estate Valuation"
+- title: "Representing Location in House-Price Prediction: Hexagonal Spatial Encodings and Out-of-Sample Performance"
   tags:
     - Housing Markets
     - Commercial Real Estate

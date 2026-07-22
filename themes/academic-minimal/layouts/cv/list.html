@@ -6,7 +6,7 @@
     <h1>{{ .Title }}</h1>
     <p>Current position, education, and selected publications. Download the full CV for complete details.</p>
     <div class="page-actions">
-      <a class="button button-primary" href="{{ "/files/cv.pdf" | relURL }}" download>Download Full CV (PDF)</a>
+      <a class="button button-primary" href="{{ "/files/cv.pdf" | relURL }}" download="Yeonchan_Kang_CV.pdf">Download Full CV (PDF)</a>
     </div>
   </div>
 </header>
@@ -67,7 +67,7 @@
     <section class="card">
       <h2>Profiles &amp; Downloads</h2>
       <div class="stack-sm">
-        <a class="button button-dark" href="{{ "/files/cv.pdf" | relURL }}" download>Full CV (PDF)</a>
+        <a class="button button-dark" href="{{ "/files/cv.pdf" | relURL }}" download="Yeonchan_Kang_CV.pdf">Full CV (PDF)</a>
         <a class="button button-outline" href="{{ "/research/" | relURL }}">All Publications &amp; Working Papers</a>
         {{ with .Site.Params.social.github }}<a class="button button-outline" href="https://github.com/{{ . }}" target="_blank" rel="noopener noreferrer">GitHub</a>{{ end }}
         {{ with .Site.Params.social.orcid }}<a class="button button-outline" href="https://orcid.org/{{ . }}" target="_blank" rel="noopener noreferrer">ORCID</a>{{ end }}
