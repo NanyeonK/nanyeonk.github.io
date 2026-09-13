@@ -2,10 +2,13 @@
 # Manuscripts Accepted / Under Review
 # ============================================================
 
-- title: "Factor Timing with Characteristic-State Similarity"
+- project_id: factor_timing
+  publication_status: forthcoming
+  title: "Factor Timing with Characteristic-State Similarity"
   coauthors: "with Doojin Ryu"
-  category: working
-  status: "Conditionally Accepted at Journal of Portfolio Management"
+  category: published
+  venue: "Journal of Portfolio Management"
+  status: "Forthcoming"
   year: 2026
   featured: true
   tags:
@@ -18,7 +21,9 @@
   figure: ""
 
 
-- title: "One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning"
+- project_id: sea_2026
+  publication_status: rnr
+  title: "One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning"
   coauthors: "with Doojin Ryu"
   category: working
   status: "Revise and Resubmit at Spatial Economic Analysis"
@@ -32,10 +37,12 @@
   code: ""
   figure: ""
 
-- title: "Market-specific confirmation horizons in momentum turning-point strategies"
+- project_id: kor_mom_turn
+  publication_status: rnr
+  title: "Market-specific confirmation horizons in momentum turning-point strategies"
   coauthors: "with Doojin Ryu"
   category: working
-  status: "Under Review at Applied Economics"
+  status: "Revise and Resubmit at Applied Economics (Round 1)"
   year: 2026
   tags:
     - Momentum
@@ -50,7 +57,9 @@
 # International Refereed Journals (SSCI)
 # ============================================================
 
-- title: "Time-Series Momentum and Market-Timing in Bitcoin"
+- project_id: crypto_mom_turn
+  publication_status: published
+  title: "Time-series momentum and market timing in Bitcoin"
   coauthors: "with Doojin Ryu"
   category: published
   venue: "Risk Management"
