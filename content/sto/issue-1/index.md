@@ -2,7 +2,7 @@
 title: "Tokenized Real Estate Review — Issue 1 (August 2026)"
 date: 2026-07-04T09:00:00+09:00
 status: "Upcoming — planned for August 2026"
-draft: false
+draft: true
 ---
 
 **Upcoming.** This is the planned inaugural issue of the *Tokenized Real Estate Review*, a periodic review of real-estate security token markets — market structure, regulation, and research notes, gathered in one place for practitioners and researchers.
