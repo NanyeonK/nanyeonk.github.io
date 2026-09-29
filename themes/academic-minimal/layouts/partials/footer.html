@@ -1,6 +1,6 @@
 <footer class="footer">
   <div class="footer-inner">
     <p>&copy; {{ now.Year }} {{ .Site.Params.author }}{{ with .Site.Params.affiliation }} &middot; {{ . }}{{ end }}</p>
-    {{ partial "contact-links.html" (dict "Site" .Site "Class" "footer-contact" "Detailed" false) }}
+    {{ partial "contact-links.html" (dict "Site" .Site "Class" "footer-contact" "Detailed" false "HidePhone" .IsHome) }}
   </div>
 </footer>

@@ -23,7 +23,7 @@
       <p class="subtitle">{{ .Site.Params.description }}{{ with .Site.Params.affiliation }}, {{ . }}{{ end }}</p>
       <div class="hero-lede">{{ .Content }}</div>
 
-      {{ partial "contact-links.html" (dict "Site" .Site "Class" "hero-contact" "Detailed" false) }}
+      {{ partial "contact-links.html" (dict "Site" .Site "Class" "hero-contact" "Detailed" false "HidePhone" true) }}
     </div>
   </div>
 </header>
