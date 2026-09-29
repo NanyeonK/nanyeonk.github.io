@@ -23,13 +23,7 @@
       <p class="subtitle">{{ .Site.Params.description }}{{ with .Site.Params.affiliation }}, {{ . }}{{ end }}</p>
       <div class="hero-lede">{{ .Content }}</div>
 
-      <div class="hero-contact">
-        {{ with .Site.Params.social.email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
-        {{ with .Site.Params.social.github }}<a href="https://github.com/{{ . }}" target="_blank" rel="noopener noreferrer">GitHub</a>{{ end }}
-        {{ with .Site.Params.social.linkedin }}<a href="https://linkedin.com/in/{{ . }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>{{ end }}
-        {{ with .Site.Params.social.orcid }}<a href="https://orcid.org/{{ . }}" target="_blank" rel="noopener noreferrer">ORCID</a>{{ end }}
-        {{ if .Site.Params.social.googleScholar }}<a href="https://scholar.google.com/citations?user={{ .Site.Params.social.googleScholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>{{ else }}<!-- TODO: re-add Google Scholar link once profile is created -->{{ end }}
-      </div>
+      {{ partial "contact-links.html" (dict "Site" .Site "Class" "hero-contact" "Detailed" false) }}
     </div>
   </div>
 </header>
@@ -40,13 +34,13 @@
 
       <section class="card">
         <h2>Research</h2>
-        <p>My research centers on real estate, with several ongoing projects on housing and commercial markets. I apply big data, econometrics, and machine learning to real estate prices, and I also work on portfolio choice and asset pricing more broadly.</p>
+        <p>My research examines housing and commercial real estate, particularly property valuation and spatial market heterogeneity. I use econometrics and machine learning, and my work also covers asset pricing and portfolio choice.</p>
       </section>
 
       {{ $nowWorking := .Site.Data.now_working }}
       {{ if $nowWorking }}
       <section class="card">
-        <h2>Now I&rsquo;m working on</h2>
+        <h2>Work in Progress</h2>
         <div class="recent-list">
           {{ range $nowWorking }}
           <article class="recent-row">
@@ -83,7 +77,7 @@
         <ul class="clean-list">
           <li>
             <span class="detail-label">{{ .Site.Params.affiliation }}</span>
-            {{ .Site.Params.description }}
+            {{ .Site.Params.description }} &middot; 2026–2026 (expected end of enrollment)
           </li>
         </ul>
       </section>

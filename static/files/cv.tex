@@ -3,24 +3,16 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{fontspec}
-\usepackage{xeCJK}
-% Korean glyphs (KCI journal title/venue below) need a CJK-capable font.
-% Prefer the system font on macOS (Apple SD Gothic Neo); fall back to
-% Noto CJK on Linux CI runners (installed via `apt-get install fonts-noto-cjk`).
-\IfFontExistsTF{Apple SD Gothic Neo}{%
-  \setCJKmainfont{Apple SD Gothic Neo}
-}{%
-  \IfFontExistsTF{Noto Serif CJK KR}{%
-    \setCJKmainfont{Noto Serif CJK KR}
-  }{%
-    \setCJKmainfont{Noto Sans CJK KR}
-  }
-}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage[colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
 \usepackage{xurl} % allow long DOI/URL text to break at any character (avoids overfull hboxes)
+\urlstyle{same} % use the surrounding text font for DOI URLs
 \usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{graphicx}
+
+\newcommand{\contacticon}[1]{\raisebox{-0.12em}{\includegraphics[height=0.95em]{icons/#1.pdf}}}
 
 \titleformat{\section}{\Large\bfseries}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{6pt}{2pt}
@@ -34,18 +26,24 @@
 \begin{center}
 {\LARGE\bfseries Yeonchan Kang}\\[6pt]
 Ph.D.\ student in Economics, Sungkyunkwan University\\[4pt]
-\href{mailto:nanyeon99@g.skku.edu}{nanyeon99@g.skku.edu} ~$\cdot$~ \href{mailto:nanyeon99@gmail.com}{nanyeon99@gmail.com}\\
-\href{https://nanyeonk.github.io}{nanyeonk.github.io} ~$\cdot$~ ORCID: \href{https://orcid.org/0009-0004-5988-299X}{0009-0004-5988-299X}
+{\small This Version: September 29, 2026}
 \end{center}
+
+\begin{tabularx}{\textwidth}{@{}XX@{}}
+\contacticon{mail}~\href{mailto:nanyeon99@g.skku.edu}{nanyeon99@g.skku.edu} & \contacticon{gmail}~\href{mailto:nanyeon99@gmail.com}{nanyeon99@gmail.com} \\
+\contacticon{phone}~\href{tel:+821037823151}{+82 (0)10-3782-3151} & \contacticon{globe}~\href{https://nanyeonk.github.io/}{Homepage: nanyeonk.github.io} \\
+\contacticon{pin}~Address: & \contacticon{github}~\href{https://github.com/NanyeonK}{GitHub} \\
+\contacticon{orcid}~\href{https://orcid.org/0009-0004-5988-299X}{ORCID: 0009-0004-5988-299X} & \contacticon{linkedin}~\href{https://linkedin.com/in/yeonchan-kang-58181a27b}{LinkedIn}
+\end{tabularx}
 
 \section{Education}
 
-\textbf{Sungkyunkwan University} \hfill 2026--Present\\
+\textbf{Sungkyunkwan University} \hfill 2026--2026 (expected end of enrollment)\\
 Ph.D.\ student in Economics
 
 \textbf{Sungkyunkwan University} \hfill 2026\\
 M.A.\ in Economics\\
-Thesis: ``Factor Timing with Characteristic-State Similarity'' \textbar{} Advisor: Doojin Ryu
+Thesis: ``Factor Timing Using Characteristic State Similarity'' \textperiodcentered{} Advisor: Doojin Ryu
 
 \textbf{Inha University} \hfill 2024\\
 B.S.\ in Industrial Engineering
@@ -54,57 +52,57 @@ B.S.\ in Industrial Engineering
 
 Commercial Real Estate ~$\cdot$~ Housing Markets ~$\cdot$~ Asset Pricing ~$\cdot$~ Portfolio Choice ~$\cdot$~ Big Data \& Machine Learning
 
-\section{International Refereed Journals (SSCI)}
+\section{Published and Working Papers}
 
-\begin{enumerate}[leftmargin=1.5em]
-\item Kang, Y., \& Ryu, D. (Forthcoming). ``Factor Timing with Characteristic-State Similarity.'' \textit{Journal of Portfolio Management}. (SSCI)
-\item Kang, Y., \& Ryu, D. (2026). ``Time-series momentum and market timing in Bitcoin.'' \textit{Risk Management}, 28, 54. \url{https://doi.org/10.1057/s41283-026-00234-7}. (SSCI)
-\item Kang, H., Kang, Y., Ryu, D., \& Webb, R. I. (2026). ``Bitcoin Forecasting with Machine Learning and On-Chain Information.'' \textit{Investment Analysts Journal}. \url{https://doi.org/10.1080/10293523.2026.2616575}. (SSCI)
-\item Kang, Y., Ryu, D., \& Webb, R. I. (2026). ``Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach.'' \textit{Computational Economics}. \url{https://doi.org/10.1007/s10614-025-11299-z}. (SSCI)
-\item Kang, Y., Ryu, D., \& Webb, R. I. (2025). ``How Well Do Machine Learning Models in Finance Work?'' \textit{Financial Innovation}, 11. \url{https://doi.org/10.1186/s40854-025-00870-0}. (SSCI)
-\item Bang, J., Kang, Y., \& Ryu, D. (2024). ``Potential Pricing Factors in the Korean Market.'' \textit{Finance Research Letters}, 67. \url{https://doi.org/10.1016/j.frl.2024.105946}. (SSCI)
-\end{enumerate}
+\begin{description}[leftmargin=2.2em]
+\item[\normalfont{[8]}] Kang, Y., \& Ryu, D. ``One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.'' \textit{Spatial Economic Analysis} (R\&R, Round 2).
+\item[\normalfont{[7]}] Kang, Y., \& Ryu, D. (Forthcoming). ``Factor Timing with Characteristic-State Similarity.'' \textit{Journal of Portfolio Management}. (SSCI)\\[-1pt]
+{\small\textit{Expanded from the M.A. thesis ``Factor Timing Using Characteristic State Similarity.''}}
+\item[\normalfont{[6]}] Kang, Y., \& Ryu, D. (Forthcoming). ``Market-specific confirmation horizons in momentum turning-point strategies.'' \textit{Applied Economics}. (SSCI)
+\item[\normalfont{[5]}] Kang, Y., \& Ryu, D. (2026). ``Time-series momentum and market timing in Bitcoin.'' \textit{Risk Management}, 28, 54. \href{https://doi.org/10.1057/s41283-026-00234-7}{DOI: \nolinkurl{10.1057/s41283-026-00234-7}}. (SSCI)
+\item[\normalfont{[4]}] Kang, H., Kang, Y., Ryu, D., \& Webb, R. I. (2026). ``Bitcoin Forecasting with Machine Learning and On-Chain Information.'' \textit{Investment Analysts Journal}.\\[-1pt]
+\href{https://doi.org/10.1080/10293523.2026.2616575}{DOI: \nolinkurl{10.1080/10293523.2026.2616575}}. (SSCI)
+\item[\normalfont{[3]}] Kang, Y., Ryu, D., \& Webb, R. I. (2026). ``Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach.'' \textit{Computational Economics}. \href{https://doi.org/10.1007/s10614-025-11299-z}{DOI: \nolinkurl{10.1007/s10614-025-11299-z}}. (SSCI)
+\item[\normalfont{[2]}] Kang, Y., Ryu, D., \& Webb, R. I. (2025). ``How Well Do Machine Learning Models in Finance Work?'' \textit{Financial Innovation}, 11. \href{https://doi.org/10.1186/s40854-025-00870-0}{DOI: \nolinkurl{10.1186/s40854-025-00870-0}}. (SSCI)
+\item[\normalfont{[1]}] Bang, J., Kang, Y., \& Ryu, D. (2024). ``Potential Pricing Factors in the Korean Market.'' \textit{Finance Research Letters}, 67. \href{https://doi.org/10.1016/j.frl.2024.105946}{DOI: \nolinkurl{10.1016/j.frl.2024.105946}}. (SSCI)
+\end{description}
 
-\section{Domestic Refereed Journals (KCI)}
+\section{Other Publication}
 
-\begin{enumerate}[leftmargin=1.5em]
-\item Kang, Y., \& Ryu, D. (2023). ``Trends in the Application of Machine Learning Models in Finance'' [금융 분야의 기계학습 모형 활용 추이]. \textit{금융공학연구}. (KCI)
-\end{enumerate}
+\begin{description}[leftmargin=2.2em]
+\item[\normalfont{[1]}] Kang, Y., \& Ryu, D. (2023). ``Trends of Machine Learning Application in Finance.'' \textit{Korean Journal of Financial Engineering}. \href{https://doi.org/10.35527/kfedoi.2023.22.3.006}{DOI: \nolinkurl{10.35527/kfedoi.2023.22.3.006}}.
+\end{description}
 
-\section{Working Papers}
-
-\begin{itemize}[leftmargin=1.5em]
-\item Kang, Y., \& Ryu, D. (Revise and Resubmit, 2026). ``One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.'' \textit{Spatial Economic Analysis}. (SSCI)
-\item Kang, Y., \& Ryu, D. (Revise and Resubmit, Round 1, 2026). ``Market-specific confirmation horizons in momentum turning-point strategies.'' \textit{Applied Economics}. (SSCI)
-\end{itemize}
-
+\newpage
 \section{Work in Progress}
 
-\begin{itemize}[leftmargin=1.5em]
+\begin{enumerate}[leftmargin=1.5em]
 \item ``Representing Location in House-Price Prediction: Hexagonal Spatial Encodings and Out-of-Sample Performance''
 \item ``Private Education Capitalization in Seoul Housing and Jeonse Markets''
 \item ``Temporal Demand Structure and Shopping District Rent Capitalization''
-\end{itemize}
+\end{enumerate}
 
 \section{Awards \& Fellowships}
 
-\textbf{Korean Finance Association -- Kiwoom Securities Ph.D. Fellowship} \hfill Recipient, 2026--2027\\
+\textbf{Korean Finance Association -- Kiwoom Securities Ph.D. Fellowship} \hfill 2026--2027\\
+\textbf{BK21 Fellowship}, Sungkyunkwan University, Ph.D. Program \hfill 2026--2027\\
 \textbf{Best Paper Award}, Korean Financial Management Association \hfill 2025\\
-\textbf{BK21 Fellowship}, Sungkyunkwan University, Master's Program \hfill 2024--2025\\
-\textbf{BK21 Fellowship}, Sungkyunkwan University, Ph.D. Program \hfill Recipient, 2026--2027
+\textbf{BK21 Fellowship}, Sungkyunkwan University, Master's Program \hfill 2024--2025
 
 \section{Conference Presentations}
 
-\begin{itemize}[leftmargin=1.5em, nosep]
-\item Korea's Allied Economic Associations Annual Meeting, Financial Engineering Session \hfill February 2026
-\item Korean Financial Management Association Annual Conference \hfill November 2025
-\item Asia-Pacific Association of Finance International Conference \hfill July 2025
-\item SERI International Conference \hfill July 2025
-\item Seoul Workshop on Empirical Finance \hfill May 2025
-\item Korean Financial Management Association Annual Conference \hfill November 2024
-\item SERI International Conference \hfill July 2024
-\item Korea's Allied Economic Associations Annual Meeting \hfill February 2024
-\end{itemize}
+\begin{tabularx}{\textwidth}{@{}p{1.1cm}X@{}}
+2026 & Korea's Allied Economic Associations Annual Meeting \\
+2025 & Korean Financial Management Association Annual Conference, Asia-Pacific Association of Finance International Conference, SERI International Conference, Seoul Workshop on Empirical Finance \\
+2024 & Korean Financial Management Association Annual Conference, SERI International Conference, Korea's Allied Economic Associations Annual Meeting
+\end{tabularx}
+
+\section{Teaching Experiences}
+
+\begin{tabularx}{\textwidth}{@{}p{1.1cm}X@{}}
+2025 & Asset Pricing; Risk and Portfolio Management \\
+2024 & Financial Derivatives; Financial Economics
+\end{tabularx}
 
 \section{Skills}
 

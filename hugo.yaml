@@ -15,7 +15,11 @@ params:
   profileImage: "/images/profile.jpg"
 
   social:
-    email: "nanyeon99@gmail.com"
+    email: "nanyeon99@g.skku.edu"
+    personalEmail: "nanyeon99@gmail.com"
+    phone:
+      display: "+82 (0)10-3782-3151"
+      dial: "+821037823151"
     github: "NanyeonK"
     linkedin: "yeonchan-kang-58181a27b"
     orcid: "0009-0004-5988-299X"
@@ -51,5 +55,7 @@ outputs:
 
 paginate: 10
 
-taxonomies:
-  tag: tags
+# Research and Blog provide their own on-page tag filters.
+disableKinds:
+  - taxonomy
+  - term

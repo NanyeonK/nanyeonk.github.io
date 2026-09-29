@@ -1,10 +1,13 @@
 {{ define "main" }}
 {{ $papers := .Site.Data.papers }}
 {{ $interests := .Site.Data.interests }}
+{{ $wip := where $papers "category" "wip" }}
 <header class="page-header">
   <div class="page-header-inner">
     <h1>{{ .Title }}</h1>
-    <p>Current position, education, and selected publications. Download the full CV for complete details.</p>
+    <p>Academic background, research, awards, presentations, and teaching. Download the PDF version below.</p>
+    <p class="cv-version">This Version: September 29, 2026</p>
+    {{ partial "contact-links.html" (dict "Site" .Site "Class" "cv-contact" "Detailed" true "ShowWebsite" true "ShowAddress" true) }}
     <div class="page-actions">
       <a class="button button-primary" href="{{ "/files/cv.pdf" | relURL }}" download="Yeonchan_Kang_CV.pdf">Download Full CV (PDF)</a>
     </div>
@@ -19,7 +22,7 @@
       <ul class="clean-list">
         <li>
           <span class="detail-label">{{ .Site.Params.affiliation }}</span>
-          Ph.D. student in Economics &middot; 2026–Present
+          Ph.D. student in Economics &middot; 2026–2026 (expected end of enrollment)
         </li>
       </ul>
     </section>
@@ -36,40 +39,111 @@
     <section class="card">
       <h2>Education</h2>
       <ul class="clean-list">
-        <li><span class="detail-label">Sungkyunkwan University</span>Ph.D. student in Economics &middot; 2026–Present</li>
-        <li><span class="detail-label">Sungkyunkwan University</span>M.A. in Economics &middot; 2026</li>
+        <li><span class="detail-label">Sungkyunkwan University</span>Ph.D. student in Economics &middot; 2026–2026 (expected end of enrollment)</li>
+        <li><span class="detail-label">Sungkyunkwan University</span>M.A. in Economics &middot; 2026<br><small>Thesis: Factor Timing Using Characteristic State Similarity &middot; Advisor: Doojin Ryu</small></li>
         <li><span class="detail-label">Inha University</span>B.S. in Industrial Engineering &middot; 2024</li>
       </ul>
     </section>
+  </div>
 
+  <section class="card cv-papers-card">
+    <h2>Published and Working Papers</h2>
+    <ul class="clean-list">
+      {{ range sort (where $papers "sort_order" "gt" 0) "sort_order" "desc" }}
+      <li>
+        <span class="detail-label">{{ .title }}</span>
+        {{ with .authors }}<span class="cv-paper-coauthors">{{ . }}</span>{{ end }}
+        <span class="cv-paper-meta">
+          {{ if eq .category "working" }}{{ .status }}{{ else }}<em>{{ .venue }}</em>, {{ if eq .publication_status "forthcoming" }}forthcoming{{ else }}{{ .year }}{{ end }}.{{ end }}
+          {{ with .url }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer">DOI</a>{{ end }}
+        </span>
+        {{ with .note }}<small class="cv-paper-note">{{ . }}</small>{{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+
+  <div class="info-grid">
     <section class="card">
-      <h2>Selected Publications</h2>
-      {{ $selected := first 4 (sort (where $papers "featured" true) "year" "desc") }}
+      <h2>Work in Progress</h2>
       <ul class="clean-list">
-        {{ range $selected }}
-        <li>
-          <span class="detail-label">{{ .title }}</span>
-          {{ if eq .category "published" }}
-          <em>{{ .venue }}</em>{{ if .year }}, {{ .year }}{{ end }}
-          {{ else }}
-          {{ replace .status " at " ", " }}{{ if .year }} ({{ .year }}){{ end }}
-          {{ end }}
-        </li>
+        {{ range $i, $paper := $wip }}
+        <li><span class="detail-label">{{ add $i 1 }}. {{ .title }}</span></li>
         {{ end }}
       </ul>
     </section>
 
     <section class="card">
-      <h2>Profiles &amp; Downloads</h2>
-      <div class="stack-sm">
-        <a class="button button-dark" href="{{ "/files/cv.pdf" | relURL }}" download="Yeonchan_Kang_CV.pdf">Full CV (PDF)</a>
-        <a class="button button-outline" href="{{ "/research/" | relURL }}">All Publications &amp; Working Papers</a>
-        {{ with .Site.Params.social.github }}<a class="button button-outline" href="https://github.com/{{ . }}" target="_blank" rel="noopener noreferrer">GitHub</a>{{ end }}
-        {{ with .Site.Params.social.orcid }}<a class="button button-outline" href="https://orcid.org/{{ . }}" target="_blank" rel="noopener noreferrer">ORCID</a>{{ end }}
-        {{ with .Site.Params.social.email }}<a class="button button-outline" href="mailto:{{ . }}">Email</a>{{ end }}
-      </div>
+      <h2>Awards &amp; Fellowships</h2>
+      <ul class="clean-list">
+        {{ range .Site.Data.awards }}
+        <li><span class="detail-label">{{ .title }} &middot; {{ .date }}</span>{{ .detail }}</li>
+        {{ end }}
+      </ul>
     </section>
   </div>
+
+  <div class="info-grid">
+    <section class="card">
+      <h2>Conference Presentations</h2>
+      <ul class="clean-list">
+        {{ range .Site.Data.conferences }}
+        <li><span class="detail-label">{{ .year }}</span>{{ .venues }}</li>
+        {{ end }}
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Teaching Experiences</h2>
+      <ul class="clean-list">
+        {{ range .Site.Data.teaching }}
+        <li><span class="detail-label">{{ .year }}</span>{{ .courses }}</li>
+        {{ end }}
+      </ul>
+    </section>
+  </div>
+
+  <div class="info-grid">
+    <section class="card">
+      <h2>Skills</h2>
+      <ul class="clean-list">
+        <li><span class="detail-label">Econometrics</span>Panel data, hedonic pricing</li>
+        <li><span class="detail-label">Machine Learning (including DL)</span>Tabular prediction with panel structures, interpretability (SHAP, PFI, PDP), image-based analysis, text mining, ensemble methods</li>
+        <li><span class="detail-label">Programming</span>R (fixest, tidyverse), Python (scikit-learn, PyTorch), DuckDB, SQL</li>
+        <li><span class="detail-label">Tools</span>LaTeX, Git</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Languages</h2>
+      <p>Korean (native) &middot; English (proficient)</p>
+    </section>
+  </div>
+
+  <div class="info-grid">
+    <section class="card">
+      <h2>Military Service</h2>
+      <p><strong>Republic of Korea Army</strong> &middot; 2019–2021</p>
+      <p>CBRN Specialist, Division Artillery Brigade Headquarters and Headquarters Battery</p>
+      <p><a href="https://en.wikipedia.org/wiki/Capital_Mechanized_Infantry_Division" target="_blank" rel="noopener noreferrer">Capital Mechanized Infantry Division</a>, Artillery Brigade</p>
+    </section>
+
+    <section class="card">
+      <h2>References</h2>
+      <ul class="clean-list">
+        <li><span class="detail-label"><a href="https://sites.google.com/view/ryudoojin" target="_blank" rel="noopener noreferrer">Doojin Ryu</a></span>Professor of Economics, Sungkyunkwan University</li>
+        <li><span class="detail-label"><a href="https://www.commerce.virginia.edu/faculty/riw4j" target="_blank" rel="noopener noreferrer">Robert I. Webb</a></span>Professor of Finance, University of Virginia</li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Research &amp; Downloads</h2>
+    <div class="stack-sm">
+      <a class="button button-dark" href="{{ "/files/cv.pdf" | relURL }}" download="Yeonchan_Kang_CV.pdf">Full CV (PDF)</a>
+      <a class="button button-outline" href="{{ "/research/" | relURL }}">All Publications &amp; Working Papers</a>
+    </div>
+  </section>
 
 </div>
 {{ end }}

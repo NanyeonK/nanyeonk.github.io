@@ -50,7 +50,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  {{ $cssHash := readFile "themes/academic-minimal/static/css/style.css" | md5 }}
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}?v={{ $cssHash }}">
   <link rel="icon" href="{{ "favicon.ico" | relURL }}">
   <script src="{{ "js/site.js" | relURL }}" defer></script>
 </head>

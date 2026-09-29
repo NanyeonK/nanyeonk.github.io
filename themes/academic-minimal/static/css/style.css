@@ -240,6 +240,23 @@ img { max-width: 100%; display: block; }
   text-decoration-color: transparent;
   transform: translateY(-1px);
 }
+.contact-icon {
+  display: inline-block;
+  width: 1.15em;
+  height: 1.15em;
+  flex: none;
+  background: currentColor;
+  -webkit-mask: var(--contact-icon) center / contain no-repeat;
+  mask: var(--contact-icon) center / contain no-repeat;
+}
+.contact-icon--mail { --contact-icon: url('/icons/contact/mail.svg'); }
+.contact-icon--gmail { --contact-icon: url('/icons/contact/gmail.svg'); }
+.contact-icon--phone { --contact-icon: url('/icons/contact/phone.svg'); }
+.contact-icon--globe { --contact-icon: url('/icons/contact/globe.svg'); }
+.contact-icon--pin { --contact-icon: url('/icons/contact/pin.svg'); }
+.contact-icon--github { --contact-icon: url('/icons/contact/github.svg'); }
+.contact-icon--orcid { --contact-icon: url('/icons/contact/orcid.svg'); }
+.contact-icon--linkedin { --contact-icon: url('/icons/contact/linkedin.svg'); }
 /* ===== Page Header (sub-pages) ===== */
 .page-header {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
@@ -418,18 +435,16 @@ img { max-width: 100%; display: block; }
   font-weight: 500;
 }
 .tag[data-tag="Asset Pricing"]              { background: #fef3c7; color: #92400e; }
-.tag[data-tag="Big Data"]                   { background: #e0e7ff; color: #3730a3; }
+.tag[data-tag="Big Data & Machine Learning"] { background: #e0e7ff; color: #3730a3; }
+.tag[data-tag="Bitcoin"]                    { background: #fce7f3; color: #9d174d; }
 .tag[data-tag="Commercial Real Estate"]     { background: #d1fae5; color: #065f46; }
-.tag[data-tag="Factor Model"]               { background: #fce7f3; color: #9d174d; }
-.tag[data-tag="Hedonic Model"]              { background: #ede9fe; color: #5b21b6; }
-.tag[data-tag="Housing Market"]             { background: #dbeafe; color: #1e40af; }
+.tag[data-tag="Factor Investing"]           { background: #ede9fe; color: #5b21b6; }
+.tag[data-tag="Forecasting"]                { background: #ccfbf1; color: #134e4a; }
+.tag[data-tag="Housing Markets"]            { background: #dbeafe; color: #1e40af; }
 .tag[data-tag="Machine Learning"]           { background: #fef9c3; color: #854d0e; }
-.tag[data-tag="Out-of-Sample Forecasting"]  { background: #ccfbf1; color: #134e4a; }
+.tag[data-tag="Momentum"]                   { background: #e0f2fe; color: #075985; }
 .tag[data-tag="SHAP"]                       { background: #fee2e2; color: #991b1b; }
-.tag[data-tag="Spatial"]                    { background: #e0f2fe; color: #075985; }
-.tag[data-tag="Token Economics"]            { background: #f3e8ff; color: #6b21a8; }
-.tag[data-tag="Urban Economics"]            { background: #dcfce7; color: #166534; }
-.tag-clickable { cursor: pointer; transition: all .15s; }
+.tag-clickable { appearance: none; border: 0; font-family: inherit; line-height: inherit; cursor: pointer; transition: all .15s; }
 .tag-clickable:hover { background: var(--primary); color: #fff; }
 .tag-active {
   outline: 2px solid rgba(109, 26, 46, .45);
@@ -439,7 +454,7 @@ img { max-width: 100%; display: block; }
 }
 #tag-filter .tag-clickable.tag-active { outline: 2px solid rgba(109, 26, 46, .45); }
 .tag-dim { opacity: .35; }
-.tag-clear { background: #f0f0f0; color: var(--text-light); cursor: pointer; font-size: .75rem; }
+.tag-clear { appearance: none; border: 0; font-family: inherit; line-height: inherit; background: #f0f0f0; color: #2a3342; cursor: pointer; font-size: .75rem; }
 .tag-clear:hover { background: #ddd; }
 .paper-dim { opacity: .2; transition: opacity .2s; }
 .paper-highlight { opacity: 1; transition: opacity .2s; }
@@ -481,6 +496,7 @@ img { max-width: 100%; display: block; }
 .paper-title a:hover { color: var(--accent); text-decoration: underline; }
 .paper-authors { color: var(--text-light); font-size: .93rem; margin-bottom: .15rem; }
 .paper-venue { font-size: .9rem; color: var(--text-light); font-style: italic; }
+.paper-note { font-size: .85rem; color: var(--text-light); margin-top: .2rem; }
 .paper-status { font-size: .85rem; color: var(--link); font-weight: 600; }
 .paper-abstract summary {
   cursor: pointer;
@@ -513,6 +529,14 @@ img { max-width: 100%; display: block; }
 
 /* ===== CV page (compact: page-actions download button + info-grid cards) ===== */
 .cv-page { padding: 2.5rem 0; }
+.cv-version { font-size: .85rem; }
+.cv-contact { display: flex; flex-wrap: wrap; gap: .45rem 1.25rem; margin-top: .65rem; font-size: .88rem; }
+.cv-contact a { display: inline-flex; align-items: center; gap: .35rem; color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+.cv-contact a:hover { color: var(--accent); }
+.cv-contact .contact-static { display: inline-flex; align-items: center; gap: .35rem; color: #fff; }
+.cv-paper-coauthors, .cv-paper-meta { display: block; font-size: .9rem; color: var(--text-light); }
+.cv-paper-meta a { font-weight: 600; }
+.cv-paper-note { display: block; margin-top: .25rem; color: var(--text-light); }
 
 /* ===== Blog ===== */
 .blog-page { padding: 2.5rem 0; }
@@ -527,7 +551,7 @@ img { max-width: 100%; display: block; }
 .blog-post article { max-width: 760px; margin: 0 auto; }
 .blog-post-header h1 { font-size: 2.1rem; line-height: 1.2; margin-bottom: .5rem; color: var(--text); }
 .blog-post-header time { color: var(--text-light); font-size: .95rem; display: block; margin-top: .2rem; }
-.blog-post-content { font-size: 1.08rem; line-height: 1.85; color: #2a3342; margin-top: 1.5rem; }
+.blog-post-content { font-size: 1.08rem; line-height: 1.85; color: var(--text); margin-top: 1.5rem; }
 .blog-post-content p { margin: 0 0 1.25rem 0; }
 .blog-post-content h2, .blog-post-content h3 { margin-top: 2.4rem; margin-bottom: .9rem; line-height: 1.35; border: none; padding: 0; display: block; }
 .blog-post-content h2:first-of-type, .blog-post-content h3:first-of-type { margin-top: 1.4rem; }
@@ -563,7 +587,8 @@ img { max-width: 100%; display: block; }
 .footer-inner { max-width: var(--max-width); margin: 0 auto; }
 .footer a { color: var(--accent); }
 .footer a:hover { color: #fff; }
-.footer-links { margin-top: .4rem; opacity: .9; }
+.footer-contact { display: flex; justify-content: center; flex-wrap: wrap; gap: .5rem 1rem; margin-top: .65rem; }
+.footer-contact a { display: inline-flex; align-items: center; gap: .3rem; }
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {

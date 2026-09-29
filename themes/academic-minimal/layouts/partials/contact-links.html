@@ -1,0 +1,12 @@
+{{ $social := .Site.Params.social }}
+{{ $detailed := .Detailed }}
+<div class="{{ .Class }}">
+  {{ with $social.email }}<a href="mailto:{{ . }}" aria-label="SKKU email: {{ . }}"><span class="contact-icon contact-icon--mail" aria-hidden="true"></span><span>{{ if $detailed }}{{ . }}{{ else }}SKKU Email{{ end }}</span></a>{{ end }}
+  {{ with $social.personalEmail }}<a href="mailto:{{ . }}" aria-label="Gmail: {{ . }}"><span class="contact-icon contact-icon--gmail" aria-hidden="true"></span><span>{{ if $detailed }}{{ . }}{{ else }}Gmail{{ end }}</span></a>{{ end }}
+  {{ with $social.phone }}<a href="tel:{{ .dial }}" aria-label="Mobile: {{ .display }}"><span class="contact-icon contact-icon--phone" aria-hidden="true"></span><span>{{ .display }}</span></a>{{ end }}
+  {{ if .ShowWebsite }}<a href="{{ .Site.BaseURL }}"><span class="contact-icon contact-icon--globe" aria-hidden="true"></span><span>Homepage: nanyeonk.github.io</span></a>{{ end }}
+  {{ if .ShowAddress }}<span class="contact-static"><span class="contact-icon contact-icon--pin" aria-hidden="true"></span><span>Address:</span></span>{{ end }}
+  {{ with $social.github }}<a href="https://github.com/{{ . }}" target="_blank" rel="noopener noreferrer"><span class="contact-icon contact-icon--github" aria-hidden="true"></span><span>GitHub</span></a>{{ end }}
+  {{ with $social.orcid }}<a href="https://orcid.org/{{ . }}" target="_blank" rel="noopener noreferrer"><span class="contact-icon contact-icon--orcid" aria-hidden="true"></span><span>ORCID</span></a>{{ end }}
+  {{ with $social.linkedin }}<a href="https://linkedin.com/in/{{ . }}" target="_blank" rel="noopener noreferrer"><span class="contact-icon contact-icon--linkedin" aria-hidden="true"></span><span>LinkedIn</span></a>{{ end }}
+</div>

@@ -1,14 +1,17 @@
 # ============================================================
-# Manuscripts Accepted / Under Review
+# Forthcoming and Working Papers
+# The website combines all papers in one list; sort_order keeps newest first.
 # ============================================================
 
 - project_id: factor_timing
+  sort_order: 8
   publication_status: forthcoming
   title: "Factor Timing with Characteristic-State Similarity"
-  coauthors: "with Doojin Ryu"
+  authors: "Yeonchan Kang and Doojin Ryu"
   category: published
   venue: "Journal of Portfolio Management"
   status: "Forthcoming"
+  note: "Expanded from the M.A. thesis “Factor Timing Using Characteristic State Similarity.”"
   year: 2026
   featured: true
   tags:
@@ -22,11 +25,12 @@
 
 
 - project_id: sea_2026
+  sort_order: 9
   publication_status: rnr
   title: "One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning"
-  coauthors: "with Doojin Ryu"
+  authors: "Yeonchan Kang and Doojin Ryu"
   category: working
-  status: "Revise and Resubmit at Spatial Economic Analysis"
+  status: "R&R (Round 2) at Spatial Economic Analysis"
   year: 2026
   tags:
     - Housing Markets
@@ -38,11 +42,13 @@
   figure: ""
 
 - project_id: kor_mom_turn
-  publication_status: rnr
+  sort_order: 7
+  publication_status: forthcoming
   title: "Market-specific confirmation horizons in momentum turning-point strategies"
-  coauthors: "with Doojin Ryu"
-  category: working
-  status: "Revise and Resubmit at Applied Economics (Round 1)"
+  authors: "Yeonchan Kang and Doojin Ryu"
+  category: published
+  venue: "Applied Economics"
+  status: "Forthcoming"
   year: 2026
   tags:
     - Momentum
@@ -54,13 +60,14 @@
   figure: ""
 
 # ============================================================
-# International Refereed Journals (SSCI)
+# Published Papers
 # ============================================================
 
 - project_id: crypto_mom_turn
+  sort_order: 6
   publication_status: published
   title: "Time-series momentum and market timing in Bitcoin"
-  coauthors: "with Doojin Ryu"
+  authors: "Yeonchan Kang and Doojin Ryu"
   category: published
   venue: "Risk Management"
   year: 2026
@@ -75,7 +82,8 @@
   figure: ""
 
 - title: "Bitcoin Forecasting with Machine Learning and On-Chain Information"
-  coauthors: "with Hoseung Kang, Doojin Ryu, and Robert I. Webb"
+  sort_order: 5
+  authors: "Hoseung Kang, Yeonchan Kang, Doojin Ryu, and Robert I. Webb"
   category: published
   venue: "Investment Analysts Journal"
   year: 2026
@@ -90,7 +98,8 @@
   figure: ""
 
 - title: "Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach"
-  coauthors: "with Doojin Ryu and Robert I. Webb"
+  sort_order: 4
+  authors: "Yeonchan Kang, Doojin Ryu, and Robert I. Webb"
   category: published
   venue: "Computational Economics"
   year: 2026
@@ -106,7 +115,8 @@
   figure: ""
 
 - title: "How Well Do Machine Learning Models in Finance Work?"
-  coauthors: "with Doojin Ryu and Robert I. Webb"
+  sort_order: 3
+  authors: "Yeonchan Kang, Doojin Ryu, and Robert I. Webb"
   category: published
   venue: "Financial Innovation"
   year: 2025
@@ -123,7 +133,8 @@
   figure: ""
 
 - title: "Potential Pricing Factors in the Korean Market"
-  coauthors: "with Jeongseok Bang and Doojin Ryu"
+  sort_order: 2
+  authors: "Jeongseok Bang, Yeonchan Kang, and Doojin Ryu"
   category: published
   venue: "Finance Research Letters"
   year: 2024
@@ -139,18 +150,19 @@
   figure: ""
 
 # ============================================================
-# Domestic Refereed Journals (KCI)
+# Other Publication
 # ============================================================
 
-- title: "Trends in the Application of Machine Learning Models in Finance"
-  coauthors: "with Doojin Ryu"
+- title: "Trends of Machine Learning Application in Finance"
+  sort_order: 1
+  authors: "Yeonchan Kang and Doojin Ryu"
   category: published
-  venue: "금융공학연구 (Korean Journal of Financial Engineering), Vol. 22, No. 3, 141-168"
+  venue: "Korean Journal of Financial Engineering"
   year: 2023
   url: "https://doi.org/10.35527/kfedoi.2023.22.3.006"
   tags:
     - Machine Learning
-  abstract: "Korean title: 금융 분야의 기계학습 모형 활용 추이."
+  abstract: ""
   pdf: ""
   code: ""
   figure: ""
@@ -160,7 +172,7 @@
 # ============================================================
 
 - title: "Representing Location in House-Price Prediction: Hexagonal Spatial Encodings and Out-of-Sample Performance"
-  coauthors: ""
+  authors: ""
   category: wip
   status: "Work in Progress"
   year: 2026
@@ -174,7 +186,7 @@
   figure: ""
 
 - title: "Private Education Capitalization in Seoul Housing and Jeonse Markets"
-  coauthors: ""
+  authors: ""
   category: wip
   status: "Work in Progress"
   year: 2026
@@ -187,7 +199,7 @@
   figure: ""
 
 - title: "Temporal Demand Structure and Shopping District Rent Capitalization"
-  coauthors: ""
+  authors: ""
   category: wip
   status: "Work in Progress"
   year: 2026

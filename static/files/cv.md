@@ -1,6 +1,4 @@
 ---
-title: Yeonchan Kang
-subtitle: Ph.D. student in Economics, Sungkyunkwan University
 geometry: margin=2.2cm
 fontsize: 10.5pt
 ---
@@ -8,18 +6,22 @@ fontsize: 10.5pt
 \begin{center}
 \Large\textbf{Yeonchan Kang}\\
 Ph.D. student in Economics, Sungkyunkwan University\\
-\href{mailto:nanyeon99@g.skku.edu}{nanyeon99@g.skku.edu} · \href{mailto:nanyeon99@gmail.com}{nanyeon99@gmail.com}\\
-\href{https://nanyeonk.github.io}{nanyeonk.github.io} · ORCID: \href{https://orcid.org/0009-0004-5988-299X}{0009-0004-5988-299X}
+This Version: September 29, 2026
 \end{center}
+
+![SKKU email](icons/mail.svg) [nanyeon99@g.skku.edu](mailto:nanyeon99@g.skku.edu) · ![Gmail](icons/gmail.svg) [nanyeon99@gmail.com](mailto:nanyeon99@gmail.com)<br>
+![Mobile](icons/phone.svg) [+82 (0)10-3782-3151](tel:+821037823151) · ![Homepage](icons/globe.svg) [Homepage: nanyeonk.github.io](https://nanyeonk.github.io/)<br>
+![Address](icons/pin.svg) Address: · ![GitHub](icons/github.svg) [GitHub](https://github.com/NanyeonK)<br>
+![ORCID](icons/orcid.svg) [ORCID: 0009-0004-5988-299X](https://orcid.org/0009-0004-5988-299X) · ![LinkedIn](icons/linkedin.svg) [LinkedIn](https://linkedin.com/in/yeonchan-kang-58181a27b)
 
 # Education
 
-**Sungkyunkwan University** \hfill 2026–Present\\
+**Sungkyunkwan University** \hfill 2026–2026 (expected end of enrollment)\\
 Ph.D. student in Economics
 
 **Sungkyunkwan University** \hfill 2026\\
 M.A. in Economics\\
-Thesis: “Factor Timing with Characteristic-State Similarity” · Advisor: Doojin Ryu
+Thesis: “Factor Timing Using Characteristic State Similarity” · Advisor: Doojin Ryu
 
 **Inha University** \hfill 2024\\
 B.S. in Industrial Engineering
@@ -28,47 +30,56 @@ B.S. in Industrial Engineering
 
 Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice · Big Data & Machine Learning
 
-# International Refereed Journals (SSCI)
+# Published and Working Papers
 
-1. Kang, Y., & Ryu, D. (Forthcoming). “Factor Timing with Characteristic-State Similarity.” *Journal of Portfolio Management*. (SSCI)
-2. Kang, Y., & Ryu, D. (2026). “Time-series momentum and market timing in Bitcoin.” *Risk Management*. <https://doi.org/10.1057/s41283-026-00234-7>. (SSCI)
-3. Kang, H., Kang, Y., Ryu, D., & Webb, R. I. (2026). “Bitcoin Forecasting with Machine Learning and On-Chain Information.” *Investment Analysts Journal*. <https://doi.org/10.1080/10293523.2026.2616575>. (SSCI)
-4. Kang, Y., Ryu, D., & Webb, R. I. (2026). “Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach.” *Computational Economics*. <https://doi.org/10.1007/s10614-025-11299-z>. (SSCI)
-5. Kang, Y., Ryu, D., & Webb, R. I. (2025). “How Well Do Machine Learning Models in Finance Work?” *Financial Innovation*, 11. <https://doi.org/10.1186/s40854-025-00870-0>. (SSCI)
-6. Bang, J., Kang, Y., & Ryu, D. (2024). “Potential Pricing Factors in the Korean Market.” *Finance Research Letters*, 67. <https://doi.org/10.1016/j.frl.2024.105946>. (SSCI)
+[8] Kang, Y., & Ryu, D. “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” *Spatial Economic Analysis* (R&R, Round 2).
 
-# Domestic Refereed Journals (KCI)
+[7] Kang, Y., & Ryu, D. (Forthcoming). “Factor Timing with Characteristic-State Similarity.” *Journal of Portfolio Management*. (SSCI)
 
-1. Kang, Y., & Ryu, D. (2023). “Trends in the Application of Machine Learning Models in Finance” [금융 분야의 기계학습 모형 활용 추이]. *금융공학연구*. (KCI)
+*Expanded from the M.A. thesis “Factor Timing Using Characteristic State Similarity.”*
 
-# Working Papers
+[6] Kang, Y., & Ryu, D. (Forthcoming). “Market-specific confirmation horizons in momentum turning-point strategies.” *Applied Economics*. (SSCI)
 
-- Kang, Y., & Ryu, D. (Revise and Resubmit, 2026). “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” *Spatial Economic Analysis*. (SSCI)
-- Kang, Y., & Ryu, D. (Revise and Resubmit, Round 1, 2026). “Market-specific confirmation horizons in momentum turning-point strategies.” *Applied Economics*. (SSCI)
+[5] Kang, Y., & Ryu, D. (2026). “Time-series momentum and market timing in Bitcoin.” *Risk Management*, 28, 54. [DOI: 10.1057/s41283-026-00234-7](https://doi.org/10.1057/s41283-026-00234-7). (SSCI)
+
+[4] Kang, H., Kang, Y., Ryu, D., & Webb, R. I. (2026). “Bitcoin Forecasting with Machine Learning and On-Chain Information.” *Investment Analysts Journal*. [DOI: 10.1080/10293523.2026.2616575](https://doi.org/10.1080/10293523.2026.2616575). (SSCI)
+
+[3] Kang, Y., Ryu, D., & Webb, R. I. (2026). “Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach.” *Computational Economics*. [DOI: 10.1007/s10614-025-11299-z](https://doi.org/10.1007/s10614-025-11299-z). (SSCI)
+
+[2] Kang, Y., Ryu, D., & Webb, R. I. (2025). “How Well Do Machine Learning Models in Finance Work?” *Financial Innovation*, 11. [DOI: 10.1186/s40854-025-00870-0](https://doi.org/10.1186/s40854-025-00870-0). (SSCI)
+
+[1] Bang, J., Kang, Y., & Ryu, D. (2024). “Potential Pricing Factors in the Korean Market.” *Finance Research Letters*, 67. [DOI: 10.1016/j.frl.2024.105946](https://doi.org/10.1016/j.frl.2024.105946). (SSCI)
+
+# Other Publication
+
+[1] Kang, Y., & Ryu, D. (2023). “Trends of Machine Learning Application in Finance.” *Korean Journal of Financial Engineering*. [DOI: 10.35527/kfedoi.2023.22.3.006](https://doi.org/10.35527/kfedoi.2023.22.3.006).
 
 # Work in Progress
 
-- “Representing Location in House-Price Prediction: Hexagonal Spatial Encodings and Out-of-Sample Performance”
-- “Private Education Capitalization in Seoul Housing and Jeonse Markets”
-- “Temporal Demand Structure and Shopping District Rent Capitalization”
+1. “Representing Location in House-Price Prediction: Hexagonal Spatial Encodings and Out-of-Sample Performance”
+2. “Private Education Capitalization in Seoul Housing and Jeonse Markets”
+3. “Temporal Demand Structure and Shopping District Rent Capitalization”
 
 # Awards & Fellowships
 
-**Korean Finance Association – Kiwoom Securities Ph.D. Fellowship** \hfill Recipient, 2026–2027\\
+**Korean Finance Association – Kiwoom Securities Ph.D. Fellowship** \hfill 2026–2027\\
+**BK21 Fellowship**, Sungkyunkwan University, Ph.D. Program \hfill 2026–2027\\
 **Best Paper Award**, Korean Financial Management Association \hfill 2025\\
-**BK21 Fellowship**, Sungkyunkwan University, Master's Program \hfill 2024–2025\\
-**BK21 Fellowship**, Sungkyunkwan University, Ph.D. Program \hfill Recipient, 2026–2027
+**BK21 Fellowship**, Sungkyunkwan University, Master's Program \hfill 2024–2025
 
 # Conference Presentations
 
-- Korea's Allied Economic Associations Annual Meeting, Financial Engineering Session \hfill February 2026
-- Korean Financial Management Association Annual Conference \hfill November 2025
-- Asia-Pacific Association of Finance International Conference \hfill July 2025
-- SERI International Conference \hfill July 2025
-- Seoul Workshop on Empirical Finance \hfill May 2025
-- Korean Financial Management Association Annual Conference \hfill November 2024
-- SERI International Conference \hfill July 2024
-- Korea's Allied Economic Associations Annual Meeting \hfill February 2024
+**2026** Korea's Allied Economic Associations Annual Meeting
+
+**2025** Korean Financial Management Association Annual Conference, Asia-Pacific Association of Finance International Conference, SERI International Conference, Seoul Workshop on Empirical Finance
+
+**2024** Korean Financial Management Association Annual Conference, SERI International Conference, Korea's Allied Economic Associations Annual Meeting
+
+# Teaching Experiences
+
+**2025** Asset Pricing; Risk and Portfolio Management
+
+**2024** Financial Derivatives; Financial Economics
 
 # Skills
 

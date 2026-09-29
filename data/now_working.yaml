@@ -1,7 +1,7 @@
 # ============================================================
-# "Now I'm working on" — homepage spotlight of current main
-# projects. Edit this file to update the section; no template
-# changes needed. Three entries by design (see round-4 feedback).
+# Homepage spotlight of selected work in progress. The entries
+# mirror the CV's work-in-progress list and do not assert that
+# the projects are currently active.
 # ============================================================
 
 - title: "Representing Location in House-Price Prediction: Hexagonal Spatial Encodings and Out-of-Sample Performance"
@@ -10,11 +10,11 @@
     - Commercial Real Estate
     - Big Data & Machine Learning
 
-- title: "Temporal Demand Structure and Shopping District Rent Capitalization"
-  tags:
-    - Commercial Real Estate
-
 - title: "Private Education Capitalization in Seoul Housing and Jeonse Markets"
   tags:
     - Housing Markets
     - Big Data & Machine Learning
+
+- title: "Temporal Demand Structure and Shopping District Rent Capitalization"
+  tags:
+    - Commercial Real Estate

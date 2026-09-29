@@ -17,11 +17,11 @@
   {{ $allBlogTags = $allBlogTags | uniq | sort }}
 
   {{ if $allBlogTags }}
-  <div class="tag-filter blog-tag-filter" id="blog-tag-filter">
+  <div class="tag-filter blog-tag-filter" id="blog-tag-filter" role="group" aria-label="Filter blog posts by topic">
     {{ range $allBlogTags }}
-    <span class="tag tag-clickable" data-tag="{{ . }}" onclick="blogFilterByTag('{{ . }}')">{{ . }}</span>
+    <button type="button" class="tag tag-clickable" data-tag="{{ . }}" aria-pressed="false" onclick="blogFilterByTag(this.dataset.tag)">{{ . }}</button>
     {{ end }}
-    <span class="tag tag-clear" id="blog-tag-clear" onclick="blogClearFilter()" style="display:none;">✕ Clear</span>
+    <button type="button" class="tag tag-clear" id="blog-tag-clear" onclick="blogClearFilter()" style="display:none;">✕ Clear</button>
   </div>
   {{ end }}
 
@@ -32,7 +32,7 @@
     <time>{{ .Date.Format "January 2, 2006" }}</time>
     {{ with .Params.tags }}
     <div class="blog-tags">
-      {{ range . }}<span class="tag tag-clickable" data-tag="{{ . }}" onclick="blogFilterByTag('{{ . }}')">{{ . }}</span>{{ end }}
+      {{ range . }}<button type="button" class="tag tag-clickable" data-tag="{{ . }}" aria-pressed="false" onclick="blogFilterByTag(this.dataset.tag)">{{ . }}</button>{{ end }}
     </div>
     {{ end }}
     <p>{{ .Summary }}</p>
@@ -66,6 +66,10 @@ function blogApplyFilter() {
   }
   document.getElementById('blog-tag-clear').style.display = 'inline-block';
 
+  document.querySelectorAll('.blog-page .tag-clickable').forEach(el => {
+    el.setAttribute('aria-pressed', String(blogActiveTags.has(el.dataset.tag)));
+  });
+
   // Research-style behavior: only filter-bar tags show active/dim state
   document.querySelectorAll('#blog-tag-filter .tag-clickable').forEach(el => {
     el.classList.toggle('tag-active', blogActiveTags.has(el.dataset.tag));
@@ -97,6 +101,9 @@ function blogApplyFilter() {
 
 function blogClearFilter() {
   blogActiveTags.clear();
+  document.querySelectorAll('.blog-page .tag-clickable').forEach(el => {
+    el.setAttribute('aria-pressed', 'false');
+  });
   document.querySelectorAll('#blog-tag-filter .tag-clickable').forEach(el => {
     el.classList.remove('tag-active', 'tag-dim');
   });

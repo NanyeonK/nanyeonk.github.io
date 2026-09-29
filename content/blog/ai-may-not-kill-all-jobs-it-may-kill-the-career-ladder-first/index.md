@@ -19,8 +19,6 @@ That matters because advanced economies are not built around farms anymore, and 
 
 That is also why I am skeptical of simplistic “bring manufacturing back” politics. Even if production returns, that does not mean workers will. A country can want more factories without its population wanting factory jobs.
 
-For more on that, see: [Will Americans really go back to manufacturing?](/blog/will-americans-really-go-back-to-manufacturing)
-
 The first jobs likely to be hit are not the most creative ones. They are the jobs that are closer to mental manual labor: simple accounting tasks, repetitive reporting, basic cover design, template-based visual work, low-level administrative analysis. In the past, these were often dismissed as easy jobs. That misses the point.
 
 They were not important because they were glamorous. They were important because they were training grounds.
@@ -34,8 +32,6 @@ The result is a harsher labor market. Firms may hire fewer people, and among tho
 If that process continues, white-collar work may start to require something closer to graduate-school timelines. I do not mean everyone will literally need a master’s degree or a PhD. I mean more people may spend years in low-income or no-income states while they accumulate credentials, signal ability, and delay real labor market entry.
 
 That creates a strange social outcome: adulthood by age, but not by income. In that world, many people may be legally adult for a decade before they become economically independent. East Asia already looks uncomfortably close to that reality.
-
-For more on that, see: [Adults by age, not by income](/blog/adults-by-age-not-by-income)
 
 So my reaction to this report is simple. It is scary, but it is not crazy.
 

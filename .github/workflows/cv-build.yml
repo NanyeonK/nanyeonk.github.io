@@ -2,7 +2,7 @@ name: Build CV PDF from LaTeX
 
 # static/files/cv.tex is the canonical source for the full CV. This workflow
 # recompiles it with Tectonic on every push that touches the source, so a
-# build failure (missing package, overfull content, broken Korean/CJK glyphs)
+# build failure (missing package, overfull content, missing glyphs)
 # is caught in CI even when nobody has a local LaTeX toolchain installed.
 # It does not commit the PDF back automatically — static/files/cv.pdf is
 # produced and verified locally (see repo history) and reviewed like any
@@ -12,6 +12,7 @@ on:
   push:
     paths:
       - "static/files/cv.tex"
+      - "static/files/icons/**"
       - ".github/workflows/cv-build.yml"
   workflow_dispatch:
 
@@ -31,10 +32,10 @@ jobs:
           tar -xzf /tmp/tectonic.tar.gz -C /usr/local/bin
           tectonic --version
 
-      - name: Install Korean CJK font + PDF tools
+      - name: Install PDF tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends fonts-noto-cjk poppler-utils
+          sudo apt-get install -y --no-install-recommends poppler-utils
 
       - name: Compile cv.tex
         working-directory: static/files
