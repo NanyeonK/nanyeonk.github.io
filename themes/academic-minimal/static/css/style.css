@@ -540,6 +540,7 @@ img { max-width: 100%; display: block; }
 .cv-paper-coauthors, .cv-paper-meta { display: block; font-size: .9rem; color: var(--text-light); }
 .cv-paper-meta a { font-weight: 600; }
 .cv-paper-emphasis .cv-paper-coauthors, .cv-paper-emphasis .cv-paper-meta { font-weight: 700; }
+.cv-paper-emphasis .cv-paper-note { font-weight: 400; }
 .cv-paper-note { display: block; margin-top: .25rem; color: var(--text-light); }
 
 /* ===== Blog ===== */
