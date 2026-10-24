@@ -9,9 +9,8 @@ Ph.D. student in Economics, Sungkyunkwan University\\
 This Version: October 24, 2026
 \end{center}
 
-![SKKU email](icons/mail.svg) [nanyeon99@g.skku.edu](mailto:nanyeon99@g.skku.edu) · ![Gmail](icons/gmail.svg) [nanyeon99@gmail.com](mailto:nanyeon99@gmail.com)<br>
-![Mobile](icons/phone.svg) [+82 (0)10-3782-3151](tel:+821037823151) · ![Homepage](icons/globe.svg) [Homepage: nanyeonk.github.io](https://nanyeonk.github.io/)<br>
-![Address](icons/pin.svg) Address: · ![GitHub](icons/github.svg) [GitHub](https://github.com/NanyeonK)<br>
+![Email](icons/mail.svg) [nanyeon99@g.skku.edu](mailto:nanyeon99@g.skku.edu) · [nanyeon99@gmail.com](mailto:nanyeon99@gmail.com)<br>
+![Homepage](icons/globe.svg) [Homepage: nanyeonk.github.io](https://nanyeonk.github.io/) · ![GitHub](icons/github.svg) [GitHub](https://github.com/NanyeonK)<br>
 ![ORCID](icons/orcid.svg) [ORCID: 0009-0004-5988-299X](https://orcid.org/0009-0004-5988-299X) · ![LinkedIn](icons/linkedin.svg) [LinkedIn](https://linkedin.com/in/yeonchan-kang-58181a27b)
 
 # Education
@@ -30,15 +29,15 @@ B.S. in Industrial Engineering
 
 Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice · Big Data & Machine Learning
 
-# Published and Working Papers
+# Published
 
-[8] Kang, Y., & Ryu, D. “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” *Spatial Economic Analysis* (R&R, Round 2).
+[8] Kang, Y., & Ryu, D. (Forthcoming). “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” *Spatial Economic Analysis*.
 
-[7] Kang, Y., & Ryu, D. (Forthcoming). “Factor Timing with Characteristic-State Similarity.” *Journal of Portfolio Management*. (SSCI)
+[7] **Kang, Y., & Ryu, D. (Forthcoming). “Factor Timing with Characteristic-State Similarity.” *Journal of Portfolio Management*. (SSCI)**
 
 *Expanded from the M.A. thesis “Factor Timing Using Characteristic State Similarity.”*
 
-[6] Kang, Y., & Ryu, D. (2026). “Market-specific confirmation horizons in momentum turning-point strategies.” *Applied Economics*. Advance online publication. [DOI: 10.1080/00036846.2026.2737829](https://doi.org/10.1080/00036846.2026.2737829). (SSCI)
+[6] Kang, Y., & Ryu, D. (2026). “Market-specific confirmation horizons in momentum turning-point strategies.” *Applied Economics*. Online. [DOI: 10.1080/00036846.2026.2737829](https://doi.org/10.1080/00036846.2026.2737829). (SSCI)
 
 [5] Kang, Y., & Ryu, D. (2026). “Time-series momentum and market timing in Bitcoin.” *Risk Management*, 28, 54. [DOI: 10.1057/s41283-026-00234-7](https://doi.org/10.1057/s41283-026-00234-7). (SSCI)
 
@@ -77,7 +76,17 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice �
 
 # Teaching Experiences
 
-**2025** Asset Pricing; Risk and Portfolio Management
+**Teaching Assistant (Graduate)**
+
+**2025** Market Microstructure
+
+**2024** Financial Engineering; Theory of Finance
+
+**Teaching Assistant (Undergraduate; taught in English)**
+
+**2026** Risk and Portfolio Management
+
+**2025** Asset Pricing
 
 **2024** Financial Derivatives; Financial Economics
 

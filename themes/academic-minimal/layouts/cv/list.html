@@ -7,7 +7,7 @@
     <h1>{{ .Title }}</h1>
     <p>Academic background, research, awards, presentations, and teaching. Download the PDF version below.</p>
     <p class="cv-version">This Version: October 24, 2026</p>
-    {{ partial "contact-links.html" (dict "Site" .Site "Class" "cv-contact" "Detailed" true "ShowWebsite" true "ShowAddress" true) }}
+    {{ partial "contact-links.html" (dict "Site" .Site "Class" "cv-contact" "Detailed" true "ShowWebsite" true "HidePhone" true) }}
     <div class="page-actions">
       <a class="button button-primary" href="{{ "/files/cv.pdf" | relURL }}" download="Yeonchan_Kang_CV.pdf">Download Full CV (PDF)</a>
     </div>
@@ -47,10 +47,10 @@
   </div>
 
   <section class="card cv-papers-card">
-    <h2>Published and Working Papers</h2>
+    <h2>Published</h2>
     <ul class="clean-list">
       {{ range sort (where $papers "sort_order" "gt" 0) "sort_order" "desc" }}
-      <li>
+      <li{{ if eq .project_id "factor_timing" }} class="cv-paper-emphasis"{{ end }}>
         <span class="detail-label">{{ .title }}</span>
         {{ with .authors }}<span class="cv-paper-coauthors">{{ . }}</span>{{ end }}
         <span class="cv-paper-meta">
@@ -97,7 +97,7 @@
       <h2>Teaching Experiences</h2>
       <ul class="clean-list">
         {{ range .Site.Data.teaching }}
-        <li><span class="detail-label">{{ .year }}</span>{{ .courses }}</li>
+        <li><span class="detail-label">{{ .role }} ({{ .level }}{{ with .language }}; taught in {{ . }}{{ end }}){{ with .year }} &middot; {{ . }}{{ end }}</span>{{ .courses }}</li>
         {{ end }}
       </ul>
     </section>

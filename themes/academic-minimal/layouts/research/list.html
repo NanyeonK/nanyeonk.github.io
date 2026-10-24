@@ -28,7 +28,7 @@
   {{ $working := where $papers "category" "working" }}
   {{ $published := where $papers "category" "published" }}
   {{ if or $working $published }}
-  <h2>Published and Working Papers</h2>
+  <h2>Published</h2>
   {{ end }}
   {{ if $working }}
   {{ range sort $working "sort_order" "desc" }}

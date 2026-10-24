@@ -1,5 +1,5 @@
 # ============================================================
-# Forthcoming and Working Papers
+# Forthcoming Papers
 # The website combines all papers in one list; sort_order keeps newest first.
 # ============================================================
 
@@ -26,11 +26,12 @@
 
 - project_id: sea_2026
   sort_order: 9
-  publication_status: rnr
+  publication_status: forthcoming
   title: "One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning"
   authors: "Yeonchan Kang and Doojin Ryu"
-  category: working
-  status: "R&R (Round 2) at Spatial Economic Analysis"
+  category: published
+  venue: "Spatial Economic Analysis"
+  status: "Forthcoming"
   year: 2026
   tags:
     - Housing Markets
@@ -50,7 +51,7 @@
   venue: "Applied Economics"
   year: 2026
   url: "https://doi.org/10.1080/00036846.2026.2737829"
-  note: "Published online October 1, 2026."
+  note: "Online."
   tags:
     - Momentum
   # Publication metadata verified against Crossref and the publisher listing on 2026-10-24.

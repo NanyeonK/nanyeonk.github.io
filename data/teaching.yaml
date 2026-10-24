@@ -1,4 +1,23 @@
 - year: 2025
-  courses: "Asset Pricing; Risk and Portfolio Management"
+  level: Graduate
+  role: Teaching Assistant
+  courses: "Market Microstructure"
 - year: 2024
+  level: Graduate
+  role: Teaching Assistant
+  courses: "Financial Engineering; Theory of Finance"
+- year: 2026
+  level: Undergraduate
+  role: Teaching Assistant
+  language: English
+  courses: "Risk and Portfolio Management"
+- year: 2025
+  level: Undergraduate
+  role: Teaching Assistant
+  language: English
+  courses: "Asset Pricing"
+- year: 2024
+  level: Undergraduate
+  role: Teaching Assistant
+  language: English
   courses: "Financial Derivatives; Financial Economics"

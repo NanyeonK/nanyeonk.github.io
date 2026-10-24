@@ -24,14 +24,11 @@
   #text(size: 8.7pt)[This Version: October 24, 2026]
 ]
 
+#contact("mail", "mailto:nanyeon99@g.skku.edu", "nanyeon99@g.skku.edu") · #link("mailto:nanyeon99@gmail.com", "nanyeon99@gmail.com")
 #grid(
   columns: (1fr, 1fr),
   gutter: 0.6em,
-  contact("mail", "mailto:nanyeon99@g.skku.edu", "nanyeon99@g.skku.edu"),
-  contact("gmail", "mailto:nanyeon99@gmail.com", "nanyeon99@gmail.com"),
-  contact("phone", "tel:+821037823151", "+82 (0)10-3782-3151"),
   contact("globe", "https://nanyeonk.github.io/", "Homepage: nanyeonk.github.io"),
-  [#image("icons/pin.svg", height: 9pt) Address:],
   contact("github", "https://github.com/NanyeonK", "GitHub"),
   contact("orcid", "https://orcid.org/0009-0004-5988-299X", "ORCID: 0009-0004-5988-299X"),
   contact("linkedin", "https://linkedin.com/in/yeonchan-kang-58181a27b", "LinkedIn"),
@@ -51,11 +48,11 @@ B.S. in Industrial Engineering
 #section[Research Interests]
 Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice · Big Data & Machine Learning
 
-#section[Published and Working Papers]
-#pubrow[[8]][Kang, Y., & Ryu, D. “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” #emph[Spatial Economic Analysis] (R&R, Round 2).]
-#pubrow[[7]][Kang, Y., & Ryu, D. (Forthcoming). “Factor Timing with Characteristic-State Similarity.” #emph[Journal of Portfolio Management]. (SSCI) \
+#section[Published]
+#pubrow[[8]][Kang, Y., & Ryu, D. (Forthcoming). “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” #emph[Spatial Economic Analysis].]
+#pubrow[[7]][#strong[Kang, Y., & Ryu, D. (Forthcoming). “Factor Timing with Characteristic-State Similarity.” #emph[Journal of Portfolio Management]. (SSCI)] \
 #text(size: 8.6pt, style: "italic")[Expanded from the M.A. thesis “Factor Timing Using Characteristic State Similarity.”]]
-#pubrow[[6]][Kang, Y., & Ryu, D. (2026). “Market-specific confirmation horizons in momentum turning-point strategies.” #emph[Applied Economics]. Advance online publication. #link("https://doi.org/10.1080/00036846.2026.2737829")[DOI: 10.1080/00036846.2026.2737829]. (SSCI)]
+#pubrow[[6]][Kang, Y., & Ryu, D. (2026). “Market-specific confirmation horizons in momentum turning-point strategies.” #emph[Applied Economics]. Online. #link("https://doi.org/10.1080/00036846.2026.2737829")[DOI: 10.1080/00036846.2026.2737829]. (SSCI)]
 #pubrow[[5]][Kang, Y., & Ryu, D. (2026). “Time-series momentum and market timing in Bitcoin.” #emph[Risk Management], 28, 54. #link("https://doi.org/10.1057/s41283-026-00234-7")[DOI: 10.1057/s41283-026-00234-7]. (SSCI)]
 #pubrow[[4]][Kang, H., Kang, Y., Ryu, D., & Webb, R. I. (2026). “Bitcoin Forecasting with Machine Learning and On-Chain Information.” #emph[Investment Analysts Journal]. #link("https://doi.org/10.1080/10293523.2026.2616575")[DOI: 10.1080/10293523.2026.2616575]. (SSCI)]
 #pubrow[[3]][Kang, Y., Ryu, D., & Webb, R. I. (2026). “Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach.” #emph[Computational Economics]. #link("https://doi.org/10.1007/s10614-025-11299-z")[DOI: 10.1007/s10614-025-11299-z]. (SSCI)]
@@ -83,7 +80,13 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice �
 #yearrow[2024][Korean Financial Management Association Annual Conference, SERI International Conference, Korea's Allied Economic Associations Annual Meeting]
 
 #section[Teaching Experiences]
-#yearrow[2025][Asset Pricing; Risk and Portfolio Management]
+*Teaching Assistant (Graduate)*
+#yearrow[2025][Market Microstructure]
+#yearrow[2024][Financial Engineering; Theory of Finance]
+
+*Teaching Assistant (Undergraduate; taught in English)*
+#yearrow[2026][Risk and Portfolio Management]
+#yearrow[2025][Asset Pricing]
 #yearrow[2024][Financial Derivatives; Financial Economics]
 
 #section[Skills]
