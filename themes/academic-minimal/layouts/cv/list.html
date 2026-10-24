@@ -94,10 +94,14 @@
     </section>
 
     <section class="card">
-      <h2>Teaching Experiences</h2>
+      <h2>Teaching Assistant Experience</h2>
       <ul class="clean-list">
-        {{ range .Site.Data.teaching }}
-        <li><span class="detail-label">{{ .role }} ({{ .level }}{{ with .language }}; taught in {{ . }}{{ end }}){{ with .year }} &middot; {{ . }}{{ end }}</span>{{ .courses }}</li>
+        {{ range slice "Graduate" "Undergraduate" }}
+        {{ $level := . }}
+        {{ $entries := where $.Site.Data.teaching "level" $level }}
+        {{ $courses := slice }}
+        {{ range $entries }}{{ $courses = $courses | append (printf "%s (%v)" (replace .courses "; " " and ") .year) }}{{ end }}
+        <li><strong>{{ $level }}{{ if eq $level "Undergraduate" }} (English-taught){{ end }}:</strong> {{ delimit $courses "; " }}.</li>
         {{ end }}
       </ul>
     </section>

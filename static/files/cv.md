@@ -74,21 +74,11 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice �
 
 **2024** Korean Financial Management Association Annual Conference, SERI International Conference, Korea's Allied Economic Associations Annual Meeting
 
-# Teaching Experiences
+# Teaching Assistant Experience
 
-**Teaching Assistant (Graduate)**
+**Graduate:** Market Microstructure (2025); Financial Engineering and Theory of Finance (2024).
 
-**2025** Market Microstructure
-
-**2024** Financial Engineering; Theory of Finance
-
-**Teaching Assistant (Undergraduate; taught in English)**
-
-**2026** Risk and Portfolio Management
-
-**2025** Asset Pricing
-
-**2024** Financial Derivatives; Financial Economics
+**Undergraduate (English-taught):** Risk and Portfolio Management (2026); Asset Pricing (2025); Financial Derivatives and Financial Economics (2024).
 
 # Skills
 
