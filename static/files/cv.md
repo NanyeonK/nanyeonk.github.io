@@ -6,7 +6,7 @@ fontsize: 10.5pt
 \begin{center}
 \Large\textbf{Yeonchan Kang}\\
 Ph.D. student in Economics, Sungkyunkwan University\\
-This Version: September 29, 2026
+This Version: October 24, 2026
 \end{center}
 
 ![SKKU email](icons/mail.svg) [nanyeon99@g.skku.edu](mailto:nanyeon99@g.skku.edu) · ![Gmail](icons/gmail.svg) [nanyeon99@gmail.com](mailto:nanyeon99@gmail.com)<br>
@@ -16,7 +16,7 @@ This Version: September 29, 2026
 
 # Education
 
-**Sungkyunkwan University** \hfill 2026–2026 (expected end of enrollment)\\
+**Sungkyunkwan University** \hfill 2026–present\\
 Ph.D. student in Economics
 
 **Sungkyunkwan University** \hfill 2026\\
@@ -38,7 +38,7 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice �
 
 *Expanded from the M.A. thesis “Factor Timing Using Characteristic State Similarity.”*
 
-[6] Kang, Y., & Ryu, D. (Forthcoming). “Market-specific confirmation horizons in momentum turning-point strategies.” *Applied Economics*. (SSCI)
+[6] Kang, Y., & Ryu, D. (2026). “Market-specific confirmation horizons in momentum turning-point strategies.” *Applied Economics*. Advance online publication. [DOI: 10.1080/00036846.2026.2737829](https://doi.org/10.1080/00036846.2026.2737829). (SSCI)
 
 [5] Kang, Y., & Ryu, D. (2026). “Time-series momentum and market timing in Bitcoin.” *Risk Management*, 28, 54. [DOI: 10.1057/s41283-026-00234-7](https://doi.org/10.1057/s41283-026-00234-7). (SSCI)
 

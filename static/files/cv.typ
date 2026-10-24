@@ -21,7 +21,7 @@
 #align(center)[
   #text(size: 16pt, weight: "bold")[Yeonchan Kang] \
   Ph.D. student in Economics, Sungkyunkwan University \
-  #text(size: 8.7pt)[This Version: September 29, 2026]
+  #text(size: 8.7pt)[This Version: October 24, 2026]
 ]
 
 #grid(
@@ -38,7 +38,7 @@
 )
 
 #section[Education]
-#row[*Sungkyunkwan University*][2026--2026 (expected end of enrollment)]
+#row[*Sungkyunkwan University*][2026–present]
 Ph.D. student in Economics
 
 #row[*Sungkyunkwan University*][2026]
@@ -55,7 +55,7 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice �
 #pubrow[[8]][Kang, Y., & Ryu, D. “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” #emph[Spatial Economic Analysis] (R&R, Round 2).]
 #pubrow[[7]][Kang, Y., & Ryu, D. (Forthcoming). “Factor Timing with Characteristic-State Similarity.” #emph[Journal of Portfolio Management]. (SSCI) \
 #text(size: 8.6pt, style: "italic")[Expanded from the M.A. thesis “Factor Timing Using Characteristic State Similarity.”]]
-#pubrow[[6]][Kang, Y., & Ryu, D. (Forthcoming). “Market-specific confirmation horizons in momentum turning-point strategies.” #emph[Applied Economics]. (SSCI)]
+#pubrow[[6]][Kang, Y., & Ryu, D. (2026). “Market-specific confirmation horizons in momentum turning-point strategies.” #emph[Applied Economics]. Advance online publication. #link("https://doi.org/10.1080/00036846.2026.2737829")[DOI: 10.1080/00036846.2026.2737829]. (SSCI)]
 #pubrow[[5]][Kang, Y., & Ryu, D. (2026). “Time-series momentum and market timing in Bitcoin.” #emph[Risk Management], 28, 54. #link("https://doi.org/10.1057/s41283-026-00234-7")[DOI: 10.1057/s41283-026-00234-7]. (SSCI)]
 #pubrow[[4]][Kang, H., Kang, Y., Ryu, D., & Webb, R. I. (2026). “Bitcoin Forecasting with Machine Learning and On-Chain Information.” #emph[Investment Analysts Journal]. #link("https://doi.org/10.1080/10293523.2026.2616575")[DOI: 10.1080/10293523.2026.2616575]. (SSCI)]
 #pubrow[[3]][Kang, Y., Ryu, D., & Webb, R. I. (2026). “Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach.” #emph[Computational Economics]. #link("https://doi.org/10.1007/s10614-025-11299-z")[DOI: 10.1007/s10614-025-11299-z]. (SSCI)]
