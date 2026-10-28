@@ -6,7 +6,7 @@ fontsize: 10.5pt
 \begin{center}
 \Large\textbf{Yeonchan Kang}\\
 Ph.D. student in Economics, Sungkyunkwan University\\
-This Version: October 24, 2026
+This Version: October 28, 2026
 \end{center}
 
 ![Email](icons/mail.svg) [nanyeon99@g.skku.edu](mailto:nanyeon99@g.skku.edu) · [nanyeon99@gmail.com](mailto:nanyeon99@gmail.com)<br>
@@ -35,7 +35,7 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice �
 
 [7] **Kang, Y., & Ryu, D. (Forthcoming). “Factor Timing with Characteristic-State Similarity.” *Journal of Portfolio Management*. (SSCI)**
 
-*Expanded from the M.A. thesis “Factor Timing Using Characteristic State Similarity.”*
+*Expanded from the M.A. thesis “Factor Timing Using Characteristic State Similarity.” Best Paper Award, Korean Financial Management Association (2025), awarded under the title “Dynamic Factor Timing.”*
 
 [6] Kang, Y., & Ryu, D. (2026). “Market-specific confirmation horizons in momentum turning-point strategies.” *Applied Economics*. Online. [DOI: 10.1080/00036846.2026.2737829](https://doi.org/10.1080/00036846.2026.2737829). (SSCI)
 
@@ -64,6 +64,7 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice �
 **Korean Finance Association – Kiwoom Securities Ph.D. Fellowship** \hfill 2026–2027\\
 **BK21 Fellowship**, Sungkyunkwan University, Ph.D. Program \hfill 2026–2027\\
 **Best Paper Award**, Korean Financial Management Association \hfill 2025\\
+Awarded for “Dynamic Factor Timing.”\\
 **BK21 Fellowship**, Sungkyunkwan University, Master's Program \hfill 2024–2025
 
 # Conference Presentations
