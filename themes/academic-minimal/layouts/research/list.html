@@ -15,6 +15,8 @@
     {{ end }}
   {{ end }}
   {{ $allTags = $allTags | uniq | sort }}
+  {{ $primaryTags := slice "Housing Markets" "Commercial Real Estate" "Asset Pricing" "Machine Learning" }}
+  {{ $allTags = union (intersect $primaryTags $allTags) (complement $primaryTags $allTags) }}
 
   <div class="tag-filter" id="tag-filter" role="group" aria-label="Filter research by topic">
     {{ range $allTags }}
