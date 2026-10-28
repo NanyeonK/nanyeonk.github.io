@@ -1,0 +1,12 @@
+# Navigation categories; paper-level tags also include assets and contribution topics.
+fields:
+  - Real Estate Economics
+  - Asset Pricing
+  - Portfolio Choice
+  - Financial Forecasting
+methods:
+  - Machine Learning
+  - Momentum Strategies
+  - Similarity-Based Methods
+  - Factor Selection
+  - Spatial Encoding

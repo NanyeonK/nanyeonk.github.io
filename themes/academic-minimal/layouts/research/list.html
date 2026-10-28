@@ -7,21 +7,19 @@
 </header>
 <div class="container research-page">
 
-  {{/* Collect all unique tags */}}
-  {{ $allTags := slice }}
-  {{ range .Site.Data.papers }}
-    {{ range .tags }}
-      {{ $allTags = $allTags | append . }}
-    {{ end }}
-  {{ end }}
-  {{ $allTags = $allTags | uniq | sort }}
-  {{ $primaryTags := slice "Housing Markets" "Commercial Real Estate" "Asset Pricing" "Machine Learning" }}
-  {{ $allTags = union (intersect $primaryTags $allTags) (complement $primaryTags $allTags) }}
-
-  <div class="tag-filter" id="tag-filter" role="group" aria-label="Filter research by topic">
-    {{ range $allTags }}
-    <button type="button" class="tag tag-clickable" data-tag="{{ . }}" aria-pressed="false" onclick="filterByTag(this.dataset.tag)">{{ . }}</button>
-    {{ end }}
+  <div class="tag-filter" id="tag-filter" role="group" aria-label="Filter research by field or method">
+    <div class="research-filter-row" role="group" aria-label="Fields">
+      <span class="research-filter-label">Fields</span>
+      <div>{{ range .Site.Data.research_topics.fields }}
+        <button type="button" class="tag tag-clickable" data-tag="{{ . }}" aria-pressed="false" onclick="filterByTag(this.dataset.tag)">{{ . }}</button>
+      {{ end }}</div>
+    </div>
+    <div class="research-filter-row" role="group" aria-label="Methods">
+      <span class="research-filter-label">Methods</span>
+      <div>{{ range .Site.Data.research_topics.methods }}
+        <button type="button" class="tag tag-clickable" data-tag="{{ . }}" aria-pressed="false" onclick="filterByTag(this.dataset.tag)">{{ . }}</button>
+      {{ end }}</div>
+    </div>
     <button type="button" class="tag tag-clear" id="tag-clear" onclick="clearFilter()" style="display:none;">✕ Clear</button>
   </div>
 

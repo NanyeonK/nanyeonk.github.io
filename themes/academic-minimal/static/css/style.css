@@ -447,12 +447,17 @@ img { max-width: 100%; display: block; }
 .tag[data-tag="Machine Learning"]           { background: #fef9c3; color: #854d0e; }
 .tag[data-tag="Momentum"]                   { background: #e0f2fe; color: #075985; }
 .tag[data-tag="SHAP"]                       { background: #fee2e2; color: #991b1b; }
-/* Research navigation: primary fields lead in color; secondary topics stay neutral. */
+/* Fields lead in color; methods have an outlined treatment; asset/topic tags stay neutral. */
 .research-page .tag[data-tag] { background: #edf2f7; color: #475569; }
-.research-page .tag[data-tag="Housing Markets"] { background: #dbeafe; color: #1e40af; font-weight: 600; }
-.research-page .tag[data-tag="Commercial Real Estate"] { background: #d1fae5; color: #065f46; font-weight: 600; }
+.research-page .tag[data-tag="Real Estate Economics"] { background: #dbeafe; color: #1e40af; font-weight: 600; }
 .research-page .tag[data-tag="Asset Pricing"] { background: #ede9fe; color: #5b21b6; font-weight: 600; }
-.research-page .tag[data-tag="Machine Learning"] { background: #fef3c7; color: #92400e; font-weight: 600; }
+.research-page .tag[data-tag="Portfolio Choice"] { background: #d1fae5; color: #065f46; font-weight: 600; }
+.research-page .tag[data-tag="Financial Forecasting"] { background: #fef3c7; color: #92400e; font-weight: 600; }
+.research-page .tag:is([data-tag="Machine Learning"], [data-tag="Momentum Strategies"], [data-tag="Similarity-Based Methods"], [data-tag="Factor Selection"], [data-tag="Spatial Encoding"]) { background: #f1f5f9; color: #334155; box-shadow: inset 0 0 0 1px #b8c5d5; }
+.research-filter-row { display: flex; align-items: baseline; gap: .8rem; margin-bottom: .5rem; }
+.research-filter-label { flex: 0 0 4.5rem; font-size: .8rem; font-weight: 600; color: var(--text); }
+.research-filter-row > div { min-width: 0; }
+@media (max-width: 520px) { .research-filter-row { display: block; } .research-filter-label { display: block; margin-bottom: .35rem; } }
 .research-page .tag-clickable:hover { background: var(--primary); color: #fff; }
 .tag-clickable { appearance: none; border: 0; font-family: inherit; line-height: inherit; cursor: pointer; transition: all .15s; }
 .tag-clickable:hover { background: var(--primary); color: #fff; }
