@@ -62,7 +62,8 @@
     - State Classification
   # Publication metadata verified against Crossref and the publisher listing on 2026-10-24.
   # Tags follow publisher keywords (capitalization normalized), checked 2026-10-28.
-  abstract: ""
+  # Published abstract; author proof text matched to the publisher, 2026-10-28.
+  abstract: "Trend-following strategies such as time-series momentum seek to capture persistent price movements. Turning-point designs identify when these movements reverse. The benchmark sets the fast confirmation horizon at one month. That benchmark reacts too quickly when short-horizon returns exhibit reversal instead of continuation. We compare horizon choices and state-based turning-point rules. Rebound classifications at the one-month horizon return to a bearish state more often than those at longer horizons, while the three-month alternative produces more stable market-state assignments. The pure three-month rule remains the strongest standalone return benchmark, while the main result concerns classification stability rather than the selection of a return-maximizing horizon. The evidence preserves the time-series momentum insight but shows that turning-point confirmation horizons should be evaluated against market structure rather than transferred mechanically across markets."
   pdf: ""
   code: ""
   figure: ""
