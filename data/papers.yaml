@@ -16,7 +16,7 @@
   featured: true
   tags:
     - Portfolio Choice
-    - Similarity-Based Methods
+    - Factor Investing
     - Equity Factors
     - Factor Timing
   # [GAP] No public preprint/SSRN link found (checked SSRN + co-author page, 2026-07-20).
@@ -155,7 +155,8 @@
   url: "https://doi.org/10.1016/j.frl.2024.105946"
   tags:
     - Asset Pricing
-    - Factor Selection
+    - Machine Learning
+    - Factor Investing
     - Equities
     - Pricing Factors
   abstract: "This letter examines whether new factors have additional explanatory power for the cross-section of expected stock returns compared to existing factors. We exploit machine-learning-based double-section LASSO to select factors explaining the cross-section in the Korean stock market. Among the recently proposed factors, gross profitability consistently exhibits significant SDF loadings, as confirmed by several robustness checks."
