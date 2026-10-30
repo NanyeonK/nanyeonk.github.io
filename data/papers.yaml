@@ -15,7 +15,7 @@
   year: 2026
   featured: true
   tags:
-    - Portfolio Choice
+    - Investment Strategies
     - Factor Investing
     - Equity Factors
     - Factor Timing
@@ -57,7 +57,7 @@
   url: "https://doi.org/10.1080/00036846.2026.2737829"
   note: "Online."
   tags:
-    - Portfolio Choice
+    - Investment Strategies
     - Momentum Strategies
     - Equities
     - Confirmation Horizons
@@ -83,7 +83,7 @@
   featured: true
   url: "https://doi.org/10.1057/s41283-026-00234-7"
   tags:
-    - Portfolio Choice
+    - Investment Strategies
     - Momentum Strategies
     - Bitcoin
     - Signal Speed
@@ -136,7 +136,7 @@
   featured: true
   url: "https://doi.org/10.1186/s40854-025-00870-0"
   tags:
-    - Asset Pricing
+    - Financial Forecasting
     - Machine Learning
     - Equities
     - Model Interpretability
