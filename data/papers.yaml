@@ -20,8 +20,9 @@
     - Equity Factors
     - Factor Timing
   # [GAP] No public preprint/SSRN link found (checked SSRN + co-author page, 2026-07-20).
-  # [GAP] Abstract not filled in — add once available; do not fabricate.
-  abstract: ""
+  # Abstract transcribed from publisher page proof received 2026-10-28, p. 1.
+  # Proof SHA-256: 795da2b5121b20ca19d07b841554aad79ca8c06c83b52cd85bbefab892f762fa
+  abstract: "This study shows how factor investors can time and allocate capital across factors using similarity in past factor characteristic states. At each date, a nonparametric rule identifies the historical states whose factor characteristics resemble the present and converts the returns that followed into allocation weights across factors. Using comprehensive US equity factor data, the rule outperforms static, linear, sentiment, macroeconomic, and factor-momentum benchmarks out of sample. A decomposition shows that the gains come from the closely matching historical states, whereas the rest of the sample contributes little. When the same rule conditions on aggregate macroeconomic states instead, it underperforms, which shows that the characteristic structure of the factor space carries timing information that aggregate conditions miss."
   pdf: ""
   code: ""
   figure: ""
