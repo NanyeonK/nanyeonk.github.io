@@ -57,7 +57,7 @@
           {{ if eq .category "working" }}{{ .status }}{{ else }}<em>{{ .venue }}</em>, {{ if eq .publication_status "forthcoming" }}forthcoming{{ else }}{{ .year }}{{ end }}.{{ end }}
           {{ with .url }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer">DOI</a>{{ end }}
         </span>
-        {{ with .note }}<small class="cv-paper-note">{{ . }}</small>{{ end }}
+        {{ $noteEmphasis := .note_emphasis }}{{ with .note }}<small class="cv-paper-note">{{ range $i, $line := split . "\n" }}{{ if $i }}<br>{{ end }}{{ if $noteEmphasis }}<strong>{{ $line }}</strong>{{ else }}{{ $line }}{{ end }}{{ end }}</small>{{ end }}
       </li>
       {{ end }}
     </ul>
