@@ -6,8 +6,8 @@
   <div class="page-header-inner">
     <h1>{{ .Title }}</h1>
     <p>Academic background, research, awards, presentations, and teaching. Download the PDF version below.</p>
-    <p class="cv-version">This Version: October 28, 2026</p>
-    {{ partial "contact-links.html" (dict "Site" .Site "Class" "cv-contact" "Detailed" true "ShowWebsite" true "HidePhone" true) }}
+    <p class="cv-version">This Version: November 5, 2026</p>
+    {{ partial "contact-links.html" (dict "Site" .Site "Class" "cv-contact" "Detailed" true "ShowWebsite" true "HidePhone" true "HideGitHubLinkedIn" true) }}
     <div class="page-actions">
       <a class="button button-primary" href="{{ "/files/cv.pdf" | relURL }}" download="Yeonchan_Kang_CV.pdf">Download Full CV (PDF)</a>
     </div>
@@ -41,20 +41,20 @@
       <ul class="clean-list">
         <li><span class="detail-label">Sungkyunkwan University</span>Ph.D. student in Economics &middot; 2026–present</li>
         <li><span class="detail-label">Sungkyunkwan University</span>M.A. in Economics &middot; 2026<br><small>Thesis: Factor Timing Using Characteristic State Similarity &middot; Advisor: Doojin Ryu</small></li>
-        <li><span class="detail-label">Inha University</span>B.S. in Industrial Engineering &middot; 2024</li>
+        <li><span class="detail-label">Inha University</span>B.S. in Industrial Engineering &middot; 2024<br><small>Capstone Design Project: “Machine Learning Interpretability in Finance”</small></li>
       </ul>
     </section>
   </div>
 
   <section class="card cv-papers-card">
-    <h2>Published</h2>
+    <h2>Publications</h2>
     <ul class="clean-list">
-      {{ range sort (where $papers "sort_order" "gt" 0) "sort_order" "desc" }}
+      {{ range sort (where $papers "category" "published") "sort_order" "desc" }}
       <li{{ if eq .project_id "factor_timing" }} class="cv-paper-emphasis"{{ end }}>
         <span class="detail-label">{{ .title }}</span>
         {{ with .authors }}<span class="cv-paper-coauthors">{{ . }}</span>{{ end }}
         <span class="cv-paper-meta">
-          {{ if eq .category "working" }}{{ .status }}{{ else }}<em>{{ .venue }}</em>, {{ if eq .publication_status "forthcoming" }}forthcoming{{ else }}{{ .year }}{{ end }}.{{ end }}
+          <em>{{ .venue }}</em>, {{ if eq .publication_status "forthcoming" }}forthcoming{{ else }}{{ .year }}{{ end }}.
           {{ with .url }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer">DOI</a>{{ end }}
         </span>
         {{ $noteEmphasis := .note_emphasis }}{{ with .note }}<small class="cv-paper-note">{{ range $i, $line := split . "\n" }}{{ if $i }}<br>{{ end }}{{ if $noteEmphasis }}<strong>{{ $line }}</strong>{{ else }}{{ $line }}{{ end }}{{ end }}</small>{{ end }}
@@ -107,14 +107,19 @@
     </section>
   </div>
 
+  <section class="card">
+    <h2>Referee Service</h2>
+    <p><em>Journal of Multinational Financial Management</em>, <em>Emerging Markets Review</em>, <em>Financial Innovation</em></p>
+  </section>
+
   <div class="info-grid">
     <section class="card">
       <h2>Skills</h2>
       <ul class="clean-list">
-        <li><span class="detail-label">Econometrics</span>Panel data, hedonic pricing</li>
-        <li><span class="detail-label">Machine Learning (including DL)</span>Tabular prediction with panel structures, interpretability (SHAP, PFI, PDP), image-based analysis, text mining, ensemble methods</li>
-        <li><span class="detail-label">Programming</span>R (fixest, tidyverse), Python (scikit-learn, PyTorch), DuckDB, SQL</li>
-        <li><span class="detail-label">Tools</span>LaTeX, Git</li>
+        <li><span class="detail-label">Econometrics &amp; Spatial Analysis</span>Panel data, hedonic pricing, spatial feature engineering</li>
+        <li><span class="detail-label">Machine Learning</span>Tree ensembles (random forests, XGBoost), model interpretability (SHAP, permutation importance, partial dependence)</li>
+        <li><span class="detail-label">Forecasting &amp; Evaluation</span>Financial forecasting, rolling-window and out-of-sample evaluation</li>
+        <li><span class="detail-label">Computing</span>R (fixest, tidyverse), Python (scikit-learn, PyTorch), SQL (DuckDB), Git, LaTeX</li>
       </ul>
     </section>
 

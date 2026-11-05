@@ -139,6 +139,7 @@
   year: 2025
   featured: true
   url: "https://doi.org/10.1186/s40854-025-00870-0"
+  note: "Expanded from the Inha University B.S. capstone project “Machine Learning Interpretability in Finance.”"
   tags:
     - Financial Forecasting
     - Machine Learning

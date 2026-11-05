@@ -496,6 +496,7 @@ img { max-width: 100%; display: block; }
   font-size: 1.3rem;
 }
 .research-page h2:first-of-type { margin-top: 1.5rem; }
+.research-empty { color: var(--text-light); font-size: .9rem; }
 
 .tag-filter { margin-bottom: 1.5rem; padding: .5rem 0; }
 
@@ -549,6 +550,7 @@ img { max-width: 100%; display: block; }
 .cv-page { padding: 2.5rem 0; }
 .cv-version { font-size: .85rem; }
 .cv-contact { display: flex; flex-wrap: wrap; gap: .45rem 1.25rem; margin-top: .65rem; font-size: .88rem; }
+.cv-contact .contact-emails { flex-basis: 100%; }
 .cv-contact a { display: inline-flex; align-items: center; gap: .35rem; color: #fff; text-decoration: underline; text-underline-offset: 3px; }
 .cv-contact a:hover { color: var(--accent); }
 .cv-contact .contact-static { display: inline-flex; align-items: center; gap: .35rem; color: #fff; }

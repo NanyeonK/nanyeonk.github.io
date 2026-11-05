@@ -6,12 +6,11 @@ fontsize: 10.5pt
 \begin{center}
 \Large\textbf{Yeonchan Kang}\\
 Ph.D. student in Economics, Sungkyunkwan University\\
-This Version: October 28, 2026
+This Version: November 5, 2026
 \end{center}
 
 ![Email](icons/mail.svg) [nanyeon99@g.skku.edu](mailto:nanyeon99@g.skku.edu) · [nanyeon99@gmail.com](mailto:nanyeon99@gmail.com)<br>
-![Homepage](icons/globe.svg) [Homepage: nanyeonk.github.io](https://nanyeonk.github.io/) · ![GitHub](icons/github.svg) [GitHub](https://github.com/NanyeonK)<br>
-![ORCID](icons/orcid.svg) [ORCID: 0009-0004-5988-299X](https://orcid.org/0009-0004-5988-299X) · ![LinkedIn](icons/linkedin.svg) [LinkedIn](https://linkedin.com/in/yeonchan-kang-58181a27b)
+![ORCID](icons/orcid.svg) [ORCID: 0009-0004-5988-299X](https://orcid.org/0009-0004-5988-299X) · ![Homepage](icons/globe.svg) [Homepage: nanyeonk.github.io](https://nanyeonk.github.io/)
 
 # Education
 
@@ -23,13 +22,14 @@ M.A. in Economics\\
 Thesis: “Factor Timing Using Characteristic State Similarity” · Advisor: Doojin Ryu
 
 **Inha University** \hfill 2024\\
-B.S. in Industrial Engineering
+B.S. in Industrial Engineering\\
+Capstone Design Project: “Machine Learning Interpretability in Finance”
 
 # Research Interests
 
-Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice · Big Data & Machine Learning
+Commercial Real Estate · Housing Markets · Asset Pricing · Big Data & Machine Learning
 
-# Published
+# Publications
 
 [8] Kang, Y., & Ryu, D. (Forthcoming). “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” *Spatial Economic Analysis*.
 
@@ -46,6 +46,8 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice �
 [3] Kang, Y., Ryu, D., & Webb, R. I. (2026). “Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach.” *Computational Economics*. [DOI: 10.1007/s10614-025-11299-z](https://doi.org/10.1007/s10614-025-11299-z). (SSCI)
 
 [2] Kang, Y., Ryu, D., & Webb, R. I. (2025). “How Well Do Machine Learning Models in Finance Work?” *Financial Innovation*, 11. [DOI: 10.1186/s40854-025-00870-0](https://doi.org/10.1186/s40854-025-00870-0). (SSCI)
+
+*Expanded from the Inha University B.S. capstone project “Machine Learning Interpretability in Finance.”*
 
 [1] Bang, J., Kang, Y., & Ryu, D. (2024). “Potential Pricing Factors in the Korean Market.” *Finance Research Letters*, 67. [DOI: 10.1016/j.frl.2024.105946](https://doi.org/10.1016/j.frl.2024.105946). (SSCI)
 
@@ -81,12 +83,16 @@ Awarded for “Dynamic Factor Timing.”\\
 
 **Undergraduate (English-taught):** Risk and Portfolio Management (2026); Asset Pricing (2025); Financial Derivatives and Financial Economics (2024).
 
+# Referee Service
+
+*Journal of Multinational Financial Management*, *Emerging Markets Review*, *Financial Innovation*
+
 # Skills
 
-**Econometrics:** Panel data, hedonic pricing\\
-**Machine Learning (including DL):** Tabular prediction with panel structures, interpretability (SHAP, PFI, PDP), image-based analysis, text mining, ensemble methods\\
-**Programming:** R (fixest, tidyverse), Python (scikit-learn, PyTorch), DuckDB, SQL\\
-**Tools:** LaTeX, Git
+**Econometrics & Spatial Analysis:** Panel data, hedonic pricing, spatial feature engineering\\
+**Machine Learning:** Tree ensembles (random forests, XGBoost), model interpretability (SHAP, permutation importance, partial dependence)\\
+**Forecasting & Evaluation:** Financial forecasting, rolling-window and out-of-sample evaluation\\
+**Computing:** R (fixest, tidyverse), Python (scikit-learn, PyTorch), SQL (DuckDB), Git, LaTeX
 
 # Languages
 

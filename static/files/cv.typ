@@ -21,18 +21,11 @@
 #align(center)[
   #text(size: 16pt, weight: "bold")[Yeonchan Kang] \
   Ph.D. student in Economics, Sungkyunkwan University \
-  #text(size: 8.7pt)[This Version: October 28, 2026]
+  #text(size: 8.7pt)[This Version: November 5, 2026]
 ]
 
-#contact("mail", "mailto:nanyeon99@g.skku.edu", "nanyeon99@g.skku.edu") · #link("mailto:nanyeon99@gmail.com", "nanyeon99@gmail.com")
-#grid(
-  columns: (1fr, 1fr),
-  gutter: 0.6em,
-  contact("globe", "https://nanyeonk.github.io/", "Homepage: nanyeonk.github.io"),
-  contact("github", "https://github.com/NanyeonK", "GitHub"),
-  contact("orcid", "https://orcid.org/0009-0004-5988-299X", "ORCID: 0009-0004-5988-299X"),
-  contact("linkedin", "https://linkedin.com/in/yeonchan-kang-58181a27b", "LinkedIn"),
-)
+#contact("mail", "mailto:nanyeon99@g.skku.edu", "nanyeon99@g.skku.edu") · #link("mailto:nanyeon99@gmail.com", "nanyeon99@gmail.com") \
+#contact("orcid", "https://orcid.org/0009-0004-5988-299X", "ORCID: 0009-0004-5988-299X") · #contact("globe", "https://nanyeonk.github.io/", "Homepage: nanyeonk.github.io")
 
 #section[Education]
 #row[*Sungkyunkwan University*][2026–present]
@@ -43,12 +36,13 @@ M.A. in Economics \
 Thesis: "Factor Timing Using Characteristic State Similarity" · Advisor: Doojin Ryu
 
 #row[*Inha University*][2024]
-B.S. in Industrial Engineering
+B.S. in Industrial Engineering \
+Capstone Design Project: “Machine Learning Interpretability in Finance”
 
 #section[Research Interests]
-Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice · Big Data & Machine Learning
+Commercial Real Estate · Housing Markets · Asset Pricing · Big Data & Machine Learning
 
-#section[Published]
+#section[Publications]
 #pubrow[[8]][Kang, Y., & Ryu, D. (Forthcoming). “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” #emph[Spatial Economic Analysis].]
 #pubrow[[7]][#strong[Kang, Y., & Ryu, D. (Forthcoming). “Factor Timing with Characteristic-State Similarity.” #emph[Journal of Portfolio Management]. (SSCI)] \
 #text(size: 8.6pt, weight: "regular", style: "italic")[Expanded from the M.A. thesis “Factor Timing Using Characteristic State Similarity.” Best Paper Award, Korean Financial Management Association (2025), awarded under the title “Dynamic Factor Timing.”]]
@@ -56,7 +50,8 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice �
 #pubrow[[5]][Kang, Y., & Ryu, D. (2026). “Time-series momentum and market timing in Bitcoin.” #emph[Risk Management], 28, 54. #link("https://doi.org/10.1057/s41283-026-00234-7")[DOI: 10.1057/s41283-026-00234-7]. (SSCI)]
 #pubrow[[4]][Kang, H., Kang, Y., Ryu, D., & Webb, R. I. (2026). “Bitcoin Forecasting with Machine Learning and On-Chain Information.” #emph[Investment Analysts Journal]. #link("https://doi.org/10.1080/10293523.2026.2616575")[DOI: 10.1080/10293523.2026.2616575]. (SSCI)]
 #pubrow[[3]][Kang, Y., Ryu, D., & Webb, R. I. (2026). “Uncertainty Indicators as Key Predictors of Oil Volatility: An Interpretable Machine Learning Approach.” #emph[Computational Economics]. #link("https://doi.org/10.1007/s10614-025-11299-z")[DOI: 10.1007/s10614-025-11299-z]. (SSCI)]
-#pubrow[[2]][Kang, Y., Ryu, D., & Webb, R. I. (2025). “How Well Do Machine Learning Models in Finance Work?” #emph[Financial Innovation], 11. #link("https://doi.org/10.1186/s40854-025-00870-0")[DOI: 10.1186/s40854-025-00870-0]. (SSCI)]
+#pubrow[[2]][Kang, Y., Ryu, D., & Webb, R. I. (2025). “How Well Do Machine Learning Models in Finance Work?” #emph[Financial Innovation], 11. #link("https://doi.org/10.1186/s40854-025-00870-0")[DOI: 10.1186/s40854-025-00870-0]. (SSCI) \
+#text(size: 8.6pt, style: "italic")[Expanded from the Inha University B.S. capstone project “Machine Learning Interpretability in Finance.”]]
 #pubrow[[1]][Bang, J., Kang, Y., & Ryu, D. (2024). “Potential Pricing Factors in the Korean Market.” #emph[Finance Research Letters], 67. #link("https://doi.org/10.1016/j.frl.2024.105946")[DOI: 10.1016/j.frl.2024.105946]. (SSCI)]
 
 #section[Other Publication]
@@ -85,11 +80,14 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Portfolio Choice �
 
 *Undergraduate (English-taught):* Risk and Portfolio Management (2026); Asset Pricing (2025); Financial Derivatives and Financial Economics (2024).
 
+#section[Referee Service]
+#emph[Journal of Multinational Financial Management], #emph[Emerging Markets Review], #emph[Financial Innovation]
+
 #section[Skills]
-*Econometrics:* Panel data, hedonic pricing \
-*Machine Learning (including DL):* Tabular prediction with panel structures, interpretability (SHAP, PFI, PDP), image-based analysis, text mining, ensemble methods \
-*Programming:* R (fixest, tidyverse), Python (scikit-learn, PyTorch), DuckDB, SQL \
-*Tools:* LaTeX, Git
+*Econometrics & Spatial Analysis:* Panel data, hedonic pricing, spatial feature engineering \
+*Machine Learning:* Tree ensembles (random forests, XGBoost), model interpretability (SHAP, permutation importance, partial dependence) \
+*Forecasting & Evaluation:* Financial forecasting, rolling-window and out-of-sample evaluation \
+*Computing:* R (fixest, tidyverse), Python (scikit-learn, PyTorch), SQL (DuckDB), Git, LaTeX
 
 #section[Languages]
 Korean (native) · English (proficient)
