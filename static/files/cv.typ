@@ -60,6 +60,7 @@ Best Paper Award, Korean Financial Management Association (2025), awarded under 
 
 #pagebreak()
 #section[Work in Progress]
+#set enum(numbering: "[1]")
 + “Representing Location in House-Price Prediction: Hexagonal Spatial Encodings and Out-of-Sample Performance”
 + “Private Education Capitalization in Seoul Housing and Jeonse Markets”
 + “Temporal Demand Structure and Shopping District Rent Capitalization”

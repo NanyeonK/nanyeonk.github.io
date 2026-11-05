@@ -58,9 +58,9 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Big Data & Machine
 
 # Work in Progress
 
-1. “Representing Location in House-Price Prediction: Hexagonal Spatial Encodings and Out-of-Sample Performance”
-2. “Private Education Capitalization in Seoul Housing and Jeonse Markets”
-3. “Temporal Demand Structure and Shopping District Rent Capitalization”
+[1] “Representing Location in House-Price Prediction: Hexagonal Spatial Encodings and Out-of-Sample Performance”
+[2] “Private Education Capitalization in Seoul Housing and Jeonse Markets”
+[3] “Temporal Demand Structure and Shopping District Rent Capitalization”
 
 # Awards & Fellowships
 

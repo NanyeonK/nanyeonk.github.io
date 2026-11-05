@@ -68,7 +68,7 @@
       <h2>Work in Progress</h2>
       <ul class="clean-list">
         {{ range $i, $paper := $wip }}
-        <li><span class="detail-label">{{ add $i 1 }}. {{ .title }}</span></li>
+        <li><span class="detail-label">[{{ add $i 1 }}] {{ .title }}</span></li>
         {{ end }}
       </ul>
     </section>
