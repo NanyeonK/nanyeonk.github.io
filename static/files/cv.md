@@ -6,7 +6,7 @@ fontsize: 10.5pt
 \begin{center}
 \Large\textbf{Yeonchan Kang}\\
 Ph.D. student in Economics, Sungkyunkwan University\\
-This Version: November 5, 2026
+This Version: November 6, 2026
 \end{center}
 
 ![Email](icons/mail.svg) [nanyeon99@g.skku.edu](mailto:nanyeon99@g.skku.edu) · [nanyeon99@gmail.com](mailto:nanyeon99@gmail.com)<br>
@@ -31,9 +31,9 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Big Data & Machine
 
 # Publications
 
-[8] Kang, Y., & Ryu, D. (Forthcoming). “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” *Spatial Economic Analysis*.
+[8] Kang, Y., & Ryu, D. (2026). “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” *Spatial Economic Analysis*. Online. [DOI: 10.1080/17421772.2026.2761314](https://doi.org/10.1080/17421772.2026.2761314).
 
-[7] **Kang, Y., & Ryu, D. (Forthcoming). “Factor Timing with Characteristic-State Similarity.” *Journal of Portfolio Management*. (SSCI)**
+[7] **Kang, Y., & Ryu, D. (2026). “Factor Timing with Characteristic-State Similarity.” *Journal of Portfolio Management*. Online. [DOI: 10.3905/jpm.2026.088](https://doi.org/10.3905/jpm.2026.088). (SSCI)**
 
 *Expanded from the M.A. thesis “Factor Timing Using Characteristic State Similarity.”*<br>
 *Best Paper Award, Korean Financial Management Association (2025), awarded under the title “Dynamic Factor Timing.”*

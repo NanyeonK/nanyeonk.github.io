@@ -21,7 +21,7 @@
 #align(center)[
   #text(size: 16pt, weight: "bold")[Yeonchan Kang] \
   Ph.D. student in Economics, Sungkyunkwan University \
-  #text(size: 8.7pt)[This Version: November 5, 2026]
+  #text(size: 8.7pt)[This Version: November 6, 2026]
 ]
 
 #contact("mail", "mailto:nanyeon99@g.skku.edu", "nanyeon99@g.skku.edu") · #link("mailto:nanyeon99@gmail.com", "nanyeon99@gmail.com") \
@@ -43,8 +43,8 @@ Capstone Design Project: “Machine Learning Interpretability in Finance”
 Commercial Real Estate · Housing Markets · Asset Pricing · Big Data & Machine Learning
 
 #section[Publications]
-#pubrow[[8]][Kang, Y., & Ryu, D. (Forthcoming). “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” #emph[Spatial Economic Analysis].]
-#pubrow[[7]][#strong[Kang, Y., & Ryu, D. (Forthcoming). “Factor Timing with Characteristic-State Similarity.” #emph[Journal of Portfolio Management]. (SSCI)] \
+#pubrow[[8]][Kang, Y., & Ryu, D. (2026). “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” #emph[Spatial Economic Analysis]. Online. #link("https://doi.org/10.1080/17421772.2026.2761314")[DOI: 10.1080/17421772.2026.2761314].]
+#pubrow[[7]][#strong[Kang, Y., & Ryu, D. (2026). “Factor Timing with Characteristic-State Similarity.” #emph[Journal of Portfolio Management]. Online. #link("https://doi.org/10.3905/jpm.2026.088")[DOI: 10.3905/jpm.2026.088]. (SSCI)] \
 #text(size: 8.6pt, weight: "regular", style: "italic")[Expanded from the M.A. thesis “Factor Timing Using Characteristic State Similarity.” \
 Best Paper Award, Korean Financial Management Association (2025), awarded under the title “Dynamic Factor Timing.”]]
 #pubrow[[6]][Kang, Y., & Ryu, D. (2026). “Market-specific confirmation horizons in momentum turning-point strategies.” #emph[Applied Economics]. Online. #link("https://doi.org/10.1080/00036846.2026.2737829")[DOI: 10.1080/00036846.2026.2737829]. (SSCI)]

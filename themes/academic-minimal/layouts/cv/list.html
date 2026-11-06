@@ -6,7 +6,7 @@
   <div class="page-header-inner">
     <h1>{{ .Title }}</h1>
     <p>Academic background, research, awards, presentations, and teaching. Download the PDF version below.</p>
-    <p class="cv-version">This Version: November 5, 2026</p>
+    <p class="cv-version">This Version: November 6, 2026</p>
     {{ partial "contact-links.html" (dict "Site" .Site "Class" "cv-contact" "Detailed" true "ShowWebsite" true "HidePhone" true "HideGitHubLinkedIn" true) }}
     <div class="page-actions">
       <a class="button button-primary" href="{{ "/files/cv.pdf" | relURL }}" download="Yeonchan_Kang_CV.pdf">Download Full CV (PDF)</a>
@@ -54,7 +54,7 @@
         <span class="detail-label">{{ .title }}</span>
         {{ with .authors }}<span class="cv-paper-coauthors">{{ . }}</span>{{ end }}
         <span class="cv-paper-meta">
-          <em>{{ .venue }}</em>, {{ if eq .publication_status "forthcoming" }}forthcoming{{ else }}{{ .year }}{{ end }}.
+          <em>{{ .venue }}</em>, {{ if eq .publication_status "forthcoming" }}forthcoming{{ else }}{{ .year }}{{ end }}.{{ if eq .publication_status "online" }} Online.{{ end }}.
           {{ with .url }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer">DOI</a>{{ end }}
         </span>
         {{ $noteEmphasis := .note_emphasis }}{{ with .note }}<small class="cv-paper-note">{{ range $i, $line := split . "\n" }}{{ if $i }}<br>{{ end }}{{ if $noteEmphasis }}<strong>{{ $line }}</strong>{{ else }}{{ $line }}{{ end }}{{ end }}</small>{{ end }}

@@ -1,21 +1,22 @@
 # ============================================================
-# Forthcoming Papers
+# Recent Online Papers
 # The website combines all papers in one list; sort_order keeps newest first.
 # ============================================================
 
 - project_id: factor_timing
   sort_order: 8
-  publication_status: forthcoming
+  publication_status: online
   title: "Factor Timing with Characteristic-State Similarity"
   authors: "Yeonchan Kang and Doojin Ryu"
   category: published
   venue: "Journal of Portfolio Management"
-  status: "Forthcoming"
+  status: "Online"
   note: |-
     Expanded from the M.A. thesis “Factor Timing Using Characteristic State Similarity.”
     Best Paper Award, Korean Financial Management Association (2025), awarded under the title “Dynamic Factor Timing.”
   note_emphasis: true
   year: 2026
+  url: "https://doi.org/10.3905/jpm.2026.088"
   featured: true
   tags:
     - Investment Strategies
@@ -33,13 +34,14 @@
 
 - project_id: sea_2026
   sort_order: 9
-  publication_status: forthcoming
+  publication_status: online
   title: "One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning"
   authors: "Yeonchan Kang and Doojin Ryu"
   category: published
   venue: "Spatial Economic Analysis"
-  status: "Forthcoming"
+  status: "Online"
   year: 2026
+  url: "https://doi.org/10.1080/17421772.2026.2761314"
   tags:
     - Real Estate Economics
     - Machine Learning
