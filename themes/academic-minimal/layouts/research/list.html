@@ -77,7 +77,7 @@
           {{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
         </p>
         {{ with .authors }}<p class="paper-coauthors">{{ partial "coauthors.html" . }}</p>{{ end }}
-        <p class="paper-venue"><em>{{ .venue }}</em>, {{ if eq .publication_status "forthcoming" }}forthcoming{{ else }}{{ .year }}{{ end }}.{{ if eq .publication_status "online" }} Online.{{ end }}.</p>
+        <p class="paper-venue"><em>{{ .venue }}</em>, {{ if eq .publication_status "forthcoming" }}forthcoming{{ else }}{{ .year }}{{ end }}.{{ if eq .publication_status "online" }} Online.{{ end }}</p>
         {{ $noteEmphasis := .note_emphasis }}{{ with .note }}<p class="paper-note">{{ range $i, $line := split . "\n" }}{{ if $i }}<br>{{ end }}{{ if $noteEmphasis }}<strong>{{ $line }}</strong>{{ else }}{{ $line }}{{ end }}{{ end }}</p>{{ end }}
         {{ with .abstract }}
         <details class="paper-abstract">

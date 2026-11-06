@@ -54,7 +54,7 @@
         <span class="detail-label">{{ .title }}</span>
         {{ with .authors }}<span class="cv-paper-coauthors">{{ . }}</span>{{ end }}
         <span class="cv-paper-meta">
-          <em>{{ .venue }}</em>, {{ if eq .publication_status "forthcoming" }}forthcoming{{ else }}{{ .year }}{{ end }}.{{ if eq .publication_status "online" }} Online.{{ end }}.
+          <em>{{ .venue }}</em>, {{ if eq .publication_status "forthcoming" }}forthcoming{{ else }}{{ .year }}{{ end }}.{{ if eq .publication_status "online" }} Online.{{ end }}
           {{ with .url }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer">DOI</a>{{ end }}
         </span>
         {{ $noteEmphasis := .note_emphasis }}{{ with .note }}<small class="cv-paper-note">{{ range $i, $line := split . "\n" }}{{ if $i }}<br>{{ end }}{{ if $noteEmphasis }}<strong>{{ $line }}</strong>{{ else }}{{ $line }}{{ end }}{{ end }}</small>{{ end }}
