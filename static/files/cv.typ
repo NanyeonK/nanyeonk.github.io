@@ -45,7 +45,7 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Big Data & Machine
 #section[Publications]
 #pubrow[[8]][Kang, Y., & Ryu, D. (2026). “One City, Multiple Markets: District-Specific Housing Valuations Using Interpretable Machine Learning.” #emph[Spatial Economic Analysis]. Online. #link("https://doi.org/10.1080/17421772.2026.2761314")[DOI: 10.1080/17421772.2026.2761314].]
 #pubrow[[7]][#strong[Kang, Y., & Ryu, D. (2026). “Factor Timing with Characteristic-State Similarity.” #emph[Journal of Portfolio Management]. Online. #text(weight: "regular")[#link("https://doi.org/10.3905/jpm.2026.088")[DOI: 10.3905/jpm.2026.088]]. (SSCI)] \
-#text(size: 8.6pt, weight: "regular", style: "italic")[Expanded from the M.A. thesis “Factor Timing Using Characteristic State Similarity.” \
+#text(size: 8.6pt, weight: "regular")[Expanded from the M.A. thesis “Factor Timing Using Characteristic State Similarity.” \
 Best Paper Award, Korean Financial Management Association (2025), awarded under the title “Dynamic Factor Timing.”]]
 #pubrow[[6]][Kang, Y., & Ryu, D. (2026). “Market-specific confirmation horizons in momentum turning-point strategies.” #emph[Applied Economics]. Online. #link("https://doi.org/10.1080/00036846.2026.2737829")[DOI: 10.1080/00036846.2026.2737829]. (SSCI)]
 #pubrow[[5]][Kang, Y., & Ryu, D. (2026). “Time-series momentum and market timing in Bitcoin.” #emph[Risk Management], 28, 54. #link("https://doi.org/10.1057/s41283-026-00234-7")[DOI: 10.1057/s41283-026-00234-7]. (SSCI)]

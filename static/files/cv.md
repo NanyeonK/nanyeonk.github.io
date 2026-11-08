@@ -35,8 +35,8 @@ Commercial Real Estate · Housing Markets · Asset Pricing · Big Data & Machine
 
 [7] **Kang, Y., & Ryu, D. (2026). “Factor Timing with Characteristic-State Similarity.” *Journal of Portfolio Management*. Online.** [DOI: 10.3905/jpm.2026.088](https://doi.org/10.3905/jpm.2026.088). **(SSCI)**
 
-*Expanded from the M.A. thesis “Factor Timing Using Characteristic State Similarity.”*<br>
-*Best Paper Award, Korean Financial Management Association (2025), awarded under the title “Dynamic Factor Timing.”*
+Expanded from the M.A. thesis “Factor Timing Using Characteristic State Similarity.”<br>
+Best Paper Award, Korean Financial Management Association (2025), awarded under the title “Dynamic Factor Timing.”
 
 [6] Kang, Y., & Ryu, D. (2026). “Market-specific confirmation horizons in momentum turning-point strategies.” *Applied Economics*. Online. [DOI: 10.1080/00036846.2026.2737829](https://doi.org/10.1080/00036846.2026.2737829). (SSCI)
 
